@@ -93,10 +93,25 @@
     }
   ],
   "categories": [
-    { "key": "tutti",      "label": "Tutti" },
-    { "key": "hotel",      "label": "L'Hotel" },
-    { "key": "ristorante", "label": "Il Ristorante" },
-    { "key": "cucina",     "label": "La Cucina" },
-    { "key": "territorio", "label": "Il Territorio" }
+    {
+      "key": "tutti",
+      "label": "Tutti"
+    },
+    {
+      "key": "hotel",
+      "label": "L'Hotel"
+    },
+    {
+      "key": "ristorante",
+      "label": "Il Ristorante"
+    },
+    {
+      "key": "cucina",
+      "label": "La Cucina"
+    },
+    {
+      "key": "territorio",
+      "label": "Il Territorio"
+    }
   ]
 }
