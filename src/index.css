@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f7f2e8;
+    color: #1c1c1c;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  #root { width: 100%; text-align: left; overflow-x: hidden; }
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: #f7f2e8; }
+  ::-webkit-scrollbar-thumb { background: #c5963a; border-radius: 4px; }
+}
+
+@layer components {
+  .btn-gold {
+    @apply inline-block bg-gold hover:bg-gold-light text-forest-dark font-sans text-xs font-medium tracking-[0.22em] uppercase px-8 py-3.5 transition-all duration-300 cursor-pointer border-none;
+  }
+  .btn-outline-dark {
+    @apply inline-block border border-forest text-forest font-sans text-xs font-medium tracking-[0.22em] uppercase px-8 py-3.5 transition-all duration-300 cursor-pointer hover:bg-forest hover:text-cream;
+  }
+  .btn-outline-light {
+    @apply inline-block border border-cream/70 text-cream font-sans text-xs font-medium tracking-[0.22em] uppercase px-8 py-3.5 transition-all duration-300 cursor-pointer hover:bg-cream hover:text-forest-dark;
+  }
+  .section-label {
+    @apply font-sans text-[0.68rem] tracking-[0.35em] uppercase text-gold;
+  }
+  .img-zoom { @apply overflow-hidden; }
+  .img-zoom img { @apply transition-transform duration-700 ease-expo-out; }
+  .img-zoom:hover img { @apply scale-105; }
+  .allergen-wrap { @apply relative inline-block; }
+  .allergen-tooltip {
+    @apply absolute bottom-[calc(100%+6px)] left-1/2 -translate-x-1/2 bg-charcoal text-cream text-[0.62rem] px-2 py-1 whitespace-nowrap z-50 pointer-events-none opacity-0 transition-opacity duration-200;
+  }
+  .allergen-tooltip::after {
+    content: '';
+    @apply absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent;
+    border-top-color: #1c1c1c;
+  }
+  .allergen-wrap:hover .allergen-tooltip { @apply opacity-100; }
+}

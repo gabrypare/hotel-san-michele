@@ -1,0 +1,78 @@
+export const ROOMS_DATA = {
+  'camera-classic': {
+    slug: 'camera-classic',
+    name: 'Camera Classic',
+    label: 'Comfort · Vista Giardino',
+    tagline: 'Il benessere essenziale',
+    price: 'da €85 / notte',
+    size: '22 m²',
+    guests: '2 ospiti',
+    desc: 'Arredata con materiali naturali, offre tutto il necessario per un soggiorno rilassante. Vista sul giardino, bagno privato con doccia, aria condizionata e Wi-Fi.',
+    features: [
+      'Letto matrimoniale o twin',
+      'Bagno privato con doccia',
+      'Aria condizionata · Wi-Fi',
+      'TV LED 40" · Cassaforte',
+      'Vista sul giardino',
+      'Colazione inclusa',
+    ],
+    photos: [
+      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1600&q=85',
+      'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=85',
+      'https://images.unsplash.com/photo-1631049422282-62d4e37e7536?auto=format&fit=crop&w=1600&q=85',
+      'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1600&q=85',
+    ],
+  },
+
+  'camera-panoramica': {
+    slug: 'camera-panoramica',
+    name: 'Camera Panoramica',
+    label: 'Superior · Vista Vigneti',
+    tagline: 'Svegliarsi in Franciacorta',
+    price: 'da €110 / notte',
+    size: '28 m²',
+    guests: '2 ospiti',
+    desc: 'Le finestre si aprono direttamente sui vigneti della Franciacorta. Balcone privato, mini-bar e colazione inclusa ogni mattina.',
+    features: [
+      'Letto matrimoniale king-size',
+      'Balcone privato vista vigneti',
+      'Bagno privato con doccia',
+      'Mini-bar · Wi-Fi · TV LED 43"',
+      'Aria condizionata',
+      'Colazione inclusa',
+    ],
+    photos: [
+      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1600&q=85',
+      'https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?auto=format&fit=crop&w=1600&q=85',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=85',
+      'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1600&q=85',
+    ],
+  },
+
+  'suite-san-michele': {
+    slug: 'suite-san-michele',
+    name: 'Suite San Michele',
+    label: 'Suite · Vista Panoramica 180°',
+    tagline: "L'eccellenza del soggiorno",
+    price: 'da €170 / notte',
+    size: '45 m²',
+    guests: '2 ospiti',
+    desc: 'Zona living separata, terrazza privata con vista a 180° sui colli, bagno in marmo con vasca idromassaggio. Franciacorta DOCG di benvenuto incluso.',
+    features: [
+      'Zona living separata',
+      'Terrazza privata panoramica',
+      'Vasca idromassaggio · doccia a pioggia',
+      'Franciacorta DOCG di benvenuto',
+      'Accappatoio · mini-bar premium',
+      'Colazione inclusa (in camera su richiesta)',
+    ],
+    photos: [
+      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1600&q=85',
+      'https://images.unsplash.com/photo-1621293954908-907159247fc8?auto=format&fit=crop&w=1600&q=85',
+      'https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?auto=format&fit=crop&w=1600&q=85',
+      'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=85',
+    ],
+  },
+}
+
+export const ROOM_SLUGS = ['camera-classic', 'camera-panoramica', 'suite-san-michele']
