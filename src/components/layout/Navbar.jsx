@@ -3,16 +3,9 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri'
 import SanMicheleLogo from '../ui/SanMicheleLogo'
+import navJson from '../../content/nav.json'
 
-const NAV = [
-  { label: 'Home',        href: '/' },
-  { label: 'Hotel',       href: '/hotel' },
-  { label: 'Ristorante',  href: '/ristorante' },
-  { label: 'Menù',        href: '/menu' },
-  { label: 'Location',    href: '/location' },
-  { label: 'Galleria',    href: '/galleria' },
-  { label: 'Clinica',     href: '/clinica' },
-]
+const NAV = navJson.items
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)

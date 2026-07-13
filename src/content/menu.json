@@ -1,0 +1,244 @@
+{
+  "categories": [
+    {
+      "key": "antipasti",
+      "label": "Antipasti",
+      "subtitle": "Per iniziare",
+      "heroImg": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "Tagliere San Michele",
+          "description": "Selezione di salumi artigianali bresciani, formaggi della Franciacorta, mostarda di Cremona e grissini al rosmarino",
+          "price": 18,
+          "allergens": ["glutine", "latte"],
+          "photo": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=300&q=80",
+          "signature": true
+        },
+        {
+          "name": "Carpaccio di Manzo al Tartufo Nero",
+          "description": "Fettine di manzo piemontese, scaglie di Grana Padano DOP, tartufo nero estivo, rucola selvatica e olio EVO",
+          "price": 16,
+          "allergens": ["latte"],
+          "photo": "https://images.pexels.com/photos/26932238/pexels-photo-26932238.jpeg?auto=compress&cs=tinysrgb&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Polpo alla Brace con Crema di Patate",
+          "description": "Polpo atlantico grigliato su vellutata di patate alle erbe, olio al prezzemolo e paprica affumicata",
+          "price": 18,
+          "allergens": ["molluschi"],
+          "photo": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Bruschetta al Pomodoro Confit",
+          "description": "Pane di campagna tostato, pomodorini confit al basilico, aglio, origano e olio extravergine Laghi Lombardi DOP",
+          "price": 10,
+          "allergens": ["glutine"],
+          "photo": "https://images.unsplash.com/photo-1572441713132-c542fc4fe282?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Uova in Camicia su Spinaci e Bitto DOP",
+          "description": "Uova biologiche in camicia su spinacini saltati, fonduta di Bitto DOP e chips di pancetta croccante",
+          "price": 13,
+          "allergens": ["uova", "latte"],
+          "photo": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        }
+      ]
+    },
+    {
+      "key": "primi",
+      "label": "Primi Piatti",
+      "subtitle": "La tradizione lombarda",
+      "heroImg": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "Risotto al Franciacorta DOCG",
+          "description": "Riso Carnaroli mantecato al Franciacorta Brut, burro di malga e Grana Padano stagionato 24 mesi",
+          "price": 20,
+          "allergens": ["latte", "solfiti"],
+          "photo": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=300&q=80",
+          "signature": true
+        },
+        {
+          "name": "Casoncelli alla Bergamasca",
+          "description": "Pasta fresca ripiena di carne brasata, amaretti, uvetta, pane, burro fuso e salvia con pancetta affumicata",
+          "price": 16,
+          "allergens": ["glutine", "uova", "latte", "fruttaGuscio"],
+          "photo": "https://images.pexels.com/photos/34565210/pexels-photo-34565210.jpeg?auto=compress&cs=tinysrgb&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Tagliatelle al Ragù di Cinghiale",
+          "description": "Pasta fresca all'uovo tirata a mano, ragù di cinghiale bresciano al Botticino rosso, finferli di stagione",
+          "price": 17,
+          "allergens": ["glutine", "uova", "sedano"],
+          "photo": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Paccheri con Gamberi Rossi e Zafferano",
+          "description": "Paccheri di Gragnano, gamberi rossi di Mazara del Vallo, crema di zafferano, pomodorino datterino",
+          "price": 22,
+          "allergens": ["glutine", "crostacei"],
+          "photo": "https://images.pexels.com/photos/725997/pexels-photo-725997.jpeg?auto=compress&cs=tinysrgb&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Zuppa di Fagioli Borlotti dell'Orto",
+          "description": "Fagioli borlotti freschi, cotenna di maiale, cavolo nero, patate, carote e olio EVO",
+          "price": 13,
+          "allergens": ["sedano"],
+          "photo": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        }
+      ]
+    },
+    {
+      "key": "secondi",
+      "label": "Secondi Piatti",
+      "subtitle": "Carne, pesce e tradizione",
+      "heroImg": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "Filetto di Manzo al Tartufo",
+          "description": "Filetto di manzo bresciano, salsa al Madeira, scaglie di tartufo nero di Norcia, gratin di patate",
+          "price": 32,
+          "allergens": ["glutine", "latte"],
+          "photo": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=300&q=80",
+          "signature": true
+        },
+        {
+          "name": "Branzino al Forno alle Erbe di Campo",
+          "description": "Branzino dell'Adriatico in crosta di erbe aromatiche, patate al forno, capperi di Pantelleria, limone confit",
+          "price": 26,
+          "allergens": ["pesce"],
+          "photo": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Costolette di Agnello con Fonduta di Pecorino",
+          "description": "Costolette di agnello al rosmarino, fonduta di Pecorino Romano, verdure grigliate e menta fresca",
+          "price": 28,
+          "allergens": ["latte"],
+          "photo": "https://images.pexels.com/photos/5638535/pexels-photo-5638535.jpeg?auto=compress&cs=tinysrgb&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Tagliata di Vitello con Grana e Rucola",
+          "description": "Vitello di razza Piemontese, Grana Padano DOP 24 mesi, rucola biologica, riduzione balsamica di Modena",
+          "price": 26,
+          "allergens": ["latte", "solfiti"],
+          "photo": "https://images.pexels.com/photos/36555149/pexels-photo-36555149.jpeg?auto=compress&cs=tinysrgb&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Pollo Ruspante alla Cacciatora",
+          "description": "Pollo allevato a terra, olive di Taggia, capperi, rosmarino, pomodoro San Marzano e Curtefranca bianco",
+          "price": 22,
+          "allergens": ["sedano", "solfiti"],
+          "photo": "https://images.unsplash.com/photo-1598103442097-8b74394b95c5?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        }
+      ]
+    },
+    {
+      "key": "dolci",
+      "label": "Dolci",
+      "subtitle": "Il finale perfetto",
+      "heroImg": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "Tiramisù San Michele",
+          "description": "La nostra ricetta storica: savoiardi, mascarpone, caffè espresso Arabica, cacao amaro e Amaretto di Saronno",
+          "price": 9,
+          "allergens": ["glutine", "uova", "latte", "fruttaGuscio"],
+          "photo": "https://images.pexels.com/photos/20586637/pexels-photo-20586637.jpeg?auto=compress&cs=tinysrgb&w=300&q=80",
+          "signature": true
+        },
+        {
+          "name": "Panna Cotta al Franciacorta Satèn",
+          "description": "Panna cotta alla vaniglia del Madagascar, gelatina di Franciacorta Satèn DOCG e frutti di bosco freschi",
+          "price": 8,
+          "allergens": ["latte", "solfiti"],
+          "photo": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Torta di Mele della Nonna",
+          "description": "Torta rustica alle mele renette con cannella, crema pasticcera al limone e gelato alla vaniglia artigianale",
+          "price": 9,
+          "allergens": ["glutine", "uova", "latte"],
+          "photo": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Crème Brûlée alla Lavanda",
+          "description": "Crema catalana con infuso di lavanda bresciana, caramello bruciato al momento e biscottino di frolla",
+          "price": 8,
+          "allergens": ["uova", "latte", "glutine"],
+          "photo": "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Sorbetto al Limone e Prosecco",
+          "description": "Sorbetto artigianale al limone di Sorrento, spruzzata di Prosecco Superiore DOCG, menta fresca",
+          "price": 7,
+          "allergens": ["solfiti"],
+          "photo": "https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        }
+      ]
+    },
+    {
+      "key": "vini",
+      "label": "Carta dei Vini",
+      "subtitle": "Franciacorta e dintorni",
+      "heroImg": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "Franciacorta DOCG Brut — Ca' del Bosco",
+          "description": "Metodo Classico, Chardonnay, Pinot Nero e Pinot Bianco. Perlage fine, note di agrumi e crosta di pane tostato",
+          "price": 48,
+          "allergens": ["solfiti"],
+          "photo": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=300&q=80",
+          "signature": true
+        },
+        {
+          "name": "Franciacorta DOCG Satèn — Bellavista",
+          "description": "Solo uve Chardonnay. Perlage cremoso, bouquet floreale, persistenza elegante. Il Franciacorta per eccellenza",
+          "price": 55,
+          "allergens": ["solfiti"],
+          "photo": "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Franciacorta DOCG Rosé — Contadi Castaldi",
+          "description": "Pinot Nero vinificato in rosé. Profumi di fragola e melagrana, freschezza vivace, finale lungo",
+          "price": 50,
+          "allergens": ["solfiti"],
+          "photo": "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Curtefranca DOC Bianco — Cavalleri",
+          "description": "Chardonnay e Pinot Bianco dei colli della Franciacorta. Fresco, minerale, ideale con i secondi di pesce",
+          "price": 30,
+          "allergens": ["solfiti"],
+          "photo": "https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Curtefranca DOC Rosso — Montenisa",
+          "description": "Cabernet Sauvignon, Merlot e Carmenère. Struttura elegante, tannini morbidi, finale speziato",
+          "price": 32,
+          "allergens": ["solfiti"],
+          "photo": "https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        }
+      ]
+    }
+  ]
+}

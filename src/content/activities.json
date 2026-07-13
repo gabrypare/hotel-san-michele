@@ -1,0 +1,160 @@
+{
+  "activities": [
+    {
+      "icon": "🍾",
+      "title": "Degustazioni Franciacorta",
+      "desc": "Oltre 60 cantine in Franciacorta, visite con degustazione su prenotazione.",
+      "imgs": [
+        "/images/territorio-4.jpg",
+        "/images/cantina-1.jpg",
+        "/images/cantina-2.jpg",
+        "/images/territorio-1.jpg",
+        "/images/cantina-3.jpg",
+        "/images/cantina-4.jpg",
+        "/images/cantina-5.jpg",
+        "/images/territorio-2.jpg"
+      ],
+      "detail": "La Franciacorta conta oltre 60 cantine, tutte aperte a visite guidate con degustazione su prenotazione. Il Franciacorta DOCG è l'unico spumante italiano prodotto esclusivamente con Metodo Classico: Chardonnay, Pinot Nero e Pinot Bianco rifermentati in bottiglia per almeno 18 mesi. Le cantine offrono percorsi tra vigne e barricaie, degustazioni delle diverse tipologie — Satèn, Rosé, Millesimato, Riserva — con abbinamenti gastronomici al territorio.",
+      "highlights": [
+        "Ca' del Bosco — Erbusco",
+        "Bellavista — Erbusco",
+        "Berlucchi — Borgonato",
+        "Cavalleri — Erbusco",
+        "Contadi Castaldi",
+        "Ferghettina — Adro"
+      ],
+      "tip": "L'Hotel San Michele può organizzare visite in cantina su prenotazione per i propri ospiti.",
+      "mapSrc": ""
+    },
+    {
+      "icon": "⛵",
+      "title": "Lago d'Iseo",
+      "desc": "Montisola, Iseo, Lovere: borghi, gite e sport acquatici a 12 km dall'hotel.",
+      "imgs": [
+        "/images/lago-panorama.jpg",
+        "/images/montisola-siviano.jpg",
+        "/images/isola-loreto.jpg",
+        "/images/lago-kayak.jpg",
+        "/images/lago-sup.jpg",
+        "/images/lago-windsurf.jpg",
+        "/images/lago-barca.jpg"
+      ],
+      "detail": "Il Lago d'Iseo è a soli 12 km dall'Hotel San Michele — circa 15 minuti in auto. Al centro del lago sorge Monte Isola, la più grande isola lacustre d'Europa abitata, raggiungibile in traghetto da Sulzano o Sale Marasino. I borghi di Iseo, Lovere e Sarnico meritano tutti una visita. Le gite e le attività acquatiche non sono organizzate dall'hotel, ma sono facilmente prenotabili direttamente una volta sul posto o online.",
+      "highlights": [
+        "Monte Isola in traghetto da Sulzano (10 min)",
+        "Borghi di Iseo, Lovere, Sarnico e Pisogne",
+        "Kayak e canoa sul lago",
+        "Stand Up Paddle (SUP)",
+        "Windsurf e kitesurf",
+        "Vela e noleggio imbarcazioni",
+        "Diving e immersioni",
+        "Pesca sportiva e canottaggio"
+      ],
+      "tip": "Traghetti e battelli: navigazionelagoiseo.it — servizio attivo tutto l'anno con corse frequenti.",
+      "mapSrc": ""
+    },
+    {
+      "icon": "🚴",
+      "title": "Cicloturismo",
+      "desc": "Piste ciclabili tra i vigneti della Franciacorta, percorsi collinari panoramici.",
+      "imgs": [
+        "/images/ciclovia-franciacorta.jpg",
+        "/images/ciclovia-erbusco.jpg",
+        "/images/ciclovia-sentiero-1.jpg",
+        "/images/ciclovia-sentiero-2.jpg",
+        "/images/ciclovia-colli.jpg",
+        "/images/territorio-4.jpg",
+        "/images/territorio-2.jpg"
+      ],
+      "detail": "La Franciacorta è uno dei territori più belli d'Italia per il cicloturismo: strade secondarie tra filari di vite, salite sui colli con vista sul lago e sulle Alpi, percorsi dedicati e segnalati. La Ciclovia della Franciacorta collega i principali borghi della denominazione attraverso paesaggi di rara bellezza. I sentieri partono praticamente dall'hotel e sono percorribili tutto l'anno.",
+      "highlights": [
+        "Ciclovia della Franciacorta (anello completo ~60 km)",
+        "Percorsi brevi tra Ome, Gussago e Rodengo (~15–25 km)",
+        "Salita ai colli con vista su lago e Alpi",
+        "Varianti per e-bike e mountain bike",
+        "Strade secondarie senza traffico tra i vigneti"
+      ],
+      "tip": "Chiedi alla reception per mappe cartacee gratuite e consigli sui percorsi più adatti al tuo livello.",
+      "mapSrc": "https://www.openstreetmap.org/export/embed.html?bbox=9.85%2C45.45%2C10.42%2C45.82&layer=cyclemap&marker=45.6442%2C10.1247"
+    },
+    {
+      "icon": "⛪",
+      "title": "Abbazie e Borghi",
+      "desc": "L'Abbazia Olivetana di Rodengo Saiano, i borghi di Erbusco, Paratico e Capriolo.",
+      "imgs": [
+        "/images/abbazia-chiesa.jpg",
+        "/images/abbazia-chiostro-grande.jpg",
+        "/images/abbazia-chiostro-piccolo.jpg",
+        "/images/abbazia-chiostro-cisterna.jpg",
+        "/images/erbusco-borgo.jpg",
+        "/images/paratico-castello.jpg",
+        "/images/paratico-lago.jpg"
+      ],
+      "detail": "La Franciacorta custodisce un patrimonio storico e religioso straordinario. L'Abbazia Olivetana di San Nicola a Rodengo Saiano — fondata nell'XI secolo da monaci cluniacensi e affidata agli Olivetani nel 1446 — è uno dei monasteri più belli della Lombardia: tre chiostri, affreschi del Romanino e del Moretto, tarsie lignee del Quattrocento. I borghi medievali di Erbusco, Paratico e Capriolo completano un territorio dove ogni vicolo racconta secoli di storia.",
+      "highlights": [
+        "Abbazia Olivetana di San Nicola — Rodengo Saiano (XI sec.)",
+        "Tre chiostri con affreschi di Romanino e Moretto",
+        "Borgo medievale di Erbusco — capitale della Franciacorta",
+        "Castello Lantieri di Paratico (XIII–XIV sec.) sul Lago d'Iseo",
+        "Santuario della Madonna di Cerezzata — Ome",
+        "Capriolo e il suo centro storico sull'Oglio"
+      ],
+      "tip": "L'Abbazia di Rodengo Saiano è visitabile la mattina; visite guidate su prenotazione. Distanza dall'hotel: ~5 min in auto.",
+      "mapSrc": ""
+    },
+    {
+      "icon": "🌿",
+      "title": "Siti Naturalistici",
+      "desc": "Le Torbiere del Sebino, le Cascate di Monticelli Brusati e il Parco dell'Alto Sebino.",
+      "imgs": [
+        "/images/torbiere-san-pietro.jpg",
+        "/images/torbiere-panorama.jpg",
+        "/images/torbiere-ninfee.jpg",
+        "/images/torbiere-tramonto.jpg",
+        "/images/cascata-gaina-1.jpg",
+        "/images/cascata-gaina-2.jpg",
+        "/images/alto-sebino-lovere.jpg",
+        "/images/alto-sebino-lago.jpg"
+      ],
+      "detail": "Il territorio intorno all'Hotel San Michele custodisce tre gioielli naturalistici di straordinario valore. Le Torbiere del Sebino — Riserva Naturale e Zona di Protezione Speciale europea — sono una delle zone umide più importanti della Lombardia, con la chiesa romanica di San Pietro in Lamosa che sorge sull'acqua tra canneti e ninfee. Le Cascate di Gaina a Monticelli Brusati sono raggiungibili con un'escursione nel canyon scavato dal torrente Gaina. Il Parco dell'Alto Sebino, il più grande parco locale della Lombardia, si estende dai 183 m del Lago d'Iseo fino ai 1.880 m del Monte Pora.",
+      "highlights": [
+        "Torbiere del Sebino — Riserva Naturale, a 10 km dall'hotel",
+        "San Pietro in Lamosa — chiesa romanica sull'acqua (XI sec.)",
+        "Ninfee bianche e fauna selvatica (aironi, martin pescatori)",
+        "Cascate di Gaina — canyon e sentiero attrezzato a Monticelli Brusati",
+        "Parco dell'Alto Sebino — escursioni da Lovere a Monte Pora",
+        "Riva di Solto — borgo sul lago, panorami mozzafiato"
+      ],
+      "tip": "Torbiere del Sebino: ingresso libero, apertura stagionale. Sentiero delle Cascate di Gaina: percorso ad anello ~3 km, dislivello 250 m.",
+      "mapSrc": ""
+    },
+    {
+      "icon": "🏔️",
+      "title": "Attività Outdoor",
+      "desc": "Golf tra i vigneti, trekking sui colli, arrampicata e sport acquatici sul Lago d'Iseo.",
+      "imgs": [
+        "/images/outdoor-golf.jpg",
+        "/images/outdoor-golf2.jpg",
+        "/images/lago-kayak.jpg",
+        "/images/lago-sup.jpg",
+        "/images/lago-windsurf.jpg",
+        "/images/lago-barca.jpg",
+        "/images/outdoor-climbing.jpg",
+        "/images/outdoor-trekking.jpg",
+        "/images/outdoor-colline.jpg"
+      ],
+      "detail": "La Franciacorta e il Lago d'Iseo offrono un ventaglio completo di attività all'aperto per tutti i livelli. Il Golf Club Franciacorta a Nigoline di Corte Franca ha 27 buche (tre percorsi da 9 chiamati Brut, Satèn e Rosé) immersi in 80 ettari di verde tra boschi e vigneti — uno dei campi più belli del Nord Italia, aperto ai non soci su prenotazione. Sul Lago d'Iseo si praticano kayak, SUP, windsurf, kitesurf, vela, canottaggio e diving. Le pareti di Sale Marasino e Riva di Solto sono tra le falesie di arrampicata sportiva più apprezzate della Lombardia. I colli di Ome e Gussago si percorrono a piedi con panorami sulle Alpi e sulla Pianura Padana.",
+      "highlights": [
+        "Golf Club Franciacorta — 27 buche (Brut, Satèn, Rosé) tra i vigneti",
+        "Kayak, SUP, windsurf e kitesurf sul Lago d'Iseo",
+        "Vela e noleggio barche — scuole attive tutto l'anno",
+        "Arrampicata sportiva a Sale Marasino e Riva di Solto",
+        "Diving e immersioni nel Lago d'Iseo",
+        "Trekking sui colli di Ome, Gussago e Rodengo Saiano",
+        "Paragliding da Forcella di Sale — vista lago panoramica"
+      ],
+      "tip": "Golf Club Franciacorta: ospiti non soci su prenotazione — tel. 030 984167. Per sport acquatici: Iseo Lake Adventure (iseolakeadventure.com) e OverAlp.",
+      "mapSrc": ""
+    }
+  ]
+}

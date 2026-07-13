@@ -1,0 +1,217 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: it
+media_folder: public/images
+public_folder: /images
+
+collections:
+  # ─── MENU ───────────────────────────────────────────────────────────────────
+  - name: menu
+    label: "🍽️ Menù del Ristorante"
+    files:
+      - name: menu
+        label: "Categorie e Piatti"
+        file: src/content/menu.json
+        format: json
+        fields:
+          - name: categories
+            label: Categorie
+            widget: list
+            label_singular: Categoria
+            fields:
+              - { name: key,      label: "Chiave (non modificare)", widget: string }
+              - { name: label,    label: "Titolo categoria",        widget: string }
+              - { name: subtitle, label: "Sottotitolo",             widget: string }
+              - { name: heroImg,  label: "Immagine copertina (URL)", widget: string }
+              - name: items
+                label: Piatti
+                widget: list
+                label_singular: Piatto
+                fields:
+                  - { name: name,        label: "Nome piatto",     widget: string }
+                  - { name: description, label: "Descrizione",     widget: text }
+                  - { name: price,       label: "Prezzo (€)",      widget: number, value_type: int }
+                  - { name: photo,       label: "Foto (URL)",      widget: string, required: false }
+                  - { name: signature,   label: "Piatto signature", widget: boolean, default: false }
+                  - name: allergens
+                    label: Allergeni
+                    widget: select
+                    multiple: true
+                    required: false
+                    options:
+                      - { label: "Glutine",          value: glutine }
+                      - { label: "Crostacei",        value: crostacei }
+                      - { label: "Uova",             value: uova }
+                      - { label: "Pesce",            value: pesce }
+                      - { label: "Arachidi",         value: arachidi }
+                      - { label: "Soia",             value: soia }
+                      - { label: "Latte/Lattosio",   value: latte }
+                      - { label: "Frutta a guscio",  value: fruttaGuscio }
+                      - { label: "Sedano",           value: sedano }
+                      - { label: "Senape",           value: senape }
+                      - { label: "Semi di sesamo",   value: sesamo }
+                      - { label: "Solfiti/SO₂",      value: solfiti }
+                      - { label: "Lupini",           value: lupini }
+                      - { label: "Molluschi",        value: molluschi }
+
+  # ─── CAMERE ─────────────────────────────────────────────────────────────────
+  - name: rooms
+    label: "🛏️ Camere e Suite"
+    files:
+      - name: rooms
+        label: "Elenco Camere"
+        file: src/content/rooms.json
+        format: json
+        fields:
+          - name: rooms
+            label: Camere
+            widget: list
+            label_singular: Camera
+            fields:
+              - { name: slug,    label: "Slug URL (non modificare)", widget: string }
+              - { name: name,    label: "Nome camera",               widget: string }
+              - { name: label,   label: "Etichetta (tipo · vista)",  widget: string }
+              - { name: tagline, label: "Tagline",                   widget: string }
+              - { name: price,   label: "Prezzo (testo)",            widget: string }
+              - { name: size,    label: "Dimensione (es. 22 m²)",    widget: string }
+              - { name: guests,  label: "Ospiti (es. 2 ospiti)",     widget: string }
+              - { name: desc,    label: "Descrizione",               widget: text }
+              - name: features
+                label: "Dotazioni"
+                widget: list
+                field: { name: feature, label: Dotazione, widget: string }
+              - name: photos
+                label: "Foto (URL)"
+                widget: list
+                field: { name: url, label: URL foto, widget: string }
+
+  # ─── ATTIVITÀ ───────────────────────────────────────────────────────────────
+  - name: activities
+    label: "🗺️ Cosa Fare in Franciacorta"
+    files:
+      - name: activities
+        label: "Attività e Attrazioni"
+        file: src/content/activities.json
+        format: json
+        fields:
+          - name: activities
+            label: Attività
+            widget: list
+            label_singular: Attività
+            fields:
+              - { name: icon,   label: "Icona emoji",   widget: string }
+              - { name: title,  label: "Titolo",        widget: string }
+              - { name: desc,   label: "Descrizione breve", widget: text }
+              - { name: detail, label: "Testo dettagliato", widget: text }
+              - { name: tip,    label: "Consiglio utile",   widget: text, required: false }
+              - { name: mapSrc, label: "URL mappa embed (opzionale)", widget: string, required: false }
+              - name: imgs
+                label: "Foto (percorso o URL)"
+                widget: list
+                field: { name: src, label: "Percorso immagine", widget: string }
+              - name: highlights
+                label: "Punti salienti"
+                widget: list
+                field: { name: item, label: Punto, widget: string }
+
+  # ─── GALLERIA ───────────────────────────────────────────────────────────────
+  - name: gallery
+    label: "🖼️ Galleria Fotografica"
+    files:
+      - name: gallery
+        label: "Foto e Categorie"
+        file: src/content/gallery.json
+        format: json
+        fields:
+          - { name: heroImg, label: "Immagine hero (URL)", widget: string }
+          - name: photos
+            label: "Foto galleria"
+            widget: list
+            label_singular: Foto
+            fields:
+              - { name: src,   label: "URL o percorso foto", widget: string }
+              - { name: label, label: "Didascalia",           widget: string }
+              - name: cat
+                label: Categoria
+                widget: select
+                options:
+                  - { label: "Hotel",         value: hotel }
+                  - { label: "Ristorante",    value: ristorante }
+                  - { label: "Cucina",        value: cucina }
+                  - { label: "Territorio",    value: territorio }
+              - name: span
+                label: "Dimensione griglia"
+                widget: select
+                required: false
+                default: ""
+                options:
+                  - { label: "Standard (1×1)",         value: "" }
+                  - { label: "Larga (2 colonne)",       value: "col-span-2" }
+                  - { label: "Grande (2×2)",            value: "col-span-2 row-span-2" }
+                  - { label: "Panoramica (3 colonne)",  value: "col-span-3" }
+
+  # ─── IMPOSTAZIONI ────────────────────────────────────────────────────────────
+  - name: settings
+    label: "⚙️ Impostazioni Sito"
+    files:
+      - name: settings
+        label: "Contatti, Orari e Social"
+        file: src/content/settings.json
+        format: json
+        fields:
+          - name: hotel
+            label: "Informazioni Hotel"
+            widget: object
+            fields:
+              - { name: name,    label: "Nome hotel",    widget: string }
+              - { name: tagline, label: "Frase tagline (footer)", widget: text }
+              - { name: piva,    label: "Partita IVA",   widget: string }
+          - name: contact
+            label: "Contatti"
+            widget: object
+            fields:
+              - { name: address,    label: "Indirizzo (via)",       widget: string }
+              - { name: city,       label: "Città e CAP",           widget: string }
+              - { name: phone,      label: "Telefono (visibile)",   widget: string }
+              - { name: phone_href, label: "Telefono (href tel:)",  widget: string }
+              - { name: email,      label: "Email",                 widget: string }
+          - name: hours
+            label: "Orari Ristorante"
+            widget: object
+            fields:
+              - { name: lunch_label, label: "Etichetta pranzo", widget: string, default: "Pranzo" }
+              - { name: lunch,       label: "Orario pranzo",    widget: string }
+              - { name: dinner_label, label: "Etichetta cena",  widget: string, default: "Cena" }
+              - { name: dinner,      label: "Orario cena",      widget: string }
+              - { name: closed,      label: "Giorno chiusura",  widget: string }
+          - name: social
+            label: "Social Media"
+            widget: object
+            fields:
+              - { name: instagram, label: "URL Instagram", widget: string }
+              - { name: facebook,  label: "URL Facebook",  widget: string }
+          - name: legal
+            label: "Link Legali"
+            widget: object
+            fields:
+              - { name: privacy_href, label: "URL Privacy Policy", widget: string }
+              - { name: cookie_href,  label: "URL Cookie Policy",  widget: string }
+
+  # ─── NAVIGAZIONE ─────────────────────────────────────────────────────────────
+  - name: navigation
+    label: "🔗 Menu di Navigazione"
+    files:
+      - name: nav
+        label: "Voci del Menu"
+        file: src/content/nav.json
+        format: json
+        fields:
+          - name: items
+            label: "Voci navigazione"
+            widget: list
+            label_singular: "Voce"
+            fields:
+              - { name: label, label: "Testo voce", widget: string }
+              - { name: href,  label: "URL (non modificare se non sai cosa fai)", widget: string }

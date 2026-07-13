@@ -1,0 +1,29 @@
+{
+  "hotel": {
+    "name": "Hotel Ristorante San Michele",
+    "tagline": "Nel cuore dei colli di Ome, dove i vigneti della Franciacorta incontrano l'ospitalità autentica e la cucina del territorio.",
+    "piva": "00000000000"
+  },
+  "contact": {
+    "address": "Via S. Michele, 5a",
+    "city": "25050 Ome (BS) — Franciacorta",
+    "phone": "+39 030 652 7167",
+    "phone_href": "+390306527167",
+    "email": "info@sanmicheleome.it"
+  },
+  "hours": {
+    "lunch_label": "Pranzo",
+    "lunch": "12:00 – 14:30",
+    "dinner_label": "Cena",
+    "dinner": "19:30 – 22:00",
+    "closed": "Chiuso il martedì"
+  },
+  "social": {
+    "instagram": "#",
+    "facebook": "#"
+  },
+  "legal": {
+    "privacy_href": "#",
+    "cookie_href": "#"
+  }
+}

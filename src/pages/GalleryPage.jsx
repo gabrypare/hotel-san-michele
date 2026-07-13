@@ -3,29 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import PageHero from '../components/ui/PageHero'
 import ScrollReveal from '../components/ui/ScrollReveal'
 import { RiCloseLine, RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
+import galleryJson from '../content/gallery.json'
 
-const HERO_IMG = 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/3c/d5/79/caption.jpg?w=1600&h=900&s=1'
-
-const PHOTOS = [
-  { src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/3c/d5/79/caption.jpg?w=900&h=600&s=1',    label: "L'Hotel",          cat: 'hotel',      span: 'col-span-2 row-span-2' },
-  { src: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=700&q=80',         label: 'Camera Superior',  cat: 'hotel',      span: '' },
-  { src: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=700&q=80',         label: 'Camera Panoramica', cat: 'hotel',     span: '' },
-  { src: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=700&q=80',         label: 'Suite San Michele', cat: 'hotel',     span: '' },
-  { src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/f8/32/c2/photo4jpg.jpg?w=900&h=600&s=1',   label: 'La Terrazza',      cat: 'hotel',      span: 'col-span-2' },
-  { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80',         label: 'Sala Ristorante',  cat: 'ristorante', span: 'col-span-2' },
-  { src: 'https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=700&q=80',         label: 'Risotto Franciacorta', cat: 'cucina', span: '' },
-  { src: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80',         label: 'Piatto del Giorno', cat: 'cucina',    span: '' },
-  { src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80',            label: 'La Cucina',        cat: 'cucina',     span: '' },
-  { src: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80',         label: 'Franciacorta DOCG', cat: 'cucina',    span: '' },
-  { src: '/images/territorio-1.jpg', label: 'Vigneti di Adro',               cat: 'territorio', span: 'col-span-3' },
-  { src: '/images/territorio-4.jpg', label: 'Vigneto in Franciacorta',       cat: 'territorio', span: '' },
-  { src: '/images/territorio-2.jpg', label: 'Vigneto e Santissima — Gussago', cat: 'territorio', span: 'col-span-2' },
-  { src: '/images/territorio-5.jpg', label: 'Vigneto Montina — Provezze',    cat: 'territorio', span: '' },
-  { src: 'https://images.unsplash.com/photo-1533920379810-6bedac961555?auto=format&fit=crop&w=700&q=80',         label: 'La Colazione',     cat: 'hotel',      span: '' },
-]
-
-const CATS = ['tutti', 'hotel', 'ristorante', 'cucina', 'territorio']
-const CAT_LABEL = { tutti: 'Tutti', hotel: "L'Hotel", ristorante: 'Il Ristorante', cucina: 'La Cucina', territorio: 'Il Territorio' }
+const HERO_IMG = galleryJson.heroImg
+const PHOTOS   = galleryJson.photos
+const CATS     = ['tutti', ...galleryJson.categories.filter(c => c.key !== 'tutti').map(c => c.key)]
+const CAT_LABEL = Object.fromEntries(galleryJson.categories.map(c => [c.key, c.label]))
 
 export default function GalleryPage() {
   const [cat, setCat]         = useState('tutti')

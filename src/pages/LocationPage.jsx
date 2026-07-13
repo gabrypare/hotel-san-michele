@@ -1,9 +1,10 @@
-import { useState, useEffect, useRef } from 'react'
+﻿import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import PageHero from '../components/ui/PageHero'
 import ScrollReveal from '../components/ui/ScrollReveal'
 import { RiArrowRightLine, RiMapPin2Line, RiCloseLine, RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
+import activitiesJson from '../content/activities.json'
 
 const HERO_IMG  = '/images/territorio-1.jpg'
 const VINEYARD  = '/images/territorio-2.jpg'
@@ -13,152 +14,13 @@ const LAKE_IMG  = '/images/ome-veduta.jpg'
 const DISTANCES = [
   { place: 'Brescia',         km: '15',  desc: 'Centro storico UNESCO, Piazza della Loggia, musei' },
   { place: "Lago d'Iseo",     km: '12',  desc: 'Terzo lago lombardo, Monte Isola, Lovere' },
-  { place: 'Lago di Garda',   km: '45',  desc: "Il lago più grande d'Italia, Sirmione, Gardaland" },
-  { place: 'Bergamo',         km: '40',  desc: 'Città alta medievale, Piazza Vecchia, Accademia Carrara' },
-  { place: 'Milano',          km: '95',  desc: "Duomo, Navigli, moda e design — meno di un'ora" },
+  { place: 'Lago di Garda',   km: '45',  desc: "Il lago piÃ¹ grande d'Italia, Sirmione, Gardaland" },
+  { place: 'Bergamo',         km: '40',  desc: 'CittÃ  alta medievale, Piazza Vecchia, Accademia Carrara' },
+  { place: 'Milano',          km: '95',  desc: "Duomo, Navigli, moda e design â€” meno di un'ora" },
   { place: 'Aeroporto BGY',   km: '55',  desc: 'Aeroporto di Bergamo Orio al Serio, voli low-cost' },
 ]
 
-const ACTIVITIES = [
-  {
-    icon: '🍾',
-    title: 'Degustazioni Franciacorta',
-    desc: 'Oltre 60 cantine in Franciacorta, visite con degustazione su prenotazione.',
-    imgs: [
-      '/images/territorio-4.jpg',
-      '/images/cantina-1.jpg',
-      '/images/cantina-2.jpg',
-      '/images/territorio-1.jpg',
-      '/images/cantina-3.jpg',
-      '/images/cantina-4.jpg',
-      '/images/cantina-5.jpg',
-      '/images/territorio-2.jpg',
-    ],
-    detail: 'La Franciacorta conta oltre 60 cantine, tutte aperte a visite guidate con degustazione su prenotazione. Il Franciacorta DOCG è l\'unico spumante italiano prodotto esclusivamente con Metodo Classico: Chardonnay, Pinot Nero e Pinot Bianco rifermentati in bottiglia per almeno 18 mesi. Le cantine offrono percorsi tra vigne e barricaie, degustazioni delle diverse tipologie — Satèn, Rosé, Millesimato, Riserva — con abbinamenti gastronomici al territorio.',
-    highlights: ["Ca' del Bosco — Erbusco", 'Bellavista — Erbusco', 'Berlucchi — Borgonato', 'Cavalleri — Erbusco', 'Contadi Castaldi', 'Ferghettina — Adro'],
-    tip: 'L\'Hotel San Michele può organizzare visite in cantina su prenotazione per i propri ospiti.',
-  },
-  {
-    icon: '⛵',
-    title: "Lago d'Iseo",
-    desc: "Montisola, Iseo, Lovere: borghi, gite e sport acquatici a 12 km dall'hotel.",
-    imgs: [
-      '/images/lago-panorama.jpg',
-      '/images/montisola-siviano.jpg',
-      '/images/isola-loreto.jpg',
-      '/images/lago-kayak.jpg',
-      '/images/lago-sup.jpg',
-      '/images/lago-windsurf.jpg',
-      '/images/lago-barca.jpg',
-    ],
-    detail: "Il Lago d'Iseo è a soli 12 km dall'Hotel San Michele — circa 15 minuti in auto. Al centro del lago sorge Monte Isola, la più grande isola lacustre d'Europa abitata, raggiungibile in traghetto da Sulzano o Sale Marasino. I borghi di Iseo, Lovere e Sarnico meritano tutti una visita. Le gite e le attività acquatiche non sono organizzate dall'hotel, ma sono facilmente prenotabili direttamente una volta sul posto o online.",
-    highlights: [
-      'Monte Isola in traghetto da Sulzano (10 min)',
-      'Borghi di Iseo, Lovere, Sarnico e Pisogne',
-      'Kayak e canoa sul lago',
-      'Stand Up Paddle (SUP)',
-      'Windsurf e kitesurf',
-      'Vela e noleggio imbarcazioni',
-      'Diving e immersioni',
-      'Pesca sportiva e canottaggio',
-    ],
-    tip: 'Traghetti e battelli: navigazionelagoiseo.it — servizio attivo tutto l\'anno con corse frequenti.',
-  },
-  {
-    icon: '🚴',
-    title: 'Cicloturismo',
-    desc: 'Piste ciclabili tra i vigneti della Franciacorta, percorsi collinari panoramici.',
-    imgs: [
-      '/images/ciclovia-franciacorta.jpg',
-      '/images/ciclovia-erbusco.jpg',
-      '/images/ciclovia-sentiero-1.jpg',
-      '/images/ciclovia-sentiero-2.jpg',
-      '/images/ciclovia-colli.jpg',
-      '/images/territorio-4.jpg',
-      '/images/territorio-2.jpg',
-    ],
-    detail: 'La Franciacorta è uno dei territori più belli d\'Italia per il cicloturismo: strade secondarie tra filari di vite, salite sui colli con vista sul lago e sulle Alpi, percorsi dedicati e segnalati. La Ciclovia della Franciacorta collega i principali borghi della denominazione attraverso paesaggi di rara bellezza. I sentieri partono praticamente dall\'hotel e sono percorribili tutto l\'anno.',
-    highlights: ['Ciclovia della Franciacorta (anello completo ~60 km)', 'Percorsi brevi tra Ome, Gussago e Rodengo (~15–25 km)', 'Salita ai colli con vista su lago e Alpi', 'Varianti per e-bike e mountain bike', 'Strade secondarie senza traffico tra i vigneti'],
-    tip: 'Chiedi alla reception per mappe cartacee gratuite e consigli sui percorsi più adatti al tuo livello.',
-    mapSrc: 'https://www.openstreetmap.org/export/embed.html?bbox=9.85%2C45.45%2C10.42%2C45.82&layer=cyclemap&marker=45.6442%2C10.1247',
-  },
-  {
-    icon: '⛪',
-    title: 'Abbazie e Borghi',
-    desc: 'L\'Abbazia Olivetana di Rodengo Saiano, i borghi di Erbusco, Paratico e Capriolo.',
-    imgs: [
-      '/images/abbazia-chiesa.jpg',
-      '/images/abbazia-chiostro-grande.jpg',
-      '/images/abbazia-chiostro-piccolo.jpg',
-      '/images/abbazia-chiostro-cisterna.jpg',
-      '/images/erbusco-borgo.jpg',
-      '/images/paratico-castello.jpg',
-      '/images/paratico-lago.jpg',
-    ],
-    detail: 'La Franciacorta custodisce un patrimonio storico e religioso straordinario. L\'Abbazia Olivetana di San Nicola a Rodengo Saiano — fondata nell\'XI secolo da monaci cluniacensi e affidata agli Olivetani nel 1446 — è uno dei monasteri più belli della Lombardia: tre chiostri, affreschi del Romanino e del Moretto, tarsie lignee del Quattrocento. I borghi medievali di Erbusco, Paratico e Capriolo completano un territorio dove ogni vicolo racconta secoli di storia.',
-    highlights: [
-      'Abbazia Olivetana di San Nicola — Rodengo Saiano (XI sec.)',
-      'Tre chiostri con affreschi di Romanino e Moretto',
-      'Borgo medievale di Erbusco — capitale della Franciacorta',
-      'Castello Lantieri di Paratico (XIII–XIV sec.) sul Lago d\'Iseo',
-      'Santuario della Madonna di Cerezzata — Ome',
-      'Capriolo e il suo centro storico sull\'Oglio',
-    ],
-    tip: 'L\'Abbazia di Rodengo Saiano è visitabile la mattina; visite guidate su prenotazione. Distanza dall\'hotel: ~5 min in auto.',
-  },
-  {
-    icon: '🌿',
-    title: 'Siti Naturalistici',
-    desc: 'Le Torbiere del Sebino, le Cascate di Monticelli Brusati e il Parco dell\'Alto Sebino.',
-    imgs: [
-      '/images/torbiere-san-pietro.jpg',
-      '/images/torbiere-panorama.jpg',
-      '/images/torbiere-ninfee.jpg',
-      '/images/torbiere-tramonto.jpg',
-      '/images/cascata-gaina-1.jpg',
-      '/images/cascata-gaina-2.jpg',
-      '/images/alto-sebino-lovere.jpg',
-      '/images/alto-sebino-lago.jpg',
-    ],
-    detail: 'Il territorio intorno all\'Hotel San Michele custodisce tre gioielli naturalistici di straordinario valore. Le Torbiere del Sebino — Riserva Naturale e Zona di Protezione Speciale europea — sono una delle zone umide più importanti della Lombardia, con la chiesa romanica di San Pietro in Lamosa che sorge sull\'acqua tra canneti e ninfee. Le Cascate di Gaina a Monticelli Brusati sono raggiungibili con un\'escursione nel canyon scavato dal torrente Gaina. Il Parco dell\'Alto Sebino, il più grande parco locale della Lombardia, si estende dai 183 m del Lago d\'Iseo fino ai 1.880 m del Monte Pora.',
-    highlights: [
-      'Torbiere del Sebino — Riserva Naturale, a 10 km dall\'hotel',
-      'San Pietro in Lamosa — chiesa romanica sull\'acqua (XI sec.)',
-      'Ninfee bianche e fauna selvatica (aironi, martin pescatori)',
-      'Cascate di Gaina — canyon e sentiero attrezzato a Monticelli Brusati',
-      'Parco dell\'Alto Sebino — escursioni da Lovere a Monte Pora',
-      'Riva di Solto — borgo sul lago, panorami mozzafiato',
-    ],
-    tip: 'Torbiere del Sebino: ingresso libero, apertura stagionale. Sentiero delle Cascate di Gaina: percorso ad anello ~3 km, dislivello 250 m.',
-  },
-  {
-    icon: '🏔️',
-    title: 'Attività Outdoor',
-    desc: 'Golf tra i vigneti, trekking sui colli, arrampicata e sport acquatici sul Lago d\'Iseo.',
-    imgs: [
-      '/images/outdoor-golf.jpg',
-      '/images/outdoor-golf2.jpg',
-      '/images/lago-kayak.jpg',
-      '/images/lago-sup.jpg',
-      '/images/lago-windsurf.jpg',
-      '/images/lago-barca.jpg',
-      '/images/outdoor-climbing.jpg',
-      '/images/outdoor-trekking.jpg',
-      '/images/outdoor-colline.jpg',
-    ],
-    detail: 'La Franciacorta e il Lago d\'Iseo offrono un ventaglio completo di attività all\'aperto per tutti i livelli. Il Golf Club Franciacorta a Nigoline di Corte Franca ha 27 buche (tre percorsi da 9 chiamati Brut, Satèn e Rosé) immersi in 80 ettari di verde tra boschi e vigneti — uno dei campi più belli del Nord Italia, aperto ai non soci su prenotazione. Sul Lago d\'Iseo si praticano kayak, SUP, windsurf, kitesurf, vela, canottaggio e diving. Le pareti di Sale Marasino e Riva di Solto sono tra le falesie di arrampicata sportiva più apprezzate della Lombardia. I colli di Ome e Gussago si percorrono a piedi con panorami sulle Alpi e sulla Pianura Padana.',
-    highlights: [
-      'Golf Club Franciacorta — 27 buche (Brut, Satèn, Rosé) tra i vigneti',
-      'Kayak, SUP, windsurf e kitesurf sul Lago d\'Iseo',
-      'Vela e noleggio barche — scuole attive tutto l\'anno',
-      'Arrampicata sportiva a Sale Marasino e Riva di Solto',
-      'Diving e immersioni nel Lago d\'Iseo',
-      'Trekking sui colli di Ome, Gussago e Rodengo Saiano',
-      'Paragliding da Forcella di Sale — vista lago panoramica',
-    ],
-    tip: 'Golf Club Franciacorta: ospiti non soci su prenotazione — tel. 030 984167. Per sport acquatici: Iseo Lake Adventure (iseolakeadventure.com) e OverAlp.',
-  },
-]
+const ACTIVITIES = activitiesJson.activities
 
 export default function LocationPage() {
   const [selected, setSelected] = useState(null)
@@ -196,7 +58,7 @@ export default function LocationPage() {
     }
   }, [selected])
 
-  // Reset e avvia carosello quando cambia attività selezionata
+  // Reset e avvia carosello quando cambia attivitÃ  selezionata
   useEffect(() => {
     setCarouselIdx(0)
     if (carouselTimer.current) clearInterval(carouselTimer.current)
@@ -223,7 +85,7 @@ export default function LocationPage() {
         backLabel="Home"
       />
 
-      {/* ── INTRO ── */}
+      {/* â”€â”€ INTRO â”€â”€ */}
       <section className="py-12 md:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -236,13 +98,13 @@ export default function LocationPage() {
                 Un paesaggio che <span className="italic text-gold">racconta storie</span>
               </h2>
               <p className="font-sans text-base text-charcoal/72 leading-relaxed mb-5">
-                La Franciacorta è una delle zone vinicole più affascinanti d'Italia: una distesa di colline dolci tra Brescia e il Lago d'Iseo, ricoperta di vigneti, attraversata da strade romantiche che collegano borghi medievali e abbazie benedettine.
+                La Franciacorta Ã¨ una delle zone vinicole piÃ¹ affascinanti d'Italia: una distesa di colline dolci tra Brescia e il Lago d'Iseo, ricoperta di vigneti, attraversata da strade romantiche che collegano borghi medievali e abbazie benedettine.
               </p>
               <p className="font-sans text-base text-charcoal/72 leading-relaxed mb-5">
-                Il nome evoca immediatamente le bollicine del Franciacorta DOCG — l'unico spumante italiano prodotto esclusivamente con Metodo Classico — ma il territorio offre molto di più: natura, storia, arte e un'enogastronomia di altissimo livello.
+                Il nome evoca immediatamente le bollicine del Franciacorta DOCG â€” l'unico spumante italiano prodotto esclusivamente con Metodo Classico â€” ma il territorio offre molto di piÃ¹: natura, storia, arte e un'enogastronomia di altissimo livello.
               </p>
               <p className="font-sans text-base text-charcoal/72 leading-relaxed mb-8">
-                Ome, il comune dove si trova il San Michele, è uno dei borghi più caratteristici dei colli: posizione panoramica, vigneti a picco sulle case, silenzio e bellezza in ogni angolo.
+                Ome, il comune dove si trova il San Michele, Ã¨ uno dei borghi piÃ¹ caratteristici dei colli: posizione panoramica, vigneti a picco sulle case, silenzio e bellezza in ogni angolo.
               </p>
               <Link to="/prenota" className="btn-gold inline-flex items-center gap-2">
                 Prenota il tuo soggiorno <RiArrowRightLine size={13} />
@@ -257,7 +119,7 @@ export default function LocationPage() {
         </div>
       </section>
 
-      {/* ── FRANCIACORTA WINE ── */}
+      {/* â”€â”€ FRANCIACORTA WINE â”€â”€ */}
       <section className="py-0 overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[460px]">
           <div className="img-zoom overflow-hidden min-h-[280px]">
@@ -272,10 +134,10 @@ export default function LocationPage() {
               Il <span className="italic text-gold-light">Franciacorta DOCG</span>
             </h2>
             <p className="font-sans text-base text-cream/65 leading-relaxed mb-4">
-              Come lo Champagne in Francia, il Franciacorta è il Metodo Classico italiano per eccellenza. Chardonnay, Pinot Nero e Pinot Bianco lavorati in cantina con una cura maniacale, per produrre bollicine eleganti, persistenti, di straordinaria complessità.
+              Come lo Champagne in Francia, il Franciacorta Ã¨ il Metodo Classico italiano per eccellenza. Chardonnay, Pinot Nero e Pinot Bianco lavorati in cantina con una cura maniacale, per produrre bollicine eleganti, persistenti, di straordinaria complessitÃ .
             </p>
             <p className="font-sans text-sm text-cream/50 leading-relaxed mb-8">
-              Su richiesta, il San Michele organizza visite e degustazioni nelle cantine più prestigiose della denominazione: Ca' del Bosco, Bellavista, Berlucchi, Cavalleri, Contadi Castaldi e molte altre.
+              Su richiesta, il San Michele organizza visite e degustazioni nelle cantine piÃ¹ prestigiose della denominazione: Ca' del Bosco, Bellavista, Berlucchi, Cavalleri, Contadi Castaldi e molte altre.
             </p>
             <Link to="/menu" className="btn-outline-light inline-flex items-center gap-2 w-fit">
               Vedi la nostra carta vini <RiArrowRightLine size={13} />
@@ -284,7 +146,7 @@ export default function LocationPage() {
         </div>
       </section>
 
-      {/* ── DISTANCES ── */}
+      {/* â”€â”€ DISTANCES â”€â”€ */}
       <section className="py-12 md:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
@@ -298,7 +160,7 @@ export default function LocationPage() {
                   Al centro di tutto, <span className="italic text-gold">distante da nulla</span>
                 </h2>
                 <p className="font-sans text-sm text-charcoal/60 mb-3 flex items-center gap-2">
-                  <RiMapPin2Line className="text-gold" /> Via S. Michele, 5a · 25050 Ome (BS)
+                  <RiMapPin2Line className="text-gold" /> Via S. Michele, 5a Â· 25050 Ome (BS)
                 </p>
               </ScrollReveal>
               <div className="divide-y divide-charcoal/8">
@@ -318,12 +180,12 @@ export default function LocationPage() {
             <ScrollReveal direction="right" delay={0.2}>
               <div className="relative">
                 <div className="img-zoom aspect-[4/3] overflow-hidden mb-4">
-                  <img src={LAKE_IMG} alt="Ome — veduta dal santuario di Cerezzata" className="w-full h-full object-cover object-center" loading="lazy" />
+                  <img src={LAKE_IMG} alt="Ome â€” veduta dal santuario di Cerezzata" className="w-full h-full object-cover object-center" loading="lazy" />
                 </div>
                 <div className="bg-forest-dark p-6">
                   <p className="font-sans text-xs tracking-widest uppercase text-gold mb-2">Come arrivare</p>
                   <ul className="space-y-2 font-sans text-sm text-cream/65">
-                    <li><strong className="text-cream/80">In auto:</strong> A4 Milano–Venezia, uscita Ospitaletto o Rovato</li>
+                    <li><strong className="text-cream/80">In auto:</strong> A4 Milanoâ€“Venezia, uscita Ospitaletto o Rovato</li>
                     <li><strong className="text-cream/80">In treno:</strong> Stazione Brescia, poi autobus per Ome</li>
                     <li><strong className="text-cream/80">In aereo:</strong> Aeroporto di Bergamo (BGY) a 55 km</li>
                   </ul>
@@ -334,7 +196,7 @@ export default function LocationPage() {
         </div>
       </section>
 
-      {/* ── ACTIVITIES ── */}
+      {/* â”€â”€ ACTIVITIES â”€â”€ */}
       <section className="py-12 md:py-20 bg-forest-dark">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <ScrollReveal direction="fade">
@@ -347,7 +209,7 @@ export default function LocationPage() {
               <h2 className="font-serif text-4xl text-cream">
                 Un territorio da <span className="italic text-gold-light">esplorare</span>
               </h2>
-              <p className="font-sans text-sm text-cream/35 mt-3">Clicca su un'attività per scoprire di più</p>
+              <p className="font-sans text-sm text-cream/35 mt-3">Clicca su un'attivitÃ  per scoprire di piÃ¹</p>
             </div>
           </ScrollReveal>
 
@@ -362,7 +224,7 @@ export default function LocationPage() {
                   <h3 className="font-serif text-lg text-gold-light mb-2 group-hover:text-gold transition-colors duration-300">{a.title}</h3>
                   <p className="font-sans text-sm text-cream/55 leading-relaxed mb-4">{a.desc}</p>
                   <span className="font-sans text-[0.65rem] tracking-[0.2em] uppercase text-gold/50 group-hover:text-gold transition-colors duration-300 inline-flex items-center gap-1.5">
-                    Scopri di più <RiArrowRightLine size={11} />
+                    Scopri di piÃ¹ <RiArrowRightLine size={11} />
                   </span>
                 </button>
               </ScrollReveal>
@@ -371,13 +233,13 @@ export default function LocationPage() {
         </div>
       </section>
 
-      {/* ── MAP ── */}
+      {/* â”€â”€ MAP â”€â”€ */}
       <section className="py-16 bg-cream">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <ScrollReveal direction="up">
             <h3 className="font-serif text-2xl text-forest-dark text-center mb-8">Dove siamo</h3>
             <iframe
-              title="Hotel San Michele — Via S. Michele 5a, Ome (BS)"
+              title="Hotel San Michele â€” Via S. Michele 5a, Ome (BS)"
               src="https://maps.google.com/maps?q=Via+S.+Michele%2C+5a%2C+25050+Ome+BS&output=embed&hl=it&z=16"
               width="100%" height="420"
               style={{ border: '1px solid rgba(42,34,24,0.12)', filter: 'grayscale(0.2) contrast(0.95)' }}
@@ -388,7 +250,7 @@ export default function LocationPage() {
         </div>
       </section>
 
-      {/* ── MODALE ── */}
+      {/* â”€â”€ MODALE â”€â”€ */}
       <AnimatePresence>
         {selected !== null && (
           <>
@@ -404,7 +266,7 @@ export default function LocationPage() {
 
             {/* Wrapper centramento */}
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8" onClick={() => setSelected(null)}>
-            {/* Panel — flex-col per vincolare l'altezza su mobile e desktop */}
+            {/* Panel â€” flex-col per vincolare l'altezza su mobile e desktop */}
             <motion.div
               className="relative w-full max-w-5xl bg-cream overflow-hidden shadow-2xl flex flex-col"
               style={{ maxHeight: '90vh' }}
@@ -414,7 +276,7 @@ export default function LocationPage() {
               transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
               onClick={e => e.stopPropagation()}
             >
-              {/* ── CICLOTURISMO: immagine sx, testo dx, mappa sotto (scroll esterno) ── */}
+              {/* â”€â”€ CICLOTURISMO: immagine sx, testo dx, mappa sotto (scroll esterno) â”€â”€ */}
               {ACTIVITIES[selected]?.mapSrc ? (() => {
                 const imgs = ACTIVITIES[selected].imgs || [ACTIVITIES[selected].img]
                 return (
@@ -422,7 +284,7 @@ export default function LocationPage() {
                     {/* Riga superiore: immagine + testo */}
                     <div className="flex flex-col md:flex-row md:min-h-[360px]">
 
-                      {/* Immagine — h fissa mobile, stretch desktop */}
+                      {/* Immagine â€” h fissa mobile, stretch desktop */}
                       <div className="relative overflow-hidden bg-forest-deeper h-52 md:h-auto md:w-[45%] shrink-0 group/car">
                         <AnimatePresence mode="sync">
                           <motion.img key={`${selected}-${carouselIdx}`} src={imgs[carouselIdx]}
@@ -488,7 +350,7 @@ export default function LocationPage() {
                       </div>
                     </div>
 
-                    {/* Mappa — full width, compare scorrendo */}
+                    {/* Mappa â€” full width, compare scorrendo */}
                     <div className="border-t border-charcoal/10">
                       <div className="px-6 py-2.5 flex flex-wrap items-center gap-x-4 gap-y-2 bg-cream-dark border-b border-charcoal/8">
                         <span className="font-sans text-[0.58rem] tracking-[0.2em] uppercase text-charcoal/45">Legenda</span>
@@ -505,7 +367,7 @@ export default function LocationPage() {
                   </div>
                 )
               })() : (() => {
-                /* ── MODAL STANDARD: flex-col/flex-row con nav fissa in fondo ── */
+                /* â”€â”€ MODAL STANDARD: flex-col/flex-row con nav fissa in fondo â”€â”€ */
                 const act = ACTIVITIES[selected]
                 const imgs = act.imgs || [act.img]
                 const isCarousel = imgs.length > 1
@@ -543,7 +405,7 @@ export default function LocationPage() {
                       )}
                     </div>
 
-                    {/* Contenuto — flex-1 per riempire lo spazio rimanente */}
+                    {/* Contenuto â€” flex-1 per riempire lo spazio rimanente */}
                     <div className="flex flex-col flex-1 min-h-0 p-5 sm:p-8 md:p-10">
                       {/* Header fisso */}
                       <div className="shrink-0 flex items-start justify-between mb-5">
@@ -565,7 +427,7 @@ export default function LocationPage() {
                           aria-label="Chiudi"><RiCloseLine size={18} /></button>
                       </div>
 
-                      {/* Testo scrollabile — prende tutto lo spazio rimasto */}
+                      {/* Testo scrollabile â€” prende tutto lo spazio rimasto */}
                       <div className="flex-1 min-h-0 overflow-y-auto pr-1">
                         <AnimatePresence mode="wait">
                           <motion.div key={selected}
