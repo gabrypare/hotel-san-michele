@@ -7,9 +7,9 @@
       "heroImg": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80",
       "items": [
         {
-          "name": "Tagliere San Michele",
+          "name": "Tagliere San",
           "description": "Selezione di salumi artigianali bresciani, formaggi della Franciacorta, mostarda di Cremona e grissini al rosmarino",
-          "price": 18,
+          "price": "18",
           "allergens": [
             "glutine",
             "latte"
@@ -78,7 +78,7 @@
           "signature": true
         },
         {
-          "name": "Casoncelli",
+          "name": "Casoncelli alla Bergamasca",
           "description": "Pasta fresca ripiena di carne brasata, amaretti, uvetta, pane, burro fuso e salvia con pancetta affumicata",
           "price": 16,
           "allergens": [
