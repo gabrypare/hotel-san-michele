@@ -1,18 +1,39 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import jsPDF from 'jspdf'
+import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from '@dnd-kit/core'
+import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import AllergenBadge from '../components/ui/AllergenBadge'
 import ScrollReveal from '../components/ui/ScrollReveal'
 import { MENU, ALLERGENS, CATEGORY_KEYS } from '../data/menuData'
 import { RiDownloadLine, RiArrowLeftLine, RiAwardLine } from 'react-icons/ri'
+import { useEditMode } from '../context/EditModeContext'
+import SortableCard  from '../components/editor/SortableCard'
+import AddCardButton from '../components/editor/AddCardButton'
+import EditableText  from '../components/editor/EditableText'
+
+const NEW_DISH = { name: 'Nuovo Piatto', description: 'Descrizione del piatto.', price: 0, allergens: [], photo: '', signature: false }
 
 export default function MenuPage() {
   const [active, setActive]   = useState('antipasti')
   const [legend, setLegend]   = useState(false)
   const [loading, setLoading] = useState(false)
+  const { isEditMode, content, reorderItems, addItem, removeItem, duplicateItem } = useEditMode()
 
-  const category = MENU[active]
+  const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
+
+  // In edit mode, read from context; otherwise use static import
+  const getCategory = (key) => {
+    if (isEditMode) {
+      const cats = content.menu.categories
+      return cats.find(c => c.key === key) || MENU[key]
+    }
+    return MENU[key]
+  }
+  const getCategoryIndex = (key) => content.menu.categories.findIndex(c => c.key === key)
+
+  const category = getCategory(active)
 
   const downloadPDF = () => {
     setLoading(true)
@@ -259,7 +280,6 @@ export default function MenuPage() {
           </div>
         </div>
       </div>
-
       {/* ── DISHES ── */}
       <div className="max-w-4xl mx-auto px-6 lg:px-10 py-14">
         <AnimatePresence mode="wait">
@@ -270,55 +290,80 @@ export default function MenuPage() {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.4 }}
           >
-            <div className="divide-y divide-charcoal/8">
-              {category.items.map((item, idx) => (
-                <motion.div
-                  key={item.name}
-                  initial={{ opacity: 0, y: 14 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: idx * 0.06, duration: 0.45 }}
-                  className={`group py-6 flex items-start gap-5 ${item.signature ? 'bg-cream-dark -mx-4 px-4 rounded-sm' : ''}`}
-                >
-                  {/* Thumbnail */}
-                  {item.photo && (
-                    <div className={`shrink-0 overflow-hidden rounded-sm ${item.signature ? 'w-24 h-24' : 'w-[72px] h-[72px]'}`}>
-                      <img
-                        src={item.photo}
-                        alt={item.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                      />
-                    </div>
-                  )}
-
-                  {/* Info */}
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between gap-4 mb-1.5">
-                      <div className="flex items-center gap-2.5 flex-wrap">
-                        <h3 className={`font-serif leading-tight group-hover:text-gold transition-colors duration-300 ${item.signature ? 'text-xl text-forest-dark' : 'text-lg text-charcoal'}`}>
-                          {item.name}
-                        </h3>
-                        {item.signature && (
-                          <span className="inline-flex items-center gap-1 font-sans text-[0.58rem] tracking-[0.22em] uppercase text-gold border border-gold/50 px-2 py-0.5 shrink-0">
-                            <RiAwardLine size={10} /> Firma
-                          </span>
-                        )}
-                      </div>
-                      <span className="font-display italic text-2xl text-gold shrink-0">€{item.price}</span>
-                    </div>
-                    <p className="font-sans text-sm text-charcoal/60 leading-relaxed mb-2.5">{item.description}</p>
-                    {item.allergens?.length > 0 && (
-                      <div className="flex items-center gap-1.5 flex-wrap">
-                        <span className="font-sans text-[0.58rem] text-charcoal/35 tracking-wide mr-0.5">Allergeni:</span>
-                        {item.allergens.map(a => <AllergenBadge key={a} type={a} size="sm" />)}
-                      </div>
-                    )}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+            <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={(e) => {
+              const { active: a, over } = e
+              if (!over || a.id === over.id) return
+              const catIdx = getCategoryIndex(active)
+              const items = getCategory(active).items
+              const oldIdx = items.findIndex((_, i) => `dish-${i}` === a.id)
+              const newIdx = items.findIndex((_, i) => `dish-${i}` === over.id)
+              reorderItems('menu', ['categories', catIdx, 'items'], oldIdx, newIdx)
+            }}>
+              <SortableContext items={category.items.map((_, i) => `dish-${i}`)} strategy={verticalListSortingStrategy}>
+                <div className="divide-y divide-charcoal/8">
+                  {category.items.map((item, idx) => {
+                    const catIdx = getCategoryIndex(active)
+                    return (
+                      <SortableCard
+                        key={`dish-${idx}`}
+                        id={`dish-${idx}`}
+                        onDuplicate={() => duplicateItem('menu', ['categories', catIdx, 'items'], idx)}
+                        onDelete={() => { if (category.items.length > 1) removeItem('menu', ['categories', catIdx, 'items'], idx) }}
+                        className={item.signature ? 'bg-cream-dark -mx-4 px-4 rounded-sm' : ''}
+                      >
+                        <motion.div
+                          initial={{ opacity: 0, y: 14 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: isEditMode ? 0 : idx * 0.06, duration: 0.45 }}
+                          className={`group py-6 flex items-start gap-5`}
+                        >
+                          {item.photo && (
+                            <div className={`shrink-0 overflow-hidden rounded-sm ${item.signature ? 'w-24 h-24' : 'w-[72px] h-[72px]'}`}>
+                              <img src={item.photo} alt={item.name}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                            </div>
+                          )}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-start justify-between gap-4 mb-1.5">
+                              <div className="flex items-center gap-2.5 flex-wrap">
+                                <EditableText tag="h3" fileKey="menu" path={['categories', catIdx, 'items', idx, 'name']} value={item.name}
+                                  className={`font-serif leading-tight group-hover:text-gold transition-colors duration-300 block ${item.signature ? 'text-xl text-forest-dark' : 'text-lg text-charcoal'}`} />
+                                {item.signature && (
+                                  <span className="inline-flex items-center gap-1 font-sans text-[0.58rem] tracking-[0.22em] uppercase text-gold border border-gold/50 px-2 py-0.5 shrink-0">
+                                    <RiAwardLine size={10} /> Firma
+                                  </span>
+                                )}
+                              </div>
+                              <div className="flex items-center gap-1 shrink-0">
+                                <span className="font-display italic text-xl text-gold">€</span>
+                                <EditableText tag="span" fileKey="menu" path={['categories', catIdx, 'items', idx, 'price']} value={String(item.price)}
+                                  className="font-display italic text-2xl text-gold" />
+                              </div>
+                            </div>
+                            <EditableText tag="p" fileKey="menu" path={['categories', catIdx, 'items', idx, 'description']} value={item.description}
+                              multiline className="font-sans text-sm text-charcoal/60 leading-relaxed mb-2.5 block" />
+                            {item.allergens?.length > 0 && (
+                              <div className="flex items-center gap-1.5 flex-wrap">
+                                <span className="font-sans text-[0.58rem] text-charcoal/35 tracking-wide mr-0.5">Allergeni:</span>
+                                {item.allergens.map(a => <AllergenBadge key={a} type={a} size="sm" />)}
+                              </div>
+                            )}
+                          </div>
+                        </motion.div>
+                      </SortableCard>
+                    )
+                  })}
+                </div>
+              </SortableContext>
+            </DndContext>
+            <AddCardButton
+              onClick={() => addItem('menu', ['categories', getCategoryIndex(active), 'items'], { ...NEW_DISH })}
+              label="Aggiungi piatto"
+              className="mt-4"
+            />
           </motion.div>
         </AnimatePresence>
+
 
         {/* ── ALLERGEN LEGEND ── */}
         <ScrollReveal direction="up" delay={0.1}>

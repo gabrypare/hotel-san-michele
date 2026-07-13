@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import Navbar       from './components/layout/Navbar'
 import Footer       from './components/layout/Footer'
+import { EditModeProvider, useEditMode } from './context/EditModeContext'
+import EditorToolbar from './components/editor/EditorToolbar'
 import HomePage     from './pages/HomePage'
 import HotelPage    from './pages/HotelPage'
 import RistorantePage from './pages/RistorantePage'
@@ -47,13 +49,27 @@ function AnimatedRoutes() {
   )
 }
 
+function AppInner() {
+  const { isEditMode } = useEditMode()
+  return (
+    <>
+      <EditorToolbar />
+      <ScrollTop />
+      <div className={isEditMode ? 'pt-14' : ''}>
+        <Navbar />
+        <AnimatedRoutes />
+        <Footer />
+      </div>
+    </>
+  )
+}
+
 export default function App() {
   return (
-    <BrowserRouter>
-      <ScrollTop />
-      <Navbar />
-      <AnimatedRoutes />
-      <Footer />
-    </BrowserRouter>
+    <EditModeProvider>
+      <BrowserRouter>
+        <AppInner />
+      </BrowserRouter>
+    </EditModeProvider>
   )
 }

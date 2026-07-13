@@ -1,10 +1,16 @@
 ﻿import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from '@dnd-kit/core'
+import { SortableContext, rectSortingStrategy, arrayMove } from '@dnd-kit/sortable'
 import PageHero from '../components/ui/PageHero'
 import ScrollReveal from '../components/ui/ScrollReveal'
 import { RiArrowRightLine, RiMapPin2Line, RiCloseLine, RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
 import activitiesJson from '../content/activities.json'
+import { useEditMode } from '../context/EditModeContext'
+import SortableCard   from '../components/editor/SortableCard'
+import AddCardButton  from '../components/editor/AddCardButton'
+import EditableText   from '../components/editor/EditableText'
 
 const HERO_IMG  = '/images/territorio-1.jpg'
 const VINEYARD  = '/images/territorio-2.jpg'
@@ -22,10 +28,28 @@ const DISTANCES = [
 
 const ACTIVITIES = activitiesJson.activities
 
+const NEW_ACTIVITY = {
+  icon: '✨', title: 'Nuova Attività', desc: 'Descrizione breve dell\'attività.',
+  imgs: ['/images/territorio-1.jpg'], detail: 'Descrizione dettagliata.',
+  highlights: ['Punto 1', 'Punto 2'], tip: 'Consiglio utile.', mapSrc: '',
+}
+
 export default function LocationPage() {
   const [selected, setSelected] = useState(null)
   const [carouselIdx, setCarouselIdx] = useState(0)
   const carouselTimer = useRef(null)
+  const { isEditMode, content, reorderItems, addItem, removeItem, duplicateItem } = useEditMode()
+  const ACTIVITIES = isEditMode ? content.activities.activities : activitiesJson.activities
+
+  const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
+
+  const handleDragEnd = (event) => {
+    const { active, over } = event
+    if (!over || active.id === over.id) return
+    const oldIndex = ACTIVITIES.findIndex((_, i) => `act-${i}` === active.id)
+    const newIndex = ACTIVITIES.findIndex((_, i) => `act-${i}` === over.id)
+    reorderItems('activities', ['activities'], oldIndex, newIndex)
+  }
 
   useEffect(() => {
     const onKey = e => { if (e.key === 'Escape') setSelected(null) }
@@ -213,23 +237,47 @@ export default function LocationPage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {ACTIVITIES.map((a, i) => (
-              <ScrollReveal key={a.title} direction="up" delay={0.08 * i}>
-                <button
-                  onClick={() => setSelected(i)}
-                  className="w-full text-left border border-cream/10 p-7 hover:border-gold/40 hover:bg-cream/4 transition-all duration-300 group cursor-pointer"
-                >
-                  <div className="text-3xl mb-4">{a.icon}</div>
-                  <h3 className="font-serif text-lg text-gold-light mb-2 group-hover:text-gold transition-colors duration-300">{a.title}</h3>
-                  <p className="font-sans text-sm text-cream/55 leading-relaxed mb-4">{a.desc}</p>
-                  <span className="font-sans text-[0.65rem] tracking-[0.2em] uppercase text-gold/50 group-hover:text-gold transition-colors duration-300 inline-flex items-center gap-1.5">
-                    Scopri di piÃ¹ <RiArrowRightLine size={11} />
-                  </span>
-                </button>
-              </ScrollReveal>
-            ))}
-          </div>
+          <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+            <SortableContext items={ACTIVITIES.map((_, i) => `act-${i}`)} strategy={rectSortingStrategy}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {ACTIVITIES.map((a, i) => (
+                  <SortableCard
+                    key={`act-${i}`}
+                    id={`act-${i}`}
+                    onDuplicate={() => duplicateItem('activities', ['activities'], i)}
+                    onDelete={() => { if (ACTIVITIES.length > 1) removeItem('activities', ['activities'], i) }}
+                  >
+                    <ScrollReveal direction="up" delay={isEditMode ? 0 : 0.08 * i}>
+                      <div className="border border-cream/10 p-7 hover:border-gold/40 hover:bg-cream/4 transition-all duration-300 group">
+                        <EditableText tag="div" fileKey="activities" path={['activities', i, 'icon']} value={a.icon}
+                          className="text-3xl mb-4 block" />
+                        <EditableText tag="h3" fileKey="activities" path={['activities', i, 'title']} value={a.title}
+                          className="font-serif text-lg text-gold-light mb-2 group-hover:text-gold transition-colors duration-300 block" />
+                        <EditableText tag="p" fileKey="activities" path={['activities', i, 'desc']} value={a.desc}
+                          multiline className="font-sans text-sm text-cream/55 leading-relaxed mb-4 block" />
+                        {!isEditMode && (
+                          <button onClick={() => setSelected(i)}
+                            className="font-sans text-[0.65rem] tracking-[0.2em] uppercase text-gold/50 group-hover:text-gold transition-colors duration-300 inline-flex items-center gap-1.5 cursor-pointer">
+                            Scopri di più <RiArrowRightLine size={11} />
+                          </button>
+                        )}
+                        {isEditMode && (
+                          <span className="font-sans text-[0.58rem] tracking-widest uppercase text-cream/20 block mt-2">
+                            ✏️ clicca sui testi per modificare
+                          </span>
+                        )}
+                      </div>
+                    </ScrollReveal>
+                  </SortableCard>
+                ))}
+              </div>
+            </SortableContext>
+          </DndContext>
+          <AddCardButton
+            onClick={() => addItem('activities', ['activities'], { icon: '✨', title: 'Nuova attività', desc: 'Descrizione breve.', imgs: ['/images/territorio-1.jpg'], detail: 'Descrizione dettagliata.', highlights: ['Punto 1'], tip: 'Consiglio utile.', mapSrc: '' })}
+            label="Aggiungi attività"
+            className="mt-6"
+          />
         </div>
       </section>
 
