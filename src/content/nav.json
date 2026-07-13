@@ -1,11 +1,32 @@
 {
   "items": [
-    { "label": "Home",       "href": "/" },
-    { "label": "Hotel",      "href": "/hotel" },
-    { "label": "Ristorante", "href": "/ristorante" },
-    { "label": "Menù",       "href": "/menu" },
-    { "label": "Location",   "href": "/location" },
-    { "label": "Galleria",   "href": "/galleria" },
-    { "label": "Clinica",    "href": "/clinica" }
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Hotel",
+      "href": "/hotel"
+    },
+    {
+      "label": "Ristorante",
+      "href": "/ristorante"
+    },
+    {
+      "label": "Menù",
+      "href": "/menu"
+    },
+    {
+      "label": "Location",
+      "href": "/location"
+    },
+    {
+      "label": "Galleria",
+      "href": "/galleria"
+    },
+    {
+      "label": "Clinica",
+      "href": "/clinica"
+    }
   ]
 }
