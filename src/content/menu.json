@@ -18,16 +18,6 @@
           "signature": true
         },
         {
-          "name": "Carpaccio di Manzo al Tartufo Nero",
-          "description": "Fettine di manzo piemontese, scaglie di Grana Padano DOP, tartufo nero estivo, rucola selvatica e olio EVO",
-          "price": 16,
-          "allergens": [
-            "latte"
-          ],
-          "photo": "https://images.pexels.com/photos/26932238/pexels-photo-26932238.jpeg?auto=compress&cs=tinysrgb&w=300&q=80",
-          "signature": false
-        },
-        {
           "name": "Polpo alla Brace con Crema di Patate",
           "description": "Polpo atlantico grigliato su vellutata di patate alle erbe, olio al prezzemolo e paprica affumicata",
           "price": 18,
@@ -35,6 +25,16 @@
             "molluschi"
           ],
           "photo": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Carpaccio di Manzo al Tartufo Nero",
+          "description": "Fettine di manzo piemontese, scaglie di Grana Padano DOP, tartufo nero estivo, rucola selvatica e olio EVO",
+          "price": 16,
+          "allergens": [
+            "latte"
+          ],
+          "photo": "https://images.pexels.com/photos/26932238/pexels-photo-26932238.jpeg?auto=compress&cs=tinysrgb&w=300&q=80",
           "signature": false
         },
         {
