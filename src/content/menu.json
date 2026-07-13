@@ -9,7 +9,7 @@
         {
           "name": "Tagliere San",
           "description": "Selezione di salumi artigianali bresciani, formaggi della Franciacorta, mostarda di Cremona e grissini al rosmarino",
-          "price": "18",
+          "price": 18,
           "allergens": [
             "glutine",
             "latte"
