@@ -35,7 +35,8 @@
             "molluschi"
           ],
           "photo": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1784019902414-dish-1784019911336.jpg",
-          "signature": false
+          "signature": false,
+          "photoSize": 220
         },
         {
           "name": "Bruschetta al Pomodoro Confit",
