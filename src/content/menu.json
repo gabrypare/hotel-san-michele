@@ -43,9 +43,7 @@
           "description": "Pane di campagna tostato, pomodorini confit al basilico, aglio, origano e olio extravergine Laghi Lombardi DOP",
           "price": 10,
           "allergens": [
-            "glutine",
-            "crostacei",
-            "uova"
+            "glutine"
           ],
           "photo": "https://images.unsplash.com/photo-1572441713132-c542fc4fe282?auto=format&fit=crop&w=300&q=80",
           "signature": false
