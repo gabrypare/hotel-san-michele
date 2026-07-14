@@ -12,7 +12,8 @@
           "price": "18",
           "allergens": [
             "glutine",
-            "latte"
+            "latte",
+            "crostacei"
           ],
           "photo": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=300&q=80",
           "signature": true
