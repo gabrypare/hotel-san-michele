@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "label": "La tavola del territorio",
+    "title": "Il Ristorante",
+    "titleItalic": "San Michele",
+    "subtitle": "Cucina lombarda d'autore, stagionale e artigianale",
+    "img": "/images/hotel-1.jpg"
+  },
+  "storia": {
+    "sectionLabel": "La nostra storia",
+    "title": "Una cucina nata",
+    "titleItalic": "dal territori",
+    "paragraphs": [
+      "Il ristorante San Michele nasce con la stessa visione dell'hotel: portare a tavola il meglio che la Franciacorta e la Lombardia hanno da offrire. Da oltre quattro decenni, la cucina lavora con fornitori locali di fiducia, seguendo il calendario naturale delle stagioni.",
+      "I casoncelli alla bergamasca tramandati di generazione in generazione, il risotto mantecato al Franciacorta DOCG che ha reso famoso il ristorante, la cacciagione e i funghi dei boschi bresciani in autunno: ogni piatto è un racconto di questa terra.",
+      "La sala può ospitare fino a 120 coperti, con una terrazza panoramica aperta nella stagione estiva. Gli ospiti dell'hotel trovano un tavolo riservato ogni mattina per la colazione e ogni sera per la cena."
+    ],
+    "images": [
+      "/images/hotel-1.jpg",
+      "/images/hotel-3.jpg",
+      "/images/hotel-4.jpg"
+    ]
+  },
+  "filosofia": {
+    "sectionLabel": "La filosofia",
+    "title": "Tre valori che",
+    "titleItalic": "guidano la cucina",
+    "cards": [
+      {
+        "icon": "🌿",
+        "title": "Stagionalità rigorosa",
+        "body": "Il menu cambia quattro volte l'anno, seguendo il ciclo naturale delle stagioni. Niente prodotti fuori stagione: solo ciò che la natura offre nel momento giusto."
+      },
+      {
+        "icon": "🤝",
+        "title": "Fornitori di fiducia",
+        "body": "Carne bresciana, pesce dell'Adriatico, formaggi delle valli bergamasche, olio EVO Laghi Lombardi DOP: ogni ingrediente ha un nome, un'azienda, una storia."
+      },
+      {
+        "icon": "⚗️",
+        "title": "Artigianalità e tecnica",
+        "body": "La tradizione come punto di partenza, la tecnica contemporanea come strumento. Il risultato: piatti riconoscibili che sorprendono ad ogni assaggio."
+      }
+    ]
+  },
+  "signature": {
+    "sectionLabel": "I nostri piatti firma",
+    "title": "Le",
+    "titleItalic": "Specialità",
+    "titleSuffix": "del San Michele",
+    "dishes": [
+      {
+        "name": "Risotto al Franciacorta DOCG",
+        "desc": "Riso Carnaroli mantecato al Franciacorta Brut, burro di malga e Grana Padano 24 mesi",
+        "cat": "Primo Piatto · Firma",
+        "img": "/images/hotel-2.jpg"
+      },
+      {
+        "name": "Filetto di Manzo al Tartufo",
+        "desc": "Filetto bresciano, salsa al Madeira, scaglie di tartufo nero, gratin di patate",
+        "cat": "Secondo Piatto · Firma",
+        "img": "/images/hotel-3.jpg"
+      },
+      {
+        "name": "Tiramisù San Michele",
+        "desc": "Savoiardi, mascarpone, caffè Arabica, cacao amaro e Amaretto di Saronno",
+        "cat": "Dolce · Firma",
+        "img": "/images/hotel-4.jpg"
+      }
+    ]
+  },
+  "vini": {
+    "sectionLabel": "La carta dei vini",
+    "title": "Il",
+    "titleItalic": "Franciacorta",
+    "titleSuffix": "in bottiglia",
+    "body1": "La carta dei vini del San Michele è un omaggio al territorio. Metodo Classico DOCG di Ca' del Bosco, Bellavista, Contadi Castaldi: le bollicine più eleganti d'Italia, prodotte a pochi chilometri dal ristorante.",
+    "body2": "Abbinati ai piatti del territorio, i Franciacorta esaltano ogni portata. Il sommelier è a disposizione per guidarvi nella scelta ideale.",
+    "img": "/images/cantina-1.jpg"
+  },
+  "orari": {
+    "title": "Orari e Prenotazioni",
+    "slots": [
+      {
+        "label": "Pranzo",
+        "value": "Lunedì – Domenica",
+        "time": "12:00 – 14:30"
+      },
+      {
+        "label": "Cena",
+        "value": "Lunedì – Domenica",
+        "time": "19:30 – 22:00"
+      },
+      {
+        "label": "Chiusura",
+        "value": "Martedì",
+        "time": "tutto il giorno"
+      }
+    ]
+  }
+}
