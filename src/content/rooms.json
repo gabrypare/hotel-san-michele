@@ -8,7 +8,7 @@
       "price": "da €85 / notte",
       "size": "22 m²",
       "guests": "2 ospiti",
-      "desc": "Arredata con materiali naturali, offre tutto il necessario per un soggiorno rilassante. Vista sul giardino, bagno privato con doccia, aria condizionata e Wi-Fi.",
+      "desc": "Arredata con materiali naturali, offre tutto il necessario per un soggiorno rilassante. Vista sul giardino, bagno privato con doccia, aria condizionata e Wi-Fi. gggggggggggggggggggg",
       "features": [
         "Letto matrimoniale o twin",
         "Bagno privato con doccia",
@@ -22,7 +22,8 @@
         "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=85",
         "https://images.unsplash.com/photo-1631049422282-62d4e37e7536?auto=format&fit=crop&w=1600&q=85",
         "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1600&q=85"
-      ]
+      ],
+      "cardDesc": "Arredata con materiali naturali, offre tutto il necessario per un soggiorno rilassante. Vista sul giardino, bagno privato con doccia, aria condizionata e Wi-Fi."
     },
     {
       "slug": "camera-panoramica",
