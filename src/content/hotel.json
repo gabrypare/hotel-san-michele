@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "label": "Dove soggiornare",
+    "title": "L'Hotel",
+    "titleItalic": "San Michele",
+    "subtitle": "16 camere immerse nei vigneti della Franciacorta",
+    "img": "/images/hotel-1.jpg"
+  },
+  "intro": {
+    "sectionLabel": "L'ospitalità autentica",
+    "title": "Un rifugio tra",
+    "titleItalic": "i vigneti",
+    "para1": "Immerso nei colli di Ome, l'Hotel San Michele è una struttura a conduzione familiare che custodisce i valori dell'ospitalità autentica. Ogni camera è stata pensata come un rifugio privato, con materiali naturali, luce abbondante e una vista che racconta la Franciacorta.",
+    "para2": "Il silenzio dei vigneti, la colazione con prodotti artigianali locali, la terrazza panoramica con vista sulla Franciacorta: il San Michele è il punto di partenza ideale per esplorare uno dei territori più belli della Lombardia.",
+    "img": "/images/hotel-2.jpg"
+  },
+  "camere": {
+    "sectionLabel": "Le camere",
+    "title": "Scegli il tuo",
+    "titleItalic": "spazio",
+    "subtitle": "Tre tipologie di camera, ognuna con carattere proprio. Clicca per scoprire i dettagli e prenotare.",
+    "featuredSlug": "camera-panoramica"
+  },
+  "amenities": {
+    "sectionLabel": "I servizi",
+    "title": "Tutto quello che",
+    "titleItalic": "ti serve",
+    "items": [
+      {
+        "iconKey": "car",
+        "title": "Parcheggio gratuito",
+        "desc": "Ampio parcheggio privato riservato agli ospiti dell'hotel"
+      },
+      {
+        "iconKey": "cup",
+        "title": "Colazione inclusa",
+        "desc": "Buffet artigianale con prodotti locali servito ogni mattina"
+      },
+      {
+        "iconKey": "wifi",
+        "title": "Wi-Fi ovunque",
+        "desc": "Connessione ad alta velocità gratuita in tutta la struttura"
+      },
+      {
+        "iconKey": "sun",
+        "title": "Terrazza panoramica",
+        "desc": "Vista sui vigneti della Franciacorta dall'alba al tramonto"
+      },
+      {
+        "iconKey": "restaurant",
+        "title": "Ristorante in loco",
+        "desc": "Cucina lombarda d'autore aperta a pranzo e cena ogni giorno"
+      },
+      {
+        "iconKey": "map",
+        "title": "Posizione strategica",
+        "desc": "A 15 min da Brescia, 12 min dal Lago d'Iseo"
+      }
+    ]
+  },
+  "colazione": {
+    "sectionLabel": "Ogni mattina",
+    "title": "La",
+    "titleItalic": "Colazione",
+    "titleSuffix": "del San Michele",
+    "para1": "Buffet artigianale in sala o in terrazza: pane fresco, marmellate fatte in casa, formaggi bresciani, salumi locali.",
+    "hours": "07:00 – 09:30 · inclusa in tutte le camere",
+    "img": "/images/hotel-3.jpg"
+  },
+  "cta": {
+    "title": "Pronto a soggiornare?",
+    "body": "Contattaci direttamente per verificare la disponibilità e ricevere le migliori tariffe.",
+    "phone": "+39 030 652 7167"
+  }
+}
