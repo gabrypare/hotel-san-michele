@@ -95,7 +95,7 @@
       "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1784215296871-gallery-1784215308193.jpg",
       "label": "Nuova foto",
       "cat": "ristorante",
-      "span": ""
+      "span": "col-span-2"
     }
   ],
   "categories": [
