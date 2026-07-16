@@ -12,8 +12,7 @@
           "price": "18",
           "allergens": [
             "glutine",
-            "latte",
-            "crostacei"
+            "latte"
           ],
           "photo": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=300&q=80",
           "signature": true
@@ -37,7 +36,7 @@
           ],
           "photo": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1784019902414-dish-1784019911336.jpg",
           "signature": false,
-          "photoSize": 220
+          "photoSize": 96.79998779296875
         },
         {
           "name": "Bruschetta al Pomodoro Confit",
