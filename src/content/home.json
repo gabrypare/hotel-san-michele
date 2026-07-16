@@ -20,6 +20,10 @@
       {
         "src": "/images/hotel-4.jpg",
         "alt": "Vista Franciacorta"
+      },
+      {
+        "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1784215573274-home-1784215585060.jpg",
+        "alt": "Nuova slide"
       }
     ]
   },
