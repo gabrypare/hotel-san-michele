@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "img": "/images/territorio-1.jpg",
+    "label": "Il territorio",
+    "title": "La",
+    "titleItalic": "Franciacorta",
+    "subtitle": "Un territorio unico tra vigneti, laghi e storia"
+  },
+  "intro": {
+    "sectionLabel": "La Franciacorta",
+    "title": "Un paesaggio che",
+    "titleItalic": "racconta storie",
+    "para1": "La Franciacorta è una delle zone vinicole più affascinanti d'Italia: una distesa di colline dolci tra Brescia e il Lago d'Iseo, ricoperta di vigneti, attraversata da strade romantiche che collegano borghi medievali e abbazie benedettine.",
+    "para2": "Il nome evoca immediatamente le bollicine del Franciacorta DOCG — l'unico spumante italiano prodotto esclusivamente con Metodo Classico — ma il territorio offre molto di più: natura, storia, arte e un'enogastronomia di altissimo livello.",
+    "para3": "Ome, il comune dove si trova il San Michele, è uno dei borghi più caratteristici dei colli: posizione panoramica, vigneti a picco sulle case, silenzio e bellezza in ogni angolo.",
+    "img": "/images/territorio-2.jpg"
+  },
+  "wine": {
+    "sectionLabel": "Il vino del territorio",
+    "title": "Il",
+    "titleItalic": "Franciacorta DOCG",
+    "para1": "Come lo Champagne in Francia, il Franciacorta è il Metodo Classico italiano per eccellenza. Chardonnay, Pinot Nero e Pinot Bianco lavorati in cantina con una cura maniacale, per produrre bollicine eleganti, persistenti, di straordinaria complessità.",
+    "para2": "Su richiesta, il San Michele organizza visite e degustazioni nelle cantine più prestigiose della denominazione: Ca' del Bosco, Bellavista, Berlucchi, Cavalleri, Contadi Castaldi e molte altre.",
+    "img": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=80"
+  },
+  "distances": {
+    "sectionLabel": "Come raggiungerci",
+    "title": "Al centro di tutto,",
+    "titleItalic": "distante da nulla",
+    "address": "Via S. Michele, 5a · 25050 Ome (BS)",
+    "img": "/images/ome-veduta.jpg",
+    "items": [
+      {
+        "place": "Brescia",
+        "km": "15",
+        "desc": "Centro storico UNESCO, Piazza della Loggia, musei"
+      },
+      {
+        "place": "Lago d'Iseo",
+        "km": "12",
+        "desc": "Terzo lago lombardo, Monte Isola, Lovere"
+      },
+      {
+        "place": "Lago di Garda",
+        "km": "45",
+        "desc": "Il lago più grande d'Italia, Sirmione, Gardaland"
+      },
+      {
+        "place": "Bergamo",
+        "km": "40",
+        "desc": "Città alta medievale, Piazza Vecchia, Accademia Carrara"
+      },
+      {
+        "place": "Milano",
+        "km": "95",
+        "desc": "Duomo, Navigli, moda e design — meno di un'ora"
+      },
+      {
+        "place": "Aeroporto BGY",
+        "km": "55",
+        "desc": "Aeroporto di Bergamo Orio al Serio, voli low-cost"
+      }
+    ],
+    "howTo": [
+      {
+        "label": "In auto:",
+        "desc": "A4 Milano–Venezia, uscita Ospitaletto o Rovato"
+      },
+      {
+        "label": "In treno:",
+        "desc": "Stazione Brescia, poi autobus per Ome"
+      },
+      {
+        "label": "In aereo:",
+        "desc": "Aeroporto di Bergamo (BGY) a 55 km"
+      }
+    ]
+  },
+  "activitiesSection": {
+    "sectionLabel": "Cosa fare",
+    "title": "Un territorio da",
+    "titleItalic": "esplorare",
+    "subtitle": "Clicca su un'attività per scoprire di più"
+  },
+  "map": {
+    "title": "Dove siamo",
+    "src": "https://maps.google.com/maps?q=Via+S.+Michele%2C+5a%2C+25050+Ome+BS&output=embed&hl=it&z=16"
+  }
+}
