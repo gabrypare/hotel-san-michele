@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "img": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=90",
+    "label": "Per pazienti e familiari",
+    "title": "Convenzioni &",
+    "titleItalic": "servizi dedicati",
+    "subtitle": "Sconto ristorante e navetta per chi è all'Istituto Clinico San Rocco"
+  },
+  "intro": {
+    "sectionLabel": "A tre minuti dalla clinica",
+    "title": "Un punto di riferimento",
+    "titleItalic": "per chi è vicino all'Istituto San Rocco",
+    "para": "L'Hotel Ristorante San Michele si trova a soli 1,2 km dall'Istituto Clinico San Rocco. Per chi affronta un ricovero o un intervento, e per le famiglie che li accompagnano, abbiamo pensato a convenzioni concrete: uno sconto al ristorante e un servizio navetta dedicato."
+  },
+  "sconto": {
+    "sectionLabel": "Convenzione ristorante",
+    "title": "Sconto speciale per",
+    "titleItalic": "pazienti e familiari",
+    "desc": "Chi è ricoverato o viene sottoposto a un intervento presso l'Istituto Clinico San Rocco, e i suoi familiari, hanno diritto a uno sconto dedicato al Ristorante San Michele. Basta comunicarlo al momento di ordinare.",
+    "footerLabel": "Per informazioni sullo sconto riservato"
+  },
+  "navetta": {
+    "sectionLabel": "Servizio incluso",
+    "title": "Navetta gratuita",
+    "titleItalic": "hotel ↔ clinica",
+    "desc": "Gli ospiti dell'Hotel San Michele che necessitano di raggiungere l'Istituto Clinico San Rocco possono usufruire del servizio navetta dedicato. Il trasporto è organizzato direttamente dalla reception su prenotazione.",
+    "footerLabel": "Prenota la navetta alla reception o contattaci"
+  },
+  "vantaggi": {
+    "sectionLabel": "Perché scegliere il San Michele",
+    "title": "Tutto quello che serve,",
+    "titleItalic": "a tre minuti",
+    "items": [
+      {
+        "icon": "heart",
+        "title": "Vicinanza alla clinica",
+        "desc": "A soli 1,2 km dall'Istituto Clinico San Rocco. Tre minuti in auto, comodità assoluta per famiglie e pazienti."
+      },
+      {
+        "icon": "restaurant",
+        "title": "Cucina del territorio",
+        "desc": "Il ristorante propone la cucina lombarda d'autore. Un momento di qualità anche durante i giorni più impegnativi."
+      },
+      {
+        "icon": "taxi",
+        "title": "Navetta su richiesta",
+        "desc": "Il servizio navetta hotel–clinica è disponibile per tutti gli ospiti. Basta avvisare la reception al check-in."
+      }
+    ]
+  },
+  "dove": {
+    "sectionLabel": "Dove siamo",
+    "title": "Istituto Clinico San Rocco —",
+    "titleItalic": "a 1,2 km dall'hotel",
+    "para": "La clinica si trova sulla stessa strada dell'hotel, a tre minuti in auto. La reception dell'Hotel San Michele è a disposizione per qualsiasi necessità di trasporto o informazione.",
+    "clinicaLabel": "Istituto Clinico San Rocco",
+    "clinicaAddress": "Via dei Sabbioni, 24 · 25050 Ome (BS)",
+    "clinicaPhoneLabel": "Centralino clinica",
+    "clinicaPhone": "+39 030 685 9111",
+    "hotelLabel": "Hotel San Michele",
+    "hotelAddress": "Via S. Michele, 5a · Ome",
+    "distanza": "~3 minuti · 1,2 km dall'Istituto San Rocco"
+  },
+  "cta": {
+    "title": "Sei qui per un familiare ricoverato?",
+    "para": "Contattaci: ti spieghiamo lo sconto riservato al ristorante e organizziamo la navetta per i tuoi spostamenti."
+  }
+}
