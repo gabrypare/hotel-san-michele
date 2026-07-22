@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "img": "/images/hotel-2.jpg",
+    "label": "Siamo a tua disposizione",
+    "title": "Prenota",
+    "titleItalic": "o contattaci",
+    "subtitle": "Risponderemo entro 24 ore"
+  },
+  "info": {
+    "sectionLabel": "Contatti",
+    "title": "Prenota",
+    "titleItalic": "direttamente",
+    "titleSuffix": "con noi",
+    "intro": "Contattandoci direttamente hai accesso alle migliori tariffe disponibili e a un servizio completamente personalizzato. Il nostro team è a disposizione per ogni esigenza."
+  },
+  "hours": {
+    "label": "Orari",
+    "reception": "Reception: 07:00 – 22:00",
+    "lunch": "Ristorante pranzo: 12:00 – 14:30",
+    "dinner": "Ristorante cena: 19:30 – 22:00",
+    "closed": "Chiuso il martedì"
+  },
+  "whyDirect": {
+    "title": "Perché prenotare direttamente",
+    "items": [
+      "Migliori tariffe garantite",
+      "Flessibilità totale sulla prenotazione",
+      "Preferenze e richieste speciali gestite direttamente",
+      "Check-in anticipato su richiesta"
+    ]
+  }
+}
