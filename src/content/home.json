@@ -3,7 +3,7 @@
     "label": "Franciacorta · Ome · Brescia",
     "titleLine1": "Hotel Ristorante",
     "titleLine2": "San Michele",
-    "quote": "Tra i vigneti della Franciacorta il luogo dove fermarsi",
+    "quote": "Vieni a scoprire la Franciacorta,soggiorna con noi e lasciati conquistare",
     "slides": [
       {
         "src": "/images/hotel-1.jpg",
@@ -27,21 +27,13 @@
     "sectionLabel": "La nostra storia",
     "title": "Nel cuore della",
     "titleItalic": "Franciacorta",
-    "para1": "Il San Michele accoglie i propri ospiti tra i vigneti di Ome. Una struttura familiare dove il calore dell'ospitalità autentica si fonde con un'attenzione costante alla qualità : cucina del territorio, camere panoramiche, e la magia del paesaggio franciacortino.",
-    "para2": "Nella parte collinare della Franciacorta a pochi passi dalle migliori cantine",
+    "para1": "Il San Michele accoglie i propri ospiti tra i vigneti di Ome. Una struttura familiare dove il calore dell'ospitalità autentica si fonde con un'attenzione costante alla qualità : cucina del territorio, camere panoramiche, e la magia del paesaggio circostante.",
+    "para2": "Nella parte collinare della Franciacorta a pochi passi dalle migliori cantine è il posto giusto per chi desidera avere  un assaggio del nostro territorio",
     "img": "/images/hotel-1.jpg",
     "stats": [
       {
-        "n": "40+",
-        "l": "Anni di ospitalità"
-      },
-      {
-        "n": "16",
-        "l": "Camere & suite"
-      },
-      {
-        "n": "120",
-        "l": "Posti a sedere"
+        "n": "",
+        "l": ""
       }
     ]
   },
@@ -84,7 +76,7 @@
     "sectionLabel": "Cucina del territorio",
     "title": "Il Menù",
     "titleItalic": "di Stagione",
-    "para1": "Risotto al Franciacorta DOCG, casoncelli alla bergamasca, filetto al tartufo, tiramisù artigianale. Un percorso nella tradizione lombarda interpretata con tecnica moderna.",
+    "para1": "La Cucina dell'hotel è attenta alla stagionalità e predilige fornitori locali ,  paste fresche , carni e selvaggina e pesce del nostro lago .",
     "para2": "Tutti gli allergeni sono chiaramente indicati su ogni piatto secondo il Reg. UE 1169/2011. Il menù include anche la carta dei vini Franciacorta selezionati.",
     "img": "/images/hotel-2.jpg"
   },
@@ -106,7 +98,7 @@
     "sectionLabel": "Pronto a venirci a trovare?",
     "title": "Prenota il tuo",
     "titleItalic": "soggiorno",
-    "body": "Contattaci direttamente per le migliori tariffe disponibili. Il nostro team risponde entro 24 ore.",
+    "body": "Contattaci direttamente per le migliori tariffe disponibili. Il nostro team risponderà al più presto",
     "img": "/images/hotel-2.jpg"
   }
 }
