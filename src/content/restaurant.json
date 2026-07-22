@@ -13,7 +13,7 @@
     "paragraphs": [
       "Il ristorante San Michele nasce con la stessa visione dell'hotel: portare a tavola il meglio che la Franciacorta e la Lombardia hanno da offrire.La cucina lavora con fornitori locali di fiducia, seguendo il calendario naturale delle stagioni.",
       "Pasta fresca, carne di qualità ,selvaggina e pesce di lago vengono trattati mescolando ricette tradizionali a gusti moderni .",
-      "La struttura dispone di una sala da 70 coperti , un ampio salone da 200 posti e una terrazza panoramica che si affaccia su colline e vigneti circostanti . Gli ospiti dell'hotel trovano un tavolo riservato ogni mattina per la colazione e ogni sera per la cena."
+      "La struttura dispone di una sala da 70 coperti , un ampio salone da 200 posti e una terrazza panoramica che si affaccia su colline e vigneti circostanti . Questi spazi rendono l'hotel il posto ideale per organizzare cerimonie , banchetti , meeting aziendali e feste ."
     ],
     "images": [
       "/images/hotel-1.jpg",
@@ -34,7 +34,7 @@
       {
         "icon": "🤝",
         "title": "Fornitori di fiducia",
-        "body": "Ci affidiamo a fornitori locali , prediligendo prodotti della zona"
+        "body": "Ci affidiamo a fornitori locali , prediligendo prodotti della zona ."
       },
       {
         "icon": "⚗️",
@@ -74,8 +74,8 @@
     "title": "Il",
     "titleItalic": "Franciacorta",
     "titleSuffix": "in bottiglia",
-    "body1": "La carta dei vini del San Michele è un omaggio al territorio. Metodo Classico DOCG di Ca' del Bosco, Bellavista, Contadi Castaldi: le bollicine più eleganti d'Italia, prodotte a pochi chilometri dal ristorante.",
-    "body2": "Abbinati ai piatti del territorio, i Franciacorta esaltano ogni portata. Il sommelier è a disposizione per guidarvi nella scelta ideale.",
+    "body1": "Cerchiamo di promuovere il nostro territorio dando la possibilità di degustare i vini prodotti nel nostro comune oltre ai più rinomati produttori del territorio Franciacortino",
+    "body2": "Venite a scoprire un mondo di bollicine",
     "img": "/images/cantina-1.jpg"
   },
   "orari": {
@@ -88,13 +88,13 @@
       },
       {
         "label": "Cena",
-        "value": "Lunedì – Domenica",
-        "time": "19:30 – 22:00"
+        "value": "Venerdì – Domenica",
+        "time": "19:00 – 22:00"
       },
       {
-        "label": "Chiusura",
-        "value": "Martedì",
-        "time": "tutto il giorno"
+        "label": "Banchetti",
+        "value": "Proponiamo menu dedicati ad ogni esigenza",
+        "time": ""
       }
     ]
   }
