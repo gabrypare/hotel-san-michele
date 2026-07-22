@@ -34,12 +34,12 @@
       {
         "iconKey": "cup",
         "title": "Colazione inclusa",
-        "desc": "Buffet artigianale con prodotti locali servito ogni mattina"
+        "desc": "Buffet dolce e salato con prodotti artigianali servito ogni mattina"
       },
       {
         "iconKey": "wifi",
         "title": "Wi-Fi ovunque",
-        "desc": "Connessione ad alta velocità gratuita in tutta la struttura"
+        "desc": "Connessione gratuita in tutta la struttura"
       },
       {
         "iconKey": "sun",
@@ -49,7 +49,7 @@
       {
         "iconKey": "restaurant",
         "title": "Ristorante in loco",
-        "desc": "Cucina lombarda d'autore aperta a pranzo e cena ogni giorno"
+        "desc": "Cucina aperta a pranzo e cena ogni giorno"
       },
       {
         "iconKey": "map",
@@ -63,8 +63,8 @@
     "title": "La",
     "titleItalic": "Colazione",
     "titleSuffix": "del San Michele",
-    "para1": "Buffet artigianale in sala o in terrazza: pane fresco, marmellate fatte in casa, formaggi bresciani, salumi locali.",
-    "hours": "07:00 – 09:30 · inclusa in tutte le camere",
+    "para1": "Colazione a buffet da gustare in sala o in terrazza",
+    "hours": "07:30– 10:00 · inclusa in tutte le camere",
     "img": "/images/hotel-3.jpg"
   },
   "cta": {
