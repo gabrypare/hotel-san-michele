@@ -12,8 +12,8 @@
     "titleItalic": "dal territorio",
     "paragraphs": [
       "Il ristorante San Michele nasce con la stessa visione dell'hotel: portare a tavola il meglio che la Franciacorta e la Lombardia hanno da offrire.La cucina lavora con fornitori locali di fiducia, seguendo il calendario naturale delle stagioni.",
-      "I casoncelli alla bresciana tramandati di generazione in generazione, il risotto mantecato al Franciacorta DOCG che ha reso famoso il ristorante, la cacciagione e i funghi dei boschi bresciani in autunno: ogni piatto è un racconto di questa terra.",
-      "La sala può ospitare fino a 120 coperti, con una terrazza panoramica aperta nella stagione estiva. Gli ospiti dell'hotel trovano un tavolo riservato ogni mattina per la colazione e ogni sera per la cena."
+      "Pasta fresca, carne di qualità ,selvaggina e pesce di lago vengono trattati mescolando ricette tradizionali a gusti moderni .",
+      "La struttura dispone di una sala da 70 coperti , un ampio salone da 200 posti e una terrazza panoramica che si affaccia su colline e vigneti circostanti . Gli ospiti dell'hotel trovano un tavolo riservato ogni mattina per la colazione e ogni sera per la cena."
     ],
     "images": [
       "/images/hotel-1.jpg",
@@ -29,12 +29,12 @@
       {
         "icon": "🌿",
         "title": "Stagionalità rigorosa",
-        "body": "Il menu cambia quattro volte l'anno, seguendo il ciclo naturale delle stagioni. Niente prodotti fuori stagione: solo ciò che la natura offre nel momento giusto."
+        "body": "Il menu cambia , seguendo il ciclo naturale delle stagioni. Evitiamo prodotti fuori stagione: cerchiamo di scegliere solo ciò che la natura offre nel momento giusto."
       },
       {
         "icon": "🤝",
         "title": "Fornitori di fiducia",
-        "body": "Carne bresciana, pesce dell'Adriatico, formaggi delle valli bergamasche, olio EVO Laghi Lombardi DOP: ogni ingrediente ha un nome, un'azienda, una storia."
+        "body": "Ci affidiamo a fornitori locali , prediligendo prodotti della zona"
       },
       {
         "icon": "⚗️",
