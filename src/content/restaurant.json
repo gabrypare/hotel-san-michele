@@ -17,8 +17,8 @@
     ],
     "images": [
       "/images/hotel-1.jpg",
-      "/images/hotel-3.jpg",
-      "/images/hotel-4.jpg"
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785013624708-ristorante-1785013623330.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785013614341-ristorante-1785013613149.jpg"
     ]
   },
   "filosofia": {
