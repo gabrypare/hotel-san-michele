@@ -13,22 +13,22 @@
     "para1": "La Franciacorta è una delle zone vinicole più affascinanti d'Italia: una distesa di colline dolci tra Brescia e il Lago d'Iseo, ricoperta di vigneti, attraversata da strade romantiche che collegano borghi medievali e abbazie benedettine.",
     "para2": "Il nome evoca immediatamente le bollicine del Franciacorta DOCG — l'unico spumante italiano prodotto esclusivamente con Metodo Classico — ma il territorio offre molto di più: natura, storia, arte e un'enogastronomia di altissimo livello.",
     "para3": "Ome, il comune dove si trova il San Michele, è uno dei borghi più caratteristici dei colli: posizione panoramica, vigneti a picco sulle case, silenzio e bellezza in ogni angolo.",
-    "img": "/images/territorio-2.jpg"
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785015217132-location-1785015215951.jpg"
   },
   "wine": {
     "sectionLabel": "Il vino del territorio",
     "title": "Il",
     "titleItalic": "Franciacorta DOCG",
     "para1": "Come lo Champagne in Francia, il Franciacorta è il Metodo Classico italiano per eccellenza. Chardonnay, Pinot Nero e Pinot Bianco lavorati in cantina con una cura maniacale, per produrre bollicine eleganti, persistenti, di straordinaria complessità.",
-    "para2": "Su richiesta, il San Michele organizza visite e degustazioni nelle cantine più prestigiose della denominazione: Ca' del Bosco, Bellavista, Berlucchi, Cavalleri, Contadi Castaldi e molte altre.",
-    "img": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=80"
+    "para2": "Su richiesta, organizziamo visite in cantina e degustazioni",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785015309256-location-1785015308857.jpg"
   },
   "distances": {
     "sectionLabel": "Come raggiungerci",
     "title": "Al centro di tutto,",
     "titleItalic": "distante da nulla",
     "address": "Via S. Michele, 5a · 25050 Ome (BS)",
-    "img": "/images/ome-veduta.jpg",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785015509184-location-1785015508200.jpg",
     "items": [
       {
         "place": "Brescia",
