@@ -16,7 +16,7 @@
       "La struttura dispone di una sala da 70 coperti , un ampio salone da 200 posti e una terrazza panoramica che si affaccia su colline e vigneti circostanti . Questi spazi rendono l'hotel il posto ideale per organizzare cerimonie , banchetti , meeting aziendali e feste ."
     ],
     "images": [
-      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064916474-ristorante-1785064914425.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066388900-ristorante-1785066386655.jpg",
       "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064896794-ristorante-1785064894809.jpg",
       "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064907076-ristorante-1785064905163.jpg"
     ]
@@ -59,13 +59,13 @@
         "name": "Filetto di Manzo al Tartufo",
         "desc": "Filetto bresciano, salsa al Madeira, scaglie di tartufo nero, gratin di patate",
         "cat": "Secondo Piatto · Firma",
-        "img": "/images/hotel-3.jpg"
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066353504-ristorante-1785066351579.jpg"
       },
       {
         "name": "Tiramisù San Michele",
         "desc": "Savoiardi, mascarpone, caffè Arabica, cacao amaro e Amaretto di Saronno",
         "cat": "Dolce · Firma",
-        "img": "/images/hotel-4.jpg"
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066368682-ristorante-1785066366724.jpg"
       }
     ]
   },
