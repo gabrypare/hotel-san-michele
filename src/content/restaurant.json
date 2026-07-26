@@ -4,7 +4,7 @@
     "title": "Il Ristorante",
     "titleItalic": "San Michele",
     "subtitle": "Locale, stagionale, artigianale",
-    "img": "/images/hotel-1.jpg"
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066268609-ristorante-1785066265500.jpg"
   },
   "storia": {
     "sectionLabel": "",
@@ -16,9 +16,9 @@
       "La struttura dispone di una sala da 70 coperti , un ampio salone da 200 posti e una terrazza panoramica che si affaccia su colline e vigneti circostanti . Questi spazi rendono l'hotel il posto ideale per organizzare cerimonie , banchetti , meeting aziendali e feste ."
     ],
     "images": [
-      "/images/hotel-1.jpg",
-      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785013624708-ristorante-1785013623330.jpg",
-      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785013614341-ristorante-1785013613149.jpg"
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064916474-ristorante-1785064914425.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064896794-ristorante-1785064894809.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064907076-ristorante-1785064905163.jpg"
     ]
   },
   "filosofia": {
