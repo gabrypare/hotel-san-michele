@@ -1,9 +1,5 @@
 {
   "heroImg": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/3c/d5/79/caption.jpg?w=1600&h=900&s=1",
-  "heroLabel": "Le immagini",
-  "heroTitle": "La",
-  "heroTitleItalic": "Galleria",
-  "heroSubtitle": "Hotel, ristorante, cucina e territorio in scatti",
   "photos": [
     {
       "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/3c/d5/79/caption.jpg?w=900&h=600&s=1",
