@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import ScrollReveal from '../ui/ScrollReveal'
 import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiTimeLine } from 'react-icons/ri'
-import EditablePhone from '../editor/EditablePhone'
 
 const INITIAL = {
   nome: '', email: '', telefono: '',
@@ -70,10 +69,9 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-sans text-xs tracking-[0.2em] uppercase text-stone mb-1">Telefono</p>
-                    <EditablePhone
-                      className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300"
-                      linkClassName="hover:text-gold transition-colors duration-300"
-                    />
+                    <a href="tel:+390303378060" className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300">
+                      +39 030 3378060
+                    </a>
                   </div>
                 </li>
                 <li className="flex gap-4 items-center">

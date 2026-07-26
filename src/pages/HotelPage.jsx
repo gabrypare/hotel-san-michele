@@ -330,13 +330,9 @@ export default function HotelPage() {
             <EditableText tag="p" fileKey="hotel" path={['cta', 'body']} value={h.cta.body} multiline className="font-sans text-base text-charcoal/60 mb-8 block" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/prenota" className="btn-gold">Prenota Ora</Link>
-              {isEditMode ? (
-                <EditableText tag="span" fileKey="hotel" path={['cta', 'phone']} value={h.cta.phone} className="btn-outline-dark" />
-              ) : (
-                <a href={`tel:${h.cta.phone.replace(/\s/g, '')}`} className="btn-outline-dark">
-                  {h.cta.phone}
-                </a>
-              )}
+              <a href={`tel:${h.cta.phone.replace(/\s/g, '')}`} className="btn-outline-dark">
+                <EditableText tag="span" fileKey="hotel" path={['cta', 'phone']} value={h.cta.phone} className="inline" />
+              </a>
             </div>
           </div>
         </ScrollReveal>

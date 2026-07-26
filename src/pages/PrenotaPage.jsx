@@ -7,7 +7,6 @@ import EditableText from '../components/editor/EditableText'
 import SortableCard from '../components/editor/SortableCard'
 import AddCardButton from '../components/editor/AddCardButton'
 import { useEditMode } from '../context/EditModeContext'
-import EditablePhone from '../components/editor/EditablePhone'
 import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiTimeLine, RiCheckLine, RiCameraLine } from 'react-icons/ri'
 
 /* ── helpers ──────────────────────────────────────────────── */
@@ -208,10 +207,9 @@ export default function PrenotaPage() {
                   </div>
                   <div>
                     <p className="font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-1">Telefono</p>
-                    <EditablePhone
-                      className="font-sans text-sm text-charcoal/80"
-                      linkClassName="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300"
-                    />
+                    <a href="tel:+390303378060" className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300">
+                      +39 030 3378060
+                    </a>
                   </div>
                 </li>
                 <li className="flex gap-4 items-start">

@@ -4,7 +4,6 @@ import SanMicheleLogo from '../ui/SanMicheleLogo'
 import settings from '../../content/settings.json'
 import { useEditMode } from '../../context/EditModeContext'
 import EditableText from '../editor/EditableText'
-import EditablePhone from '../editor/EditablePhone'
 
 const { hotel, contact, hours, social, legal } = settings
 
@@ -85,10 +84,9 @@ export default function Footer() {
             </li>
             <li className="flex gap-3 items-center">
               <RiPhoneLine size={15} className="text-gold shrink-0" />
-              <EditablePhone
-                className="text-cream/50 hover:text-gold transition-colors duration-300"
-                linkClassName="text-cream/50 hover:text-gold transition-colors duration-300"
-              />
+              <a href="tel:+390303378060" className="font-sans text-sm text-cream/50 hover:text-gold transition-colors duration-300">
+                +39 030 3378060
+              </a>
             </li>
             <li className="flex gap-3 items-center">
               <RiMailLine size={15} className="text-gold shrink-0" />

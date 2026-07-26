@@ -5,7 +5,6 @@ import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from 
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import ScrollReveal from '../components/ui/ScrollReveal'
 import EditableText from '../components/editor/EditableText'
-import EditablePhone from '../components/editor/EditablePhone'
 import SortableCard from '../components/editor/SortableCard'
 import AddCardButton from '../components/editor/AddCardButton'
 import { useEditMode } from '../context/EditModeContext'
@@ -179,10 +178,9 @@ export default function ClinicaPage() {
               <div className="border-t border-cream/10 pt-6">
                 <EditableText tag="p" fileKey="clinica" path={['sconto', 'footerLabel']} value={sc.footerLabel}
                   className="font-sans text-xs text-cream/35 tracking-wide mb-4" />
-                <EditablePhone
-                  className="btn-gold inline-flex items-center gap-2 text-sm"
-                  linkClassName="btn-gold inline-flex items-center gap-2 text-sm"
-                />
+                <a href="tel:+390303378060" className="btn-gold inline-flex items-center gap-2 text-sm">
+                  +39 030 3378060
+                </a>
               </div>
             </div>
           </ScrollReveal>
@@ -212,10 +210,9 @@ export default function ClinicaPage() {
                   <Link to="/prenota" className="btn-gold inline-flex items-center gap-2 text-sm">
                     Prenota l'Hotel <RiArrowRightLine size={13} />
                   </Link>
-                  <EditablePhone
-                    className="btn-outline-dark inline-flex items-center gap-2 text-sm"
-                    linkClassName="btn-outline-dark inline-flex items-center gap-2 text-sm"
-                  />
+                  <a href="tel:+390303378060" className="btn-outline-dark inline-flex items-center gap-2 text-sm">
+                    +39 030 3378060
+                  </a>
                 </div>
               </div>
             </div>
@@ -341,10 +338,9 @@ export default function ClinicaPage() {
                   className="font-sans text-sm text-gold mb-6" />
                 <div className="border-t border-cream/10 pt-6 flex flex-col sm:flex-row gap-3">
                   <Link to="/prenota" className="btn-gold text-sm">Prenota una camera</Link>
-                  <EditablePhone
-                    className="btn-outline-light text-sm"
-                    linkClassName="btn-outline-light text-sm"
-                  />
+                  <a href="tel:+390303378060" className="btn-outline-light text-sm">
+                    +39 030 3378060
+                  </a>
                 </div>
               </div>
             </div>
@@ -363,10 +359,7 @@ export default function ClinicaPage() {
               className="font-sans text-base text-charcoal/60 mb-8" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/prenota" className="btn-gold">Contattaci</Link>
-              <EditablePhone
-                className="btn-outline-dark"
-                linkClassName="btn-outline-dark"
-              />
+              <a href="tel:+390303378060" className="btn-outline-dark">+39 030 3378060</a>
             </div>
           </div>
         </ScrollReveal>

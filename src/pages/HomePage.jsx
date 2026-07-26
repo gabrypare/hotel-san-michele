@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from '@dnd-kit/core'
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { RiArrowRightLine, RiArrowLeftLine, RiAddLine } from 'react-icons/ri'
-import EditablePhone from '../components/editor/EditablePhone'
 import ScrollReveal from '../components/ui/ScrollReveal'
 import EditableText from '../components/editor/EditableText'
 import SortableCard from '../components/editor/SortableCard'
@@ -496,7 +495,7 @@ export default function HomePage() {
           <EditableText tag="p" fileKey="home" path={['bookCta', 'body']} value={h.bookCta.body} multiline className="font-sans text-base text-cream/60 mb-10 leading-relaxed block" />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/prenota" className="btn-gold">Prenota Ora</Link>
-            <EditablePhone className="btn-outline-light" linkClassName="btn-outline-light" />
+            <a href="tel:+390303378060" className="btn-outline-light">+39 030 3378060</a>
           </div>
         </ScrollReveal>
       </section>
