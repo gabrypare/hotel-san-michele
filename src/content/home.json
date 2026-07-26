@@ -47,28 +47,28 @@
     "titleItalic": "San Michele",
     "cards": [
       {
-        "img": "/images/hotel-1.jpg",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785061951883-home-1785061950278.jpg",
         "title": "L'Hotel",
         "desc": "16 camere con vista sui vigneti della Franciacorta. Colazione, piscina, terrazza panoramica.",
         "href": "/hotel",
         "cta": "Vedi le camere"
       },
       {
-        "img": "/images/hotel-3.jpg",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062509833-home-1785062508201.jpg",
         "title": "Il Ristorante",
         "desc": "Cucina lombarda d'autore, ingredienti locali di stagione, carta dei vini Franciacorta DOCG.",
         "href": "/ristorante",
         "cta": "Scopri la storia"
       },
       {
-        "img": "/images/hotel-4.jpg",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785061980967-home-1785061979554.jpg",
         "title": "La Franciacorta",
         "desc": "Vigneti, abbazie, Lago d'Iseo e Brescia. La Franciacorta è tutta da esplorare.",
         "href": "/location",
         "cta": "Esplora il territorio"
       },
       {
-        "img": "/images/hotel-2.jpg",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062016316-home-1785062015721.jpg",
         "title": "La Clinica",
         "desc": "L'Istituto Clinico San Rocco di Ome — eccellenza medica a pochi passi dall'Hotel San Michele.",
         "href": "/clinica",
@@ -89,13 +89,13 @@
     "title": "Un assaggio del",
     "titleItalic": "San Michele",
     "photos": [
-      "/images/hotel-1.jpg",
-      "/images/hotel-2.jpg",
-      "/images/hotel-3.jpg",
-      "/images/hotel-4.jpg",
-      "/images/hotel-1.jpg",
-      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1784215927897-home-1784215939087.jpg",
-      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1784215933018-home-1784215945050.jpg"
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062856177-home-1785062855317.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062851241-home-1785062850366.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062756345-home-1785062755386.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062786252-home-1785062785015.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063424530-home-1785063422203.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063445260-home-1785063443653.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063457174-home-1785063455178.jpg"
     ]
   },
   "bookCta": {
