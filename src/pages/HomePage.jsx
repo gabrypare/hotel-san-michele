@@ -173,24 +173,28 @@ export default function HomePage() {
 
         {/* Controlli slide in edit mode */}
         {isEditMode && (
-          <div className="absolute top-28 right-4 z-30 flex gap-1">
-            <PhotoBtn fileKey="home" path={['hero', 'slides', slide, 'src']} label={`Cambia foto slide ${slide + 1}`} />
-            <button
-              onClick={() => updateField('home', ['hero', 'slides', slide, 'dark'], h.hero.slides[slide]?.dark === false)}
-              className="bg-charcoal/80 text-white text-[0.6rem] tracking-widest uppercase font-semibold px-2 py-1 shadow-lg hover:bg-charcoal transition-colors"
-            >
-              {h.hero.slides[slide]?.dark !== false ? '☀ Originale' : '◑ Scura'}
-            </button>
-            {h.hero.slides.length > 1 && (
+          <>
+            <div className="absolute top-28 right-4 z-30 flex gap-1">
+              <PhotoBtn fileKey="home" path={['hero', 'slides', slide, 'src']} label={`Slide ${slide + 1}`} />
+              {h.hero.slides.length > 1 && (
+                <button
+                  onClick={() => {
+                    removeItem('home', ['hero', 'slides'], slide)
+                    setSlide(s => Math.min(s, h.hero.slides.length - 2))
+                  }}
+                  className="bg-red-500 text-white text-[0.6rem] tracking-widest uppercase font-semibold px-2 py-1 shadow-lg hover:bg-red-600 transition-colors"
+                >✕ Elimina</button>
+              )}
+            </div>
+            <div className="absolute top-28 left-4 z-30">
               <button
-                onClick={() => {
-                  removeItem('home', ['hero', 'slides'], slide)
-                  setSlide(s => Math.min(s, h.hero.slides.length - 2))
-                }}
-                className="bg-red-500 text-white text-[0.6rem] tracking-widest uppercase font-semibold px-2 py-1 shadow-lg hover:bg-red-600 transition-colors"
-              >✕ Elimina slide</button>
-            )}
-          </div>
+                onClick={() => updateField('home', ['hero', 'slides', slide, 'dark'], h.hero.slides[slide]?.dark === false)}
+                className="bg-charcoal text-white text-[0.6rem] tracking-widest uppercase font-semibold px-3 py-1.5 shadow-lg hover:bg-charcoal/70 transition-colors"
+              >
+                {h.hero.slides[slide]?.dark !== false ? '☀ Colori originali' : '◑ Scurisci'}
+              </button>
+            </div>
+          </>
         )}
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
