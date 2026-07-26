@@ -3,8 +3,8 @@
     "label": "Dove soggiornare",
     "title": "L'Hotel",
     "titleItalic": "San Michele",
-    "subtitle": "16 camere immerse nei vigneti della Franciacorta",
-    "img": "/images/hotel-1.jpg"
+    "subtitle": "il tuo soggiorno immerso nei vigneti della Franciacorta",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785068031711-hotel-1785068030529.jpg"
   },
   "intro": {
     "sectionLabel": "L'ospitalità autentica",
@@ -18,7 +18,7 @@
     "sectionLabel": "Le camere",
     "title": "Scegli il tuo",
     "titleItalic": "spazio",
-    "subtitle": "Tre tipologie di camera, ognuna con carattere proprio. Clicca per scoprire i dettagli e prenotare.",
+    "subtitle": "Tre tipologie di camera, matrimoniale ,doppia oppure tripla",
     "featuredSlug": "camera-panoramica"
   },
   "amenities": {
@@ -26,12 +26,36 @@
     "title": "Tutto quello che",
     "titleItalic": "ti serve",
     "items": [
-      { "iconKey": "car",        "title": "Parcheggio gratuito",  "desc": "Ampio parcheggio privato riservato agli ospiti dell'hotel" },
-      { "iconKey": "cup",        "title": "Colazione inclusa",    "desc": "Buffet artigianale con prodotti locali servito ogni mattina" },
-      { "iconKey": "wifi",       "title": "Wi-Fi ovunque",        "desc": "Connessione ad alta velocità gratuita in tutta la struttura" },
-      { "iconKey": "sun",        "title": "Terrazza panoramica",  "desc": "Vista sui vigneti della Franciacorta dall'alba al tramonto" },
-      { "iconKey": "restaurant", "title": "Ristorante in loco",   "desc": "Cucina lombarda d'autore aperta a pranzo e cena ogni giorno" },
-      { "iconKey": "map",        "title": "Posizione strategica", "desc": "A 15 min da Brescia, 12 min dal Lago d'Iseo" }
+      {
+        "iconKey": "car",
+        "title": "Parcheggio gratuito",
+        "desc": "Ampio parcheggio privato riservato agli ospiti dell'hotel"
+      },
+      {
+        "iconKey": "cup",
+        "title": "Colazione inclusa",
+        "desc": "Buffet dolce e salato con prodotti artigianali servito ogni mattina"
+      },
+      {
+        "iconKey": "wifi",
+        "title": "Wi-Fi ovunque",
+        "desc": "Connessione gratuita in tutta la struttura"
+      },
+      {
+        "iconKey": "sun",
+        "title": "Terrazza panoramica",
+        "desc": "Vista sui vigneti della Franciacorta dall'alba al tramonto"
+      },
+      {
+        "iconKey": "restaurant",
+        "title": "Ristorante in loco",
+        "desc": "Cucina aperta a pranzo e cena ogni giorno"
+      },
+      {
+        "iconKey": "map",
+        "title": "Posizione strategica",
+        "desc": "A 15 min da Brescia, 12 min dal Lago d'Iseo"
+      }
     ]
   },
   "colazione": {
@@ -39,9 +63,9 @@
     "title": "La",
     "titleItalic": "Colazione",
     "titleSuffix": "del San Michele",
-    "para1": "Buffet artigianale in sala o in terrazza: pane fresco, marmellate fatte in casa, formaggi bresciani, salumi locali.",
-    "hours": "07:00 – 09:30 · inclusa in tutte le camere",
-    "img": "/images/hotel-3.jpg"
+    "para1": "Colazione a buffet da gustare in sala o in terrazza",
+    "hours": "07:30– 10:00 · inclusa in tutte le camere",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785067854373-hotel-1785067852013.jpg"
   },
   "cta": {
     "title": "Pronto a soggiornare?",
