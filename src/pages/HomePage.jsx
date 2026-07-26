@@ -171,10 +171,10 @@ export default function HomePage() {
             : 'bg-gradient-to-b from-forest-deeper/10 via-transparent to-forest-deeper/20'
         }`} />
 
-        {/* Controlli slide in edit mode */}
+        {/* Controlli slide in edit mode — fixed per superare navbar e overflow-hidden */}
         {isEditMode && (
           <>
-            <div className="absolute top-28 right-4 z-30 flex gap-1">
+            <div className="fixed right-4 z-[150] flex gap-1" style={{ top: 104 }}>
               <PhotoBtn fileKey="home" path={['hero', 'slides', slide, 'src']} label={`Slide ${slide + 1}`} />
               {h.hero.slides.length > 1 && (
                 <button
@@ -186,7 +186,7 @@ export default function HomePage() {
                 >✕ Elimina</button>
               )}
             </div>
-            <div className="absolute top-28 left-4 z-30">
+            <div className="fixed left-4 z-[150]" style={{ top: 104 }}>
               <button
                 onClick={() => updateField('home', ['hero', 'slides', slide, 'dark'], h.hero.slides[slide]?.dark === false)}
                 className="bg-charcoal text-white text-[0.6rem] tracking-widest uppercase font-semibold px-3 py-1.5 shadow-lg hover:bg-charcoal/70 transition-colors"
