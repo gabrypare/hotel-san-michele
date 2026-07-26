@@ -7,23 +7,28 @@
     "slides": [
       {
         "src": "/images/hotel-1.jpg",
-        "alt": "Hotel San Michele — esterno"
+        "alt": "Hotel San Michele — esterno",
+        "dark": true
       },
       {
         "src": "/images/hotel-2.jpg",
-        "alt": "Terrazza panoramica"
+        "alt": "Terrazza panoramica",
+        "dark": true
       },
       {
         "src": "/images/hotel-3.jpg",
-        "alt": "Hotel Ristorante San Michele"
+        "alt": "Hotel Ristorante San Michele",
+        "dark": true
       },
       {
         "src": "/images/hotel-4.jpg",
-        "alt": "Vista Franciacorta"
+        "alt": "Vista Franciacorta",
+        "dark": true
       },
       {
         "src": "/images/hotel-3.jpg",
-        "alt": "Nuova slide"
+        "alt": "Nuova slide",
+        "dark": true
       }
     ]
   },

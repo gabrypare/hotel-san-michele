@@ -165,12 +165,22 @@ export default function HomePage() {
           </motion.div>
         </AnimatePresence>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-forest-deeper/65 via-forest-deeper/45 to-forest-deeper/80 pointer-events-none" />
+        <div className={`absolute inset-0 pointer-events-none transition-opacity duration-700 ${
+          h.hero.slides[slide]?.dark !== false
+            ? 'bg-gradient-to-b from-forest-deeper/65 via-forest-deeper/45 to-forest-deeper/80'
+            : 'bg-gradient-to-b from-forest-deeper/10 via-transparent to-forest-deeper/20'
+        }`} />
 
         {/* Controlli slide in edit mode */}
         {isEditMode && (
           <div className="absolute top-28 right-4 z-30 flex gap-1">
             <PhotoBtn fileKey="home" path={['hero', 'slides', slide, 'src']} label={`Cambia foto slide ${slide + 1}`} />
+            <button
+              onClick={() => updateField('home', ['hero', 'slides', slide, 'dark'], h.hero.slides[slide]?.dark === false)}
+              className="bg-charcoal/80 text-white text-[0.6rem] tracking-widest uppercase font-semibold px-2 py-1 shadow-lg hover:bg-charcoal transition-colors"
+            >
+              {h.hero.slides[slide]?.dark !== false ? '☀ Originale' : '◑ Scura'}
+            </button>
             {h.hero.slides.length > 1 && (
               <button
                 onClick={() => {
