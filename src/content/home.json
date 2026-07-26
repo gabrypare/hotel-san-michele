@@ -3,25 +3,42 @@
     "label": "Franciacorta · Ome · Brescia",
     "titleLine1": "Hotel Ristorante",
     "titleLine2": "San Michele",
-    "quote": "Dove la storia della Franciacorta incontra l'eccellenza",
+    "quote": "Vieni a scoprire la Franciacorta,soggiorna con noi e lasciati conquistare",
     "slides": [
-      { "src": "/images/hotel-1.jpg", "alt": "Hotel San Michele — esterno" },
-      { "src": "/images/hotel-2.jpg", "alt": "Terrazza panoramica" },
-      { "src": "/images/hotel-3.jpg", "alt": "Hotel Ristorante San Michele" },
-      { "src": "/images/hotel-4.jpg", "alt": "Vista Franciacorta" }
+      {
+        "src": "/images/hotel-1.jpg",
+        "alt": "Hotel San Michele — esterno"
+      },
+      {
+        "src": "/images/hotel-2.jpg",
+        "alt": "Terrazza panoramica"
+      },
+      {
+        "src": "/images/hotel-3.jpg",
+        "alt": "Hotel Ristorante San Michele"
+      },
+      {
+        "src": "/images/hotel-4.jpg",
+        "alt": "Vista Franciacorta"
+      },
+      {
+        "src": "/images/hotel-3.jpg",
+        "alt": "Nuova slide"
+      }
     ]
   },
   "intro": {
     "sectionLabel": "La nostra storia",
     "title": "Nel cuore della",
     "titleItalic": "Franciacorta",
-    "para1": "Da oltre quarant'anni, il San Michele accoglie i propri ospiti tra i vigneti di Ome. Una struttura familiare dove il calore dell'ospitalità autentica si fonde con un'attenzione costante all'eccellenza: cucina del territorio, camere panoramiche, e la magia del paesaggio franciacortino.",
-    "para2": "Non semplicemente un albergo: un'esperienza nel cuore della denominazione spumantistica più prestigiosa d'Italia.",
-    "img": "/images/hotel-1.jpg",
+    "para1": "Il San Michele accoglie i propri ospiti tra i vigneti di Ome. Una struttura familiare dove il calore dell'ospitalità autentica si fonde con un'attenzione costante alla qualità : cucina del territorio, camere panoramiche e la magia del paesaggio circostante.",
+    "para2": "Nella parte collinare della Franciacorta a pochi passi dalle migliori cantine è il posto giusto per chi desidera avere  un assaggio del nostro territorio",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063608652-home-1785063606900.jpg",
     "stats": [
-      { "n": "40+", "l": "Anni di ospitalità" },
-      { "n": "16",  "l": "Camere & suite" },
-      { "n": "120", "l": "Posti a sedere" }
+      {
+        "n": "",
+        "l": ""
+      }
     ]
   },
   "esperienze": {
@@ -29,17 +46,41 @@
     "title": "Cosa ti aspetta al",
     "titleItalic": "San Michele",
     "cards": [
-      { "img": "/images/hotel-1.jpg", "title": "L'Hotel",         "desc": "16 camere con vista sui vigneti della Franciacorta. Colazione, piscina, terrazza panoramica.",   "href": "/hotel",      "cta": "Vedi le camere" },
-      { "img": "/images/hotel-3.jpg", "title": "Il Ristorante",   "desc": "Cucina lombarda d'autore, ingredienti locali di stagione, carta dei vini Franciacorta DOCG.",      "href": "/ristorante", "cta": "Scopri la storia" },
-      { "img": "/images/hotel-4.jpg", "title": "La Franciacorta", "desc": "Vigneti, abbazie, Lago d'Iseo e Brescia. La Franciacorta è tutta da esplorare.",                  "href": "/location",   "cta": "Esplora il territorio" },
-      { "img": "/images/hotel-2.jpg", "title": "La Clinica",      "desc": "L'Istituto Clinico San Rocco di Ome — eccellenza medica a pochi passi dall'Hotel San Michele.",   "href": "/clinica",    "cta": "Scopri la clinica" }
+      {
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063589215-home-1785063587759.jpg",
+        "title": "L'Hotel",
+        "desc": "16 camere con vista sui vigneti della Franciacorta. Colazione, piscina, terrazza panoramica.",
+        "href": "/hotel",
+        "cta": "Vedi le camere"
+      },
+      {
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063510911-home-1785063509355.jpg",
+        "title": "Il Ristorante",
+        "desc": "Cucina lombarda d'autore, ingredienti locali di stagione, carta dei vini Franciacorta DOCG.",
+        "href": "/ristorante",
+        "cta": "Scopri la storia"
+      },
+      {
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785061980967-home-1785061979554.jpg",
+        "title": "La Franciacorta",
+        "desc": "Vigneti, abbazie, Lago d'Iseo e Brescia. La Franciacorta è tutta da esplorare.",
+        "href": "/location",
+        "cta": "Esplora il territorio"
+      },
+      {
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062016316-home-1785062015721.jpg",
+        "title": "La Clinica",
+        "desc": "L'Istituto Clinico San Rocco di Ome — eccellenza medica a pochi passi dall'Hotel San Michele.",
+        "href": "/clinica",
+        "cta": "Scopri la clinica"
+      }
     ]
   },
   "menuTeaser": {
     "sectionLabel": "Cucina del territorio",
     "title": "Il Menù",
     "titleItalic": "di Stagione",
-    "para1": "Risotto al Franciacorta DOCG, casoncelli alla bergamasca, filetto al tartufo, tiramisù artigianale. Un percorso nella tradizione lombarda interpretata con tecnica moderna.",
+    "para1": "La Cucina dell'hotel è attenta alla stagionalità e predilige fornitori locali ,  paste fresche , carni e selvaggina e pesce del nostro lago .",
     "para2": "Tutti gli allergeni sono chiaramente indicati su ogni piatto secondo il Reg. UE 1169/2011. Il menù include anche la carta dei vini Franciacorta selezionati.",
     "img": "/images/hotel-2.jpg"
   },
@@ -48,18 +89,20 @@
     "title": "Un assaggio del",
     "titleItalic": "San Michele",
     "photos": [
-      "/images/hotel-1.jpg",
-      "/images/hotel-2.jpg",
-      "/images/hotel-3.jpg",
-      "/images/hotel-4.jpg",
-      "/images/hotel-1.jpg"
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062856177-home-1785062855317.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062851241-home-1785062850366.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062756345-home-1785062755386.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062786252-home-1785062785015.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063424530-home-1785063422203.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063445260-home-1785063443653.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064796367-home-1785064794241.jpg"
     ]
   },
   "bookCta": {
     "sectionLabel": "Pronto a venirci a trovare?",
     "title": "Prenota il tuo",
     "titleItalic": "soggiorno",
-    "body": "Contattaci direttamente per le migliori tariffe disponibili. Il nostro team risponde entro 24 ore.",
+    "body": "Contattaci direttamente per le migliori tariffe disponibili. Il nostro team risponderà al più presto",
     "img": "/images/hotel-2.jpg"
   }
 }
