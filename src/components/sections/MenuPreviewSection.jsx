@@ -26,7 +26,7 @@ export default function MenuPreviewSection() {
             </div>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.1}>
-            <h2 className="font-serif text-4xl lg:text-5xl text-cream mb-4">
+            <h2 className="font-script text-4xl lg:text-5xl text-cream mb-4">
               Il Menù<br />
               <span className="italic text-gold-light">Bozza di Stagione</span>
             </h2>

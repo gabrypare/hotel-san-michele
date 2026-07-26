@@ -8,6 +8,12 @@
       "price": "da €85 / notte",
       "size": "22 m²",
       "guests": "2 ospiti",
+      "cardDesc": "Arredata con materiali naturali, offre tutto il necessario per un soggiorno rilassante.",
+      "cardFeatures": [
+        "Letto matrimoniale o twin",
+        "Bagno privato con doccia",
+        "Colazione inclusa"
+      ],
       "desc": "Arredata con materiali naturali, offre tutto il necessario per un soggiorno rilassante. Vista sul giardino, bagno privato con doccia, aria condizionata e Wi-Fi.",
       "features": [
         "Letto matrimoniale o twin",
@@ -33,6 +39,12 @@
       "price": "da €110 / notte",
       "size": "28 m²",
       "guests": "2 ospiti",
+      "cardDesc": "Le finestre si aprono direttamente sui vigneti della Franciacorta. Balcone privato e mini-bar.",
+      "cardFeatures": [
+        "Letto matrimoniale king-size",
+        "Balcone privato vista vigneti",
+        "Colazione inclusa"
+      ],
       "desc": "Le finestre si aprono direttamente sui vigneti della Franciacorta. Balcone privato, mini-bar e colazione inclusa ogni mattina.",
       "features": [
         "Letto matrimoniale king-size",
@@ -57,6 +69,12 @@
       "price": "da €170 / notte",
       "size": "45 m²",
       "guests": "2 ospiti",
+      "cardDesc": "Zona living separata, terrazza privata panoramica e vasca idromassaggio.",
+      "cardFeatures": [
+        "Zona living separata",
+        "Terrazza privata panoramica",
+        "Franciacorta DOCG di benvenuto"
+      ],
       "desc": "Zona living separata, terrazza privata con vista a 180° sui colli, bagno in marmo con vasca idromassaggio. Franciacorta DOCG di benvenuto incluso.",
       "features": [
         "Zona living separata",

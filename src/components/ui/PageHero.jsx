@@ -36,7 +36,7 @@ export default function PageHero({ img, label, title, titleItalic, subtitle, bac
         )}
 
         <motion.h1
-          className="font-serif text-4xl sm:text-5xl md:text-6xl text-cream leading-tight"
+          className="font-script text-4xl sm:text-5xl md:text-6xl text-cream leading-tight"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45, duration: 1, ease: [0.16, 1, 0.3, 1] }}

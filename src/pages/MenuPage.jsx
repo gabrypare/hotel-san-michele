@@ -9,9 +9,10 @@ import ScrollReveal from '../components/ui/ScrollReveal'
 import { MENU, ALLERGENS, CATEGORY_KEYS } from '../data/menuData'
 import { RiDownloadLine, RiArrowLeftLine, RiAwardLine } from 'react-icons/ri'
 import { useEditMode } from '../context/EditModeContext'
-import SortableCard  from '../components/editor/SortableCard'
-import AddCardButton from '../components/editor/AddCardButton'
-import EditableText  from '../components/editor/EditableText'
+import SortableCard   from '../components/editor/SortableCard'
+import AddCardButton  from '../components/editor/AddCardButton'
+import EditableText   from '../components/editor/EditableText'
+import EditableImage  from '../components/editor/EditableImage'
 
 const NEW_DISH = { name: 'Nuovo Piatto', description: 'Descrizione del piatto.', price: 0, allergens: [], photo: '', signature: false }
 
@@ -19,17 +20,14 @@ export default function MenuPage() {
   const [active, setActive]   = useState('antipasti')
   const [legend, setLegend]   = useState(false)
   const [loading, setLoading] = useState(false)
-  const { isEditMode, content, reorderItems, addItem, removeItem, duplicateItem } = useEditMode()
+  const { isEditMode, content, updateField, reorderItems, addItem, removeItem, duplicateItem } = useEditMode()
 
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
 
   // In edit mode, read from context; otherwise use static import
   const getCategory = (key) => {
-    if (isEditMode) {
-      const cats = content.menu.categories
-      return cats.find(c => c.key === key) || MENU[key]
-    }
-    return MENU[key]
+    const cats = content.menu.categories
+    return cats.find(c => c.key === key) || MENU[key]
   }
   const getCategoryIndex = (key) => content.menu.categories.findIndex(c => c.key === key)
 
@@ -84,21 +82,21 @@ export default function MenuPage() {
       pdf.line(M, y, W - M, y)
       y += 10
 
-      /* ── CATEGORIES ── */
-      CATEGORY_KEYS.forEach(key => {
+      /* ── CATEGORIES — usa i dati aggiornati dal context ── */
+      content.menu.categories.forEach(cat => {
         guard(18)
 
         /* category title */
         pdf.setFont('times', 'bold')
         pdf.setFontSize(13)
         pdf.setTextColor(42, 34, 24)
-        pdf.text(MENU[key].label, M, y)
+        pdf.text(cat.label, M, y)
         y += 5
 
         pdf.setFont('times', 'italic')
         pdf.setFontSize(8.5)
         pdf.setTextColor(139, 115, 85)
-        pdf.text(MENU[key].subtitle, M, y)
+        pdf.text(cat.subtitle || '', M, y)
         y += 2
 
         pdf.setDrawColor(232, 208, 151)
@@ -107,7 +105,7 @@ export default function MenuPage() {
         y += 6
 
         /* items */
-        MENU[key].items.forEach(item => {
+        cat.items.forEach(item => {
           const nameText  = item.name + (item.signature ? '  ★' : '')
           const nameLines = pdf.splitTextToSize(nameText, CW - 18)
           const descLines = pdf.splitTextToSize(item.description, CW - 18)
@@ -228,7 +226,7 @@ export default function MenuPage() {
                   <span className="w-6 h-px bg-gold" />
                   <span className="section-label text-gold">{category.subtitle}</span>
                 </div>
-                <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-cream leading-tight drop-shadow-lg">
+                <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-cream leading-tight drop-shadow-lg">
                   {category.label}
                 </h1>
               </motion.div>
@@ -317,11 +315,15 @@ export default function MenuPage() {
                           transition={{ delay: isEditMode ? 0 : idx * 0.06, duration: 0.45 }}
                           className={`group py-6 flex items-start gap-5`}
                         >
-                          {item.photo && (
-                            <div className={`shrink-0 overflow-hidden rounded-sm ${item.signature ? 'w-24 h-24' : 'w-[72px] h-[72px]'}`}>
-                              <img src={item.photo} alt={item.name}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                            </div>
+                          {(item.photo || isEditMode) && (
+                            <EditableImage
+                              src={item.photo}
+                              fileKey="menu"
+                              path={['categories', catIdx, 'items', idx, 'photo']}
+                              sizePath={['categories', catIdx, 'items', idx, 'photoSize']}
+                              size={item.photoSize || (item.signature ? 96 : 72)}
+                              className="group-hover:scale-105 transition-transform duration-500"
+                            />
                           )}
                           <div className="flex-1 min-w-0">
                             <div className="flex items-start justify-between gap-4 mb-1.5">
@@ -342,7 +344,38 @@ export default function MenuPage() {
                             </div>
                             <EditableText tag="p" fileKey="menu" path={['categories', catIdx, 'items', idx, 'description']} value={item.description}
                               multiline className="font-sans text-sm text-charcoal/60 leading-relaxed mb-2.5 block" />
-                            {item.allergens?.length > 0 && (
+                            {isEditMode ? (
+                              <div className="mt-2">
+                                <p className="font-sans text-[0.58rem] text-charcoal/35 tracking-wide mb-1.5">Allergeni (clicca per aggiungere/rimuovere):</p>
+                                <div className="flex flex-wrap gap-1">
+                                  {Object.entries(ALLERGENS).map(([key, a]) => {
+                                    const active = item.allergens?.includes(key)
+                                    return (
+                                      <button
+                                        key={key}
+                                        onClick={() => {
+                                          const current = item.allergens || []
+                                          const next = active
+                                            ? current.filter(x => x !== key)
+                                            : [...current, key].sort((a, b) => ALLERGENS[a].id - ALLERGENS[b].id)
+                                          updateField('menu', ['categories', catIdx, 'items', idx, 'allergens'], next)
+                                        }}
+                                        className={`inline-flex items-center gap-1 font-sans text-[0.58rem] px-1.5 py-0.5 rounded-full border transition-all duration-150 cursor-pointer ${
+                                          active
+                                            ? 'opacity-100 ring-1 ring-offset-1'
+                                            : 'opacity-30 hover:opacity-60'
+                                        }`}
+                                        style={active ? { borderColor: a.color, backgroundColor: a.bg, color: a.color, ringColor: a.color } : { borderColor: '#ccc', color: '#999' }}
+                                        title={a.label}
+                                      >
+                                        <span className="font-bold">{a.id}</span>
+                                        <span>{a.label}</span>
+                                      </button>
+                                    )
+                                  })}
+                                </div>
+                              </div>
+                            ) : item.allergens?.length > 0 && (
                               <div className="flex items-center gap-1.5 flex-wrap">
                                 <span className="font-sans text-[0.58rem] text-charcoal/35 tracking-wide mr-0.5">Allergeni:</span>
                                 {item.allergens.map(a => <AllergenBadge key={a} type={a} size="sm" />)}

@@ -52,7 +52,7 @@ export default function HotelSection() {
               </div>
             </ScrollReveal>
             <ScrollReveal direction="left" delay={0.1}>
-              <h2 className="font-serif text-4xl lg:text-5xl text-cream leading-tight">
+              <h2 className="font-script text-4xl lg:text-5xl text-cream leading-tight">
                 Le Camere &<br />
                 <span className="italic text-gold-light">Suite</span>
               </h2>

@@ -57,7 +57,7 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-24 flex items-center justify-between">
 
           {/* Logo */}
           <Link to="/" onClick={() => setOpen(false)}>

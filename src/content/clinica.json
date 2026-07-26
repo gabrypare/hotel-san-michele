@@ -31,21 +31,9 @@
     "title": "Tutto quello che serve,",
     "titleItalic": "a tre minuti",
     "items": [
-      {
-        "icon": "heart",
-        "title": "Vicinanza alla clinica",
-        "desc": "A soli 1,2 km dall'Istituto Clinico San Rocco. Tre minuti in auto, comodità assoluta per famiglie e pazienti."
-      },
-      {
-        "icon": "restaurant",
-        "title": "Cucina del territorio",
-        "desc": "Il ristorante propone la cucina lombarda d'autore. Un momento di qualità anche durante i giorni più impegnativi."
-      },
-      {
-        "icon": "taxi",
-        "title": "Navetta su richiesta",
-        "desc": "Il servizio navetta hotel–clinica è disponibile per tutti gli ospiti. Basta avvisare la reception al check-in."
-      }
+      { "icon": "heart",      "title": "Vicinanza alla clinica",  "desc": "A soli 1,2 km dall'Istituto Clinico San Rocco. Tre minuti in auto, comodità assoluta per famiglie e pazienti." },
+      { "icon": "restaurant", "title": "Cucina del territorio",   "desc": "Il ristorante propone la cucina lombarda d'autore. Un momento di qualità anche durante i giorni più impegnativi." },
+      { "icon": "taxi",       "title": "Navetta su richiesta",    "desc": "Il servizio navetta hotel–clinica è disponibile per tutti gli ospiti. Basta avvisare la reception al check-in." }
     ]
   },
   "dove": {

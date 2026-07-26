@@ -29,7 +29,7 @@ export default function LocationSection() {
             </div>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.1}>
-            <h2 className="font-serif text-4xl lg:text-5xl text-forest-dark mb-5">
+            <h2 className="font-script text-4xl lg:text-5xl text-forest-dark mb-5">
               La <span className="italic text-gold">Franciacorta</span>
             </h2>
           </ScrollReveal>

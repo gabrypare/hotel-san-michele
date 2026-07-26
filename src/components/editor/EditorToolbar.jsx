@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { flushSync } from 'react-dom'
 import { useEditMode } from '../../context/EditModeContext'
 import { RiSaveLine, RiCloseLine, RiEdit2Line, RiCheckLine, RiErrorWarningLine, RiLoaderLine } from 'react-icons/ri'
 
@@ -69,12 +70,54 @@ function PasswordModal({ onClose }) {
   )
 }
 
+/* ── Success overlay ── */
+function SuccessBanner({ onDone }) {
+  return (
+    <div className="fixed inset-0 z-[400] bg-forest-deeper/90 backdrop-blur-sm flex items-center justify-center">
+      <div className="text-center px-8">
+        <div className="w-16 h-16 rounded-full bg-emerald-400/20 flex items-center justify-center mx-auto mb-5">
+          <RiCheckLine size={32} className="text-emerald-400" />
+        </div>
+        <h2 className="font-display italic text-3xl text-cream mb-2">Sito aggiornato con successo</h2>
+        <p className="font-sans text-sm text-cream/50">Le modifiche sono state salvate. Uscita dalla modalità modifica...</p>
+      </div>
+    </div>
+  )
+}
+
 /* ── Toolbar ── */
 export default function EditorToolbar() {
   const { isEditMode, isDirty, saveStatus, save, deactivate } = useEditMode()
   const [showModal, setShowModal] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
   const [clickCount, setClickCount] = useState(0)
   const timerRef = { current: null }
+
+  /* Auto-exit dopo salvataggio riuscito */
+  const handleSave = async () => {
+    /* Forza il blur sul campo attivo così l'onBlur salva il testo prima di inviare */
+    const active = document.activeElement
+    if (active?.getAttribute('data-editable')) {
+      flushSync(() => { active.blur() })
+    }
+    await save()
+  }
+
+  /* Mostra banner successo e poi esce */
+  if (saveStatus === 'saved' && !showSuccess) {
+    setShowSuccess(true)
+    setTimeout(() => {
+      setShowSuccess(false)
+      deactivate()
+    }, 2500)
+  }
+
+  const handleExit = () => {
+    if (isDirty) {
+      if (!window.confirm('Hai modifiche non salvate. Vuoi uscire senza salvare?')) return
+    }
+    deactivate()
+  }
 
   const handleLogoClick = () => {
     setClickCount(c => {
@@ -92,7 +135,6 @@ export default function EditorToolbar() {
   if (!isEditMode) {
     return (
       <>
-        {/* Hidden trigger — inject via URL param ?edit or 5-click on logo */}
         <div
           data-editor-trigger
           onClick={handleLogoClick}
@@ -104,64 +146,62 @@ export default function EditorToolbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[200] bg-forest-deeper shadow-xl" style={{ height: 56 }}>
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 h-full flex items-center justify-between gap-4">
+    <>
+      {showSuccess && <SuccessBanner />}
+      <div className="fixed top-0 left-0 right-0 z-[200] bg-forest-deeper shadow-xl" style={{ height: 56 }}>
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 h-full flex items-center justify-between gap-4">
 
-        {/* Left */}
-        <div className="flex items-center gap-3">
-          <RiEdit2Line size={16} className="text-gold shrink-0" />
-          <span className="font-sans text-[0.7rem] tracking-[0.22em] uppercase text-cream/70 hidden sm:block">
-            Modalità Modifica
-          </span>
-          {isDirty && (
-            <span className="font-sans text-[0.65rem] text-gold/70 hidden sm:block">
-              — modifiche non salvate
+          {/* Left */}
+          <div className="flex items-center gap-3">
+            <RiEdit2Line size={16} className="text-gold shrink-0" />
+            <span className="font-sans text-[0.7rem] tracking-[0.22em] uppercase text-cream/70 hidden sm:block">
+              Modalità Modifica
             </span>
-          )}
-        </div>
+            {isDirty && (
+              <span className="font-sans text-[0.65rem] text-gold/70 hidden sm:block">
+                — modifiche non salvate
+              </span>
+            )}
+          </div>
 
-        {/* Center hint */}
-        <p className="font-sans text-[0.62rem] text-cream/30 tracking-wide hidden lg:block">
-          Passa il cursore su testi e riquadri per modificarli · trascina ≡ per riordinare
-        </p>
+          {/* Center hint */}
+          <p className="font-sans text-[0.62rem] text-cream/30 tracking-wide hidden lg:block">
+            Passa il cursore su testi e riquadri per modificarli · trascina per riordinare
+          </p>
 
-        {/* Right */}
-        <div className="flex items-center gap-2 shrink-0">
-          {saveStatus === 'saving' && (
-            <span className="flex items-center gap-1.5 font-sans text-xs text-gold animate-pulse">
-              <RiLoaderLine size={14} className="animate-spin" /> Salvataggio...
-            </span>
-          )}
-          {saveStatus === 'saved' && (
-            <span className="flex items-center gap-1.5 font-sans text-xs text-emerald-400">
-              <RiCheckLine size={14} /> Salvato — deploy in corso (~30s)
-            </span>
-          )}
-          {saveStatus === 'error' && (
-            <span className="flex items-center gap-1.5 font-sans text-xs text-red-400">
-              <RiErrorWarningLine size={14} /> Errore — riprova
-            </span>
-          )}
+          {/* Right */}
+          <div className="flex items-center gap-2 shrink-0">
+            {saveStatus === 'saving' && (
+              <span className="flex items-center gap-1.5 font-sans text-xs text-gold animate-pulse">
+                <RiLoaderLine size={14} className="animate-spin" /> Salvataggio...
+              </span>
+            )}
+            {saveStatus === 'error' && (
+              <span className="flex items-center gap-1.5 font-sans text-xs text-red-400">
+                <RiErrorWarningLine size={14} /> Errore — riprova
+              </span>
+            )}
 
-          <button
-            onClick={save}
-            disabled={!isDirty || saveStatus === 'saving'}
-            className="flex items-center gap-1.5 px-4 py-2 bg-gold text-forest font-sans text-[0.7rem] tracking-[0.18em] uppercase font-medium hover:bg-gold-light transition-colors disabled:opacity-35 disabled:cursor-not-allowed"
-          >
-            <RiSaveLine size={13} />
-            Salva
-          </button>
+            <button
+              onClick={handleSave}
+              disabled={!isDirty || saveStatus === 'saving'}
+              className="flex items-center gap-1.5 px-4 py-2 bg-gold text-forest font-sans text-[0.7rem] tracking-[0.18em] uppercase font-medium hover:bg-gold-light transition-colors disabled:opacity-35 disabled:cursor-not-allowed"
+            >
+              <RiSaveLine size={13} />
+              Salva
+            </button>
 
-          <button
-            onClick={deactivate}
-            className="flex items-center gap-1.5 px-3 py-2 border border-cream/20 text-cream/60 font-sans text-[0.7rem] tracking-[0.18em] uppercase hover:border-cream/50 hover:text-cream transition-colors"
-          >
-            <RiCloseLine size={14} />
-            Esci
-          </button>
+            <button
+              onClick={handleExit}
+              className="flex items-center gap-1.5 px-3 py-2 border border-cream/20 text-cream/60 font-sans text-[0.7rem] tracking-[0.18em] uppercase hover:border-cream/50 hover:text-cream transition-colors"
+            >
+              <RiCloseLine size={14} />
+              Esci
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

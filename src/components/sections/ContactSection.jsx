@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import ScrollReveal from '../ui/ScrollReveal'
 import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiTimeLine } from 'react-icons/ri'
+import EditablePhone from '../editor/EditablePhone'
 
 const INITIAL = {
   nome: '', email: '', telefono: '',
@@ -37,7 +38,7 @@ export default function ContactSection() {
             </div>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.1}>
-            <h2 className="font-serif text-4xl lg:text-5xl text-forest-dark">
+            <h2 className="font-script text-4xl lg:text-5xl text-forest-dark">
               Prenota o<br />
               <span className="italic text-gold">Contattaci</span>
             </h2>
@@ -69,9 +70,10 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-sans text-xs tracking-[0.2em] uppercase text-stone mb-1">Telefono</p>
-                    <a href="tel:+390306527167" className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300">
-                      +39 030 652 7167
-                    </a>
+                    <EditablePhone
+                      className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300"
+                      linkClassName="hover:text-gold transition-colors duration-300"
+                    />
                   </div>
                 </li>
                 <li className="flex gap-4 items-center">

@@ -28,7 +28,7 @@ export default function AboutSection() {
           {/* Text column */}
           <div>
             <ScrollReveal direction="left" delay={0.1}>
-              <h2 className="font-serif text-4xl lg:text-5xl text-forest-dark leading-tight mb-6">
+              <h2 className="font-script text-4xl lg:text-5xl text-forest-dark leading-tight mb-6">
                 Nel cuore della<br />
                 <span className="italic text-gold">Franciacorta</span>
               </h2>
@@ -74,7 +74,7 @@ export default function AboutSection() {
           {STATS.map((stat, i) => (
             <ScrollReveal key={stat.label} direction="up" delay={0.1 * i}>
               <div className={`text-center px-6 ${i < STATS.length - 1 ? 'border-r border-gold/20' : ''}`}>
-                <p className="font-serif text-4xl lg:text-5xl text-forest mb-2">{stat.value}</p>
+                <p className="font-script text-4xl lg:text-5xl text-forest mb-2">{stat.value}</p>
                 <p className="font-sans text-[0.72rem] tracking-[0.2em] uppercase text-stone">
                   {stat.label}
                 </p>

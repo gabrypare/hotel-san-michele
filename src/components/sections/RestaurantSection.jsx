@@ -49,7 +49,7 @@ export default function RestaurantSection() {
             </ScrollReveal>
 
             <ScrollReveal direction="right" delay={0.15}>
-              <h2 className="font-serif text-4xl lg:text-5xl text-forest-dark leading-tight mb-6">
+              <h2 className="font-script text-4xl lg:text-5xl text-forest-dark leading-tight mb-6">
                 Il Ristorante<br />
                 <span className="italic text-gold">San Michele</span>
               </h2>
