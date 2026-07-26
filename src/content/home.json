@@ -33,7 +33,7 @@
     "titleItalic": "Franciacorta",
     "para1": "Il San Michele accoglie i propri ospiti tra i vigneti di Ome. Una struttura familiare dove il calore dell'ospitalità autentica si fonde con un'attenzione costante alla qualità : cucina del territorio, camere panoramiche e la magia del paesaggio circostante.",
     "para2": "Nella parte collinare della Franciacorta a pochi passi dalle migliori cantine è il posto giusto per chi desidera avere  un assaggio del nostro territorio",
-    "img": "/images/hotel-1.jpg",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063608652-home-1785063606900.jpg",
     "stats": [
       {
         "n": "",
@@ -47,14 +47,14 @@
     "titleItalic": "San Michele",
     "cards": [
       {
-        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785061951883-home-1785061950278.jpg",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063589215-home-1785063587759.jpg",
         "title": "L'Hotel",
         "desc": "16 camere con vista sui vigneti della Franciacorta. Colazione, piscina, terrazza panoramica.",
         "href": "/hotel",
         "cta": "Vedi le camere"
       },
       {
-        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062509833-home-1785062508201.jpg",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063510911-home-1785063509355.jpg",
         "title": "Il Ristorante",
         "desc": "Cucina lombarda d'autore, ingredienti locali di stagione, carta dei vini Franciacorta DOCG.",
         "href": "/ristorante",
