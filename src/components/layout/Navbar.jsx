@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri'
 import SanMicheleLogo from '../ui/SanMicheleLogo'
 import navJson from '../../content/nav.json'
+import { useEditMode } from '../../context/EditModeContext'
 
 const NAV = navJson.items
 
@@ -13,6 +14,7 @@ export default function Navbar() {
   const location = useLocation()
   const navigate = useNavigate()
   const isHome   = location.pathname === '/'
+  const { isEditMode } = useEditMode()
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 60)
@@ -52,7 +54,8 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${solid ? 'bg-cream shadow-sm' : 'bg-transparent'}`}
+        className={`fixed left-0 right-0 z-50 transition-all duration-500 ${solid ? 'bg-cream shadow-sm' : 'bg-transparent'}`}
+        style={{ top: isEditMode ? 56 : 0 }}
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}

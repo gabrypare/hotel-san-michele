@@ -55,7 +55,7 @@ function AppInner() {
     <>
       <EditorToolbar />
       <ScrollTop />
-      <div className={isEditMode ? 'pt-14' : ''}>
+      <div style={{ paddingTop: isEditMode ? 152 : 0 }}>
         <Navbar />
         <AnimatedRoutes />
         <Footer />
