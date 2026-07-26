@@ -171,10 +171,10 @@ export default function HomePage() {
             : 'bg-gradient-to-b from-forest-deeper/10 via-transparent to-forest-deeper/20'
         }`} />
 
-        {/* Controlli slide in edit mode — fixed per superare navbar e overflow-hidden */}
+        {/* Controlli slide in edit mode */}
         {isEditMode && (
-          <>
-            <div className="fixed right-4 z-[150] flex gap-1" style={{ top: 160 }}>
+          <div className="fixed right-4 z-[150] flex flex-col gap-1 items-end" style={{ top: 160 }}>
+            <div className="flex gap-1">
               <PhotoBtn fileKey="home" path={['hero', 'slides', slide, 'src']} label={`Slide ${slide + 1}`} />
               {h.hero.slides.length > 1 && (
                 <button
@@ -186,15 +186,13 @@ export default function HomePage() {
                 >✕ Elimina</button>
               )}
             </div>
-            <div className="fixed left-4 z-[150]" style={{ top: 160 }}>
-              <button
-                onClick={() => updateField('home', ['hero', 'slides', slide, 'dark'], h.hero.slides[slide]?.dark === false)}
-                className="bg-charcoal text-white text-[0.6rem] tracking-widest uppercase font-semibold px-3 py-1.5 shadow-lg hover:bg-charcoal/70 transition-colors"
-              >
-                {h.hero.slides[slide]?.dark !== false ? '☀ Colori originali' : '◑ Scurisci'}
-              </button>
-            </div>
-          </>
+            <button
+              onClick={() => updateField('home', ['hero', 'slides', slide, 'dark'], h.hero.slides[slide]?.dark === false)}
+              className="bg-gold text-forest-dark text-[0.6rem] tracking-widest uppercase font-semibold px-3 py-1 shadow-lg hover:bg-gold-light transition-colors w-full text-center"
+            >
+              {h.hero.slides[slide]?.dark !== false ? '☀ Colori originali' : '◑ Scurisci'}
+            </button>
+          </div>
         )}
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
