@@ -17,7 +17,7 @@
     ],
     "images": [
       "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066388900-ristorante-1785066386655.jpg",
-      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064896794-ristorante-1785064894809.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239901564-ristorante-1785239899366.jpg",
       "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064907076-ristorante-1785064905163.jpg"
     ]
   },
@@ -44,28 +44,28 @@
     ]
   },
   "signature": {
-    "sectionLabel": "I nostri piatti firma",
-    "title": "Le",
-    "titleItalic": "Specialità",
-    "titleSuffix": "del San Michele",
+    "sectionLabel": "Il Ristorante",
+    "title": "",
+    "titleItalic": "del San",
+    "titleSuffix": "Michele",
     "dishes": [
       {
-        "name": "Risotto al Franciacorta DOCG",
-        "desc": "Riso Carnaroli mantecato al Franciacorta Brut, burro di malga e Grana Padano 24 mesi",
-        "cat": "Primo Piatto · Firma",
-        "img": "/images/hotel-2.jpg"
+        "name": "Ampia terrazza panoramica...",
+        "desc": "Spazio esterno affacciato sui colli circostanti con vista sui vigneti e uliveti del paese, si presta a cerimonie banchetti e feste all'aperto .",
+        "cat": "Terrazza",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239764553-ristorante-1785239762055.jpg"
       },
       {
-        "name": "Filetto di Manzo al Tartufo",
-        "desc": "Filetto bresciano, salsa al Madeira, scaglie di tartufo nero, gratin di patate",
-        "cat": "Secondo Piatto · Firma",
-        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066353504-ristorante-1785066351579.jpg"
+        "name": "Accogliente sala interna...",
+        "desc": "Con una capienza di settanta coperti circa e l'atmosfera intima e accogliente si presta a ogni occasione",
+        "cat": "Sala interna",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239780090-ristorante-1785239777909.jpg"
       },
       {
-        "name": "Tiramisù San Michele",
-        "desc": "Savoiardi, mascarpone, caffè Arabica, cacao amaro e Amaretto di Saronno",
-        "cat": "Dolce · Firma",
-        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066368682-ristorante-1785066366724.jpg"
+        "name": "Ampio salone per grandi eventi...",
+        "desc": "Salone dalle generose dimensioni che può ospitare oltre 250 persone ideale per eventi , cerimonie , meeting aziendali e ogni tipo di ricorrenza",
+        "cat": "Salone",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239561008-ristorante-1785239558059.jpg"
       }
     ]
   },
@@ -73,7 +73,7 @@
     "sectionLabel": "La carta dei vini",
     "title": "Il",
     "titleItalic": "Franciacorta",
-    "titleSuffix": "in bottiglia",
+    "titleSuffix": "",
     "body1": "Cerchiamo di promuovere il nostro territorio dando la possibilità di degustare i vini prodotti nel comune di Ome oltre ai più rinomati produttori del territorio Franciacortino",
     "body2": "Venite a scoprire un mondo di bollicine",
     "img": "/images/cantina-1.jpg"
