@@ -102,12 +102,12 @@ export default function Footer() {
               className="text-cream/70 font-medium mb-1 block" />
             <p>
               <EditableText tag="span" fileKey="settings" path={['hours', 'lunch_label']} value={s.hours.lunch_label} className="inline" />
-              {': '}
+              {(isEditMode || s.hours.lunch) && ': '}
               <EditableText tag="span" fileKey="settings" path={['hours', 'lunch']} value={s.hours.lunch} className="inline" />
             </p>
             <p>
               <EditableText tag="span" fileKey="settings" path={['hours', 'dinner_label']} value={s.hours.dinner_label} className="inline" />
-              {': '}
+              {(isEditMode || s.hours.dinner) && ': '}
               <EditableText tag="span" fileKey="settings" path={['hours', 'dinner']} value={s.hours.dinner} className="inline" />
             </p>
             <EditableText tag="p" fileKey="settings" path={['hours', 'closed']} value={s.hours.closed}
