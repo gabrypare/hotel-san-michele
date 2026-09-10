@@ -18,10 +18,10 @@
   },
   "hours": {
     "section_label": "Ristorante",
-    "lunch_label": "Pranzo",
-    "lunch": "12:00 – 14:30",
-    "dinner_label": "Cena",
-    "dinner": "19:30 – 22:00",
+    "lunch_label": "",
+    "lunch": "",
+    "dinner_label": "",
+    "dinner": "",
     "closed": ""
   },
   "social": {
