@@ -2,25 +2,35 @@ export default function SanMicheleLogo({ light = false, size = 'md' }) {
   const height  = size === 'lg' ? 88 : 72
   const gold    = '#C9A96E'
   const text    = light ? '#f7f2e8'               : '#1c1510'
-  const sub     = light ? 'rgba(247,242,232,0.50)' : 'rgba(42,34,24,0.45)'
+  const sub     = light ? 'rgba(247,242,232,0.60)' : 'rgba(42,34,24,0.65)'
 
   return (
     <div className="flex items-center gap-3.5 select-none">
 
       {/* ── Logo SVG ── */}
-      <img
-        src="/images/logo.svg"
-        alt="Hotel San Michele"
-        height={height}
+      <div
         style={{
           height,
           width: 'auto',
           display: 'block',
-          filter: light ? 'brightness(0) invert(1)' : 'none',
+          filter: light
+            ? 'brightness(0) invert(1) drop-shadow(0 1px 3px rgba(0,0,0,0.4))'
+            : 'brightness(0) contrast(1)',
           transition: 'filter 0.4s',
         }}
-        draggable={false}
-      />
+      >
+        <img
+          src="/images/logo.svg"
+          alt="Hotel San Michele"
+          height={height}
+          style={{
+            height,
+            width: 'auto',
+            display: 'block',
+          }}
+          draggable={false}
+        />
+      </div>
 
       {/* ── Testo a fianco ── */}
       <div className="flex flex-col leading-none">

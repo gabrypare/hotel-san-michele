@@ -32,6 +32,21 @@ const INITIAL = {
 
 function deepClone(obj) { return JSON.parse(JSON.stringify(obj)) }
 
+function isPlainObject(v) {
+  return v !== null && typeof v === 'object' && !Array.isArray(v)
+}
+
+function deepMerge(base, incoming) {
+  if (!isPlainObject(base) || !isPlainObject(incoming)) return incoming
+  const result = { ...base }
+  for (const key of Object.keys(incoming)) {
+    result[key] = isPlainObject(base[key]) && isPlainObject(incoming[key])
+      ? deepMerge(base[key], incoming[key])
+      : incoming[key]
+  }
+  return result
+}
+
 function getIn(obj, path) {
   return path.reduce((o, k) => o?.[k], obj)
 }
@@ -61,7 +76,7 @@ export function EditModeProvider({ children }) {
       .then(r => r.ok ? r.json() : null)
       .then(data => {
         if (data && Object.keys(data).length > 0) {
-          setContent(prev => ({ ...prev, ...data }))
+          setContent(prev => deepMerge(prev, data))
         }
       })
       .catch(() => {})

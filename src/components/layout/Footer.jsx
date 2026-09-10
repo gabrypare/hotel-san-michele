@@ -38,7 +38,8 @@ export default function Footer() {
 
         {/* Links */}
         <div>
-          <p className="section-label text-gold mb-5">Esplora</p>
+          <EditableText tag="p" fileKey="settings" path={['footer_labels', 'explora']} value={s.footer_labels.explora}
+            className="section-label text-gold mb-5 block" />
           <ul className="space-y-3 text-sm">
             {[
               { label: "L'Hotel",       href: '/hotel' },
@@ -59,7 +60,8 @@ export default function Footer() {
 
         {/* Menu */}
         <div>
-          <p className="section-label text-gold mb-5">Il Menù</p>
+          <EditableText tag="p" fileKey="settings" path={['footer_labels', 'menu']} value={s.footer_labels.menu}
+            className="section-label text-gold mb-5 block" />
           <ul className="space-y-3 text-sm">
             {['Antipasti', 'Primi Piatti', 'Secondi Piatti', 'Dolci', 'Carta dei Vini'].map(m => (
               <li key={m}>
@@ -71,7 +73,8 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <p className="section-label text-gold mb-5">Contatti</p>
+          <EditableText tag="p" fileKey="settings" path={['footer_labels', 'contatti']} value={s.footer_labels.contatti}
+            className="section-label text-gold mb-5 block" />
           <ul className="space-y-4 text-sm">
             <li className="flex gap-3 items-start">
               <RiMapPin2Line size={15} className="text-gold mt-0.5 shrink-0" />
@@ -84,8 +87,8 @@ export default function Footer() {
             </li>
             <li className="flex gap-3 items-center">
               <RiPhoneLine size={15} className="text-gold shrink-0" />
-              <a href="tel:+390303378060" className="font-sans text-sm text-cream/50 hover:text-gold transition-colors duration-300">
-                +39 030 3378060
+              <a href={`tel:${s.contact.phone_href}`} className="font-sans text-sm text-cream/50 hover:text-gold transition-colors duration-300">
+                <EditableText tag="span" fileKey="settings" path={['contact', 'phone']} value={s.contact.phone} />
               </a>
             </li>
             <li className="flex gap-3 items-center">
@@ -95,7 +98,8 @@ export default function Footer() {
             </li>
           </ul>
           <div className="mt-5 text-sm text-cream/50">
-            <p className="text-cream/70 font-medium mb-1">Ristorante</p>
+            <EditableText tag="p" fileKey="settings" path={['hours', 'section_label']} value={s.hours.section_label}
+              className="text-cream/70 font-medium mb-1 block" />
             <p>
               <EditableText tag="span" fileKey="settings" path={['hours', 'lunch_label']} value={s.hours.lunch_label} className="inline" />
               {': '}
@@ -114,7 +118,11 @@ export default function Footer() {
 
       <div className="border-t border-cream/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[0.68rem] text-cream/30">
-          <p>© {year} {s.hotel.name} · P.IVA {s.hotel.piva}</p>
+          <p>
+            © {year} <EditableText tag="span" fileKey="settings" path={['hotel', 'name']} value={s.hotel.name} />
+            {' · P.IVA '}
+            <EditableText tag="span" fileKey="settings" path={['hotel', 'piva']} value={s.hotel.piva} />
+          </p>
           <div className="flex gap-5">
             <a href={legal.privacy_href} className="hover:text-gold transition-colors duration-300">Privacy Policy</a>
             <a href={legal.cookie_href} className="hover:text-gold transition-colors duration-300">Cookie Policy</a>
