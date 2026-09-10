@@ -27,6 +27,7 @@ export default {
         warm:     '#3d3025',
       },
       fontFamily: {
+        script:  ['"Great Vibes"', 'cursive'],
         serif:   ['"Playfair Display"', 'Georgia', 'serif'],
         display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         sans:    ['"Inter"', 'system-ui', 'sans-serif'],
