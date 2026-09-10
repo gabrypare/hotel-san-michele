@@ -11,9 +11,15 @@
     "phone_href": "+390306527167",
     "email": "Ristorantesanmicheleome@gmail.com Hotelsanmicheleome@gmail.com"
   },
+  "footer_labels": {
+    "explora": "Esplora",
+    "menu": "Il Menù",
+    "contatti": "Contatti"
+  },
   "hours": {
-    "lunch_label": "Pranzo",
-    "lunch": "12:00 – 14:30",
+    "section_label": "",
+    "lunch_label": "",
+    "lunch": "",
     "dinner_label": "",
     "dinner": "",
     "closed": ""
