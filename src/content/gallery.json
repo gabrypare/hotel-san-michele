@@ -32,22 +32,10 @@
       "span": "col-span-2"
     },
     {
-      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80",
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1789027402605-gallery-1789027399982.jpg",
       "label": "Sala Ristorante",
       "cat": "ristorante",
       "span": "col-span-2"
-    },
-    {
-      "src": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=700&q=80",
-      "label": "Risotto Franciacorta",
-      "cat": "cucina",
-      "span": ""
-    },
-    {
-      "src": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80",
-      "label": "Piatto del Giorno",
-      "cat": "cucina",
-      "span": ""
     },
     {
       "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80",
@@ -86,7 +74,7 @@
       "span": ""
     },
     {
-      "src": "https://images.unsplash.com/photo-1533920379810-6bedac961555?auto=format&fit=crop&w=700&q=80",
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1789027527100-gallery-1789027523994.jpg",
       "label": "La Colazione",
       "cat": "hotel",
       "span": ""
