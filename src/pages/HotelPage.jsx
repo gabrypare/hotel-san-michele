@@ -9,7 +9,7 @@ import SortableCard from '../components/editor/SortableCard'
 import AddCardButton from '../components/editor/AddCardButton'
 import { useEditMode } from '../context/EditModeContext'
 import {
-  RiCheckLine, RiArrowRightLine, RiArrowLeftLine,
+  RiArrowRightLine, RiArrowLeftLine,
   RiCarLine, RiCupLine, RiWifiLine,
   RiMapPin2Line, RiRestaurantLine, RiSunLine, RiStarLine,
 } from 'react-icons/ri'
@@ -192,41 +192,9 @@ export default function HotelPage() {
                     />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-forest-deeper/85 via-forest-deeper/20 to-transparent" />
-                  {room.slug === h.camere.featuredSlug && (
-                    <div className="absolute top-5 right-5 bg-gold text-forest-dark font-sans text-[0.58rem] tracking-widest uppercase px-3 py-1.5 z-10">
-                      Più richiesta
-                    </div>
-                  )}
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
-                    <p className="font-sans text-[0.62rem] tracking-[0.25em] uppercase text-gold/80 mb-1.5">{room.label}</p>
                     <h3 className="font-serif text-2xl text-cream leading-tight">{room.name}</h3>
-                    <p className="font-display italic text-gold-light text-lg mt-1.5">{room.price}</p>
                   </div>
-                  <motion.div
-                    className="absolute inset-0 flex flex-col justify-end p-6 z-20"
-                    style={{ background: 'linear-gradient(to top, rgba(16,14,11,0.95) 60%, rgba(16,14,11,0.3) 100%)' }}
-                    variants={{ rest: { opacity: 0, y: 20 }, hover: { opacity: 1, y: 0 } }}
-                    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                  >
-                    <p className="font-sans text-[0.62rem] tracking-[0.25em] uppercase text-gold/80 mb-1.5">{room.label}</p>
-                    <h3 className="font-serif text-2xl text-cream mb-1">{room.name}</h3>
-                    <p className="font-display italic text-gold-light text-base mb-4">{room.tagline}</p>
-                    <EditableText tag="p" fileKey="rooms" path={['rooms', i, 'cardDesc']} value={room.cardDesc ?? room.desc} className="font-sans text-xs text-cream/65 leading-relaxed mb-4 block" />
-                    <ul className="space-y-1.5 mb-5">
-                      {(room.cardFeatures ?? room.features).map((f, fi) => (
-                        <li key={fi} className="flex items-center gap-2 font-sans text-[0.72rem] text-cream/55">
-                          <RiCheckLine size={12} className="text-gold shrink-0" />
-                          <EditableText tag="span" fileKey="rooms" path={['rooms', i, 'cardFeatures', fi]} value={f} />
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="flex items-center justify-between border-t border-cream/10 pt-4">
-                      <span className="font-display italic text-gold-light text-xl">{room.price}</span>
-                      <Link to="/prenota" className="inline-flex items-center gap-1.5 font-sans text-[0.68rem] tracking-[0.2em] uppercase text-gold border-b border-gold/50 hover:border-gold transition-colors duration-300" onClick={e => e.stopPropagation()}>
-                        Prenota <RiArrowRightLine size={11} />
-                      </Link>
-                    </div>
-                  </motion.div>
                 </motion.div>
               )
               return (
