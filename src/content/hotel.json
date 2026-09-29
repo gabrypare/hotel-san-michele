@@ -18,8 +18,13 @@
     "sectionLabel": "Le camere",
     "title": "Scegli il tuo",
     "titleItalic": "spazio",
-    "subtitle": "Tre tipologie di camera, matrimoniale ,doppia oppure tripla",
-    "featuredSlug": "camera-panoramica"
+    "subtitle": "Camere confortevoli con vista sui vigneti della Franciacorta, pensate per un soggiorno rilassante.",
+    "features": [
+      "Vista sui vigneti o sul giardino",
+      "Colazione inclusa",
+      "Wi-Fi gratuito",
+      "Aria condizionata"
+    ]
   },
   "amenities": {
     "sectionLabel": "I servizi",

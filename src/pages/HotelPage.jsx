@@ -9,7 +9,7 @@ import SortableCard from '../components/editor/SortableCard'
 import AddCardButton from '../components/editor/AddCardButton'
 import { useEditMode } from '../context/EditModeContext'
 import {
-  RiArrowRightLine, RiArrowLeftLine,
+  RiCheckLine, RiArrowRightLine, RiArrowLeftLine,
   RiCarLine, RiCupLine, RiWifiLine,
   RiMapPin2Line, RiRestaurantLine, RiSunLine, RiStarLine,
 } from 'react-icons/ri'
@@ -177,39 +177,29 @@ export default function HotelPage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
-            {rooms.map((room, i) => {
-              const card = (
-                <motion.div className={`group relative overflow-hidden ${isEditMode ? '' : 'cursor-pointer'}`} whileHover="hover" initial="rest">
-                  <div className="aspect-[3/4] overflow-hidden">
-                    <motion.img
-                      src={room.photos[0]}
-                      alt={room.name}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                      variants={{ rest: { scale: 1 }, hover: { scale: 1.06 } }}
-                      transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                    />
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-center">
+            <ScrollReveal direction="left" className="lg:col-span-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {rooms.flatMap(r => r.photos).slice(0, 6).map((src, i) => (
+                  <div key={i} className="aspect-square overflow-hidden">
+                    <img src={src} alt="Camera Hotel San Michele" className="w-full h-full object-cover" loading="lazy" />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-forest-deeper/85 via-forest-deeper/20 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
-                    <h3 className="font-serif text-2xl text-cream leading-tight">{room.name}</h3>
-                  </div>
-                </motion.div>
-              )
-              return (
-                <ScrollReveal key={room.slug} direction="up" delay={0.1 * i}>
-                  {isEditMode ? card : <Link to={`/hotel/${room.slug}`}>{card}</Link>}
-                </ScrollReveal>
-              )
-            })}
-          </div>
+                ))}
+              </div>
+            </ScrollReveal>
 
-          <ScrollReveal direction="up" delay={0.3}>
-            <div className="mt-10 text-center">
+            <ScrollReveal direction="right" delay={0.15} className="lg:col-span-2">
+              <ul className="space-y-3 mb-8">
+                {h.camere.features.map((f, fi) => (
+                  <li key={fi} className="flex items-center gap-3 font-sans text-sm text-charcoal/70">
+                    <RiCheckLine size={15} className="text-gold shrink-0" />
+                    <EditableText tag="span" fileKey="hotel" path={['camere', 'features', fi]} value={f} />
+                  </li>
+                ))}
+              </ul>
               <Link to="/prenota" className="btn-gold">Richiedi disponibilità</Link>
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
