@@ -353,8 +353,12 @@ export default function HomePage() {
                     onDelete={() => { if (h.esperienze.cards.length > 1) removeItem('home', ['esperienze', 'cards'], i) }}
                   >
                     <ScrollReveal direction="up" delay={0.12 * i}>
-                      <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }}
-                        className="group relative overflow-hidden bg-forest-dark cursor-pointer">
+                      {(() => {
+                        const CardTag = isEditMode ? 'div' : Link
+                        const cardProps = isEditMode ? {} : { to: c.href }
+                        return (
+                        <CardTag {...cardProps} className="group relative overflow-hidden bg-forest-dark cursor-pointer block">
+                        <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }} className="relative">
                         <div className="img-zoom aspect-[3/4] overflow-hidden">
                           <img src={c.img} alt={c.title} className="w-full h-full object-cover" loading="lazy" />
                         </div>
@@ -375,7 +379,10 @@ export default function HomePage() {
                           <EditableText tag="span" fileKey="home" path={['esperienze', 'cards', i, 'cta']} value={c.cta}
                             className="inline-flex items-center gap-2 font-sans text-[0.72rem] tracking-[0.2em] uppercase text-gold border-b border-gold/40 pb-0.5 group-hover:border-gold transition-colors duration-300" />
                         </div>
-                      </motion.div>
+                        </motion.div>
+                        </CardTag>
+                        )
+                      })()}
                     </ScrollReveal>
                   </SortableCard>
                 ))}
