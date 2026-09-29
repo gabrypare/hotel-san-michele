@@ -13,10 +13,10 @@
     "para": "L'Hotel Ristorante San Michele si trova a soli 1,2 km dall'Istituto Clinico San Rocco. Per chi affronta un ricovero o un intervento, e per le famiglie che li accompagnano, abbiamo pensato a convenzioni concrete: uno sconto al ristorante e un servizio navetta dedicato."
   },
   "sconto": {
-    "sectionLabel": "Convenzione ristorante",
+    "sectionLabel": "",
     "title": "Sconto speciale per",
     "titleItalic": "pazienti e familiari",
-    "desc": "Chi è ricoverato o viene sottoposto a un intervento presso l'Istituto Clinico San Rocco, e i suoi familiari, hanno diritto a uno sconto dedicato al Ristorante San Michele. Basta comunicarlo al momento di ordinare.",
+    "desc": "Chi è ricoverato o viene sottoposto a un intervento presso l'Istituto Clinico San Rocco, e i suoi familiari, hanno diritto a uno sconto dedicato e all'esenzione dalla tassa di soggiorno.",
     "footerLabel": "Per informazioni sullo sconto riservato"
   },
   "navetta": {
