@@ -11,7 +11,10 @@
     "title": "Prenota",
     "titleItalic": "direttamente",
     "titleSuffix": "con noi",
-    "intro": "Contattandoci direttamente hai accesso alle migliori tariffe disponibili e a un servizio completamente personalizzato. Il nostro team è a disposizione per ogni esigenza."
+    "intro": "Contattandoci direttamente hai accesso alle migliori tariffe disponibili e a un servizio completamente personalizzato. Il nostro team è a disposizione per ogni esigenza.",
+    "addressLabel": "Indirizzo",
+    "phoneLabel": "Telefono",
+    "emailLabel": "Email"
   },
   "hours": {
     "label": "Orari",

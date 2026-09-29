@@ -7,7 +7,7 @@ import EditableText from '../components/editor/EditableText'
 import SortableCard from '../components/editor/SortableCard'
 import AddCardButton from '../components/editor/AddCardButton'
 import { useEditMode } from '../context/EditModeContext'
-import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiTimeLine, RiCheckLine, RiCameraLine } from 'react-icons/ri'
+import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiCheckLine, RiCameraLine } from 'react-icons/ri'
 
 /* ── helpers ──────────────────────────────────────────────── */
 async function resizeAndEncode(file, maxW = 1800) {
@@ -75,7 +75,6 @@ export default function PrenotaPage() {
   const set  = content.settings
   const hero = pre.hero
   const info = pre.info
-  const hrs  = pre.hours
   const why  = pre.whyDirect
 
   const setF = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
@@ -194,7 +193,8 @@ export default function PrenotaPage() {
                     <RiMapPin2Line size={15} className="text-gold" />
                   </div>
                   <div>
-                    <p className="font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-1">Indirizzo</p>
+                    <EditableText tag="p" fileKey="prenota" path={['info', 'addressLabel']} value={info.addressLabel}
+                      className="font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-1" />
                     <EditableText tag="p" fileKey="settings" path={['contact', 'address']} value={set.contact.address}
                       className="font-sans text-sm text-charcoal/80" />
                     <EditableText tag="p" fileKey="settings" path={['contact', 'city']}    value={set.contact.city}
@@ -206,9 +206,10 @@ export default function PrenotaPage() {
                     <RiPhoneLine size={15} className="text-gold" />
                   </div>
                   <div>
-                    <p className="font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-1">Telefono</p>
-                    <a href="tel:+390303378060" className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300">
-                      +39 030 3378060
+                    <EditableText tag="p" fileKey="prenota" path={['info', 'phoneLabel']} value={info.phoneLabel}
+                      className="font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-1" />
+                    <a href={`tel:${set.contact.phone_href}`} className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300">
+                      <EditableText tag="span" fileKey="settings" path={['contact', 'phone']} value={set.contact.phone} />
                     </a>
                   </div>
                 </li>
@@ -217,26 +218,11 @@ export default function PrenotaPage() {
                     <RiMailLine size={15} className="text-gold" />
                   </div>
                   <div>
-                    <p className="font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-1">Email</p>
+                    <EditableText tag="p" fileKey="prenota" path={['info', 'emailLabel']} value={info.emailLabel}
+                      className="font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-1" />
                     <a href={`mailto:${set.contact.email}`} className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300">
                       <EditableText tag="span" fileKey="settings" path={['contact', 'email']} value={set.contact.email} />
                     </a>
-                  </div>
-                </li>
-                <li className="flex gap-4 items-start">
-                  <div className="w-10 h-10 border border-gold/40 flex items-center justify-center shrink-0">
-                    <RiTimeLine size={15} className="text-gold" />
-                  </div>
-                  <div>
-                    <EditableText tag="p" fileKey="prenota" path={['hours', 'label']} value={hrs.label}
-                      className="font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-2" />
-                    <div className="space-y-1 font-sans text-sm text-charcoal/80">
-                      <EditableText tag="p" fileKey="prenota" path={['hours', 'reception']} value={hrs.reception} />
-                      <EditableText tag="p" fileKey="prenota" path={['hours', 'lunch']}     value={hrs.lunch} />
-                      <EditableText tag="p" fileKey="prenota" path={['hours', 'dinner']}    value={hrs.dinner} />
-                      <EditableText tag="p" fileKey="prenota" path={['hours', 'closed']}    value={hrs.closed}
-                        className="text-charcoal/45 text-xs mt-1" />
-                    </div>
                   </div>
                 </li>
               </ul>
