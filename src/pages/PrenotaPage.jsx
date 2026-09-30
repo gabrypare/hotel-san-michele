@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from '@dnd-kit/core'
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
@@ -61,15 +62,20 @@ function PhotoBtn({ onUpload, className = '' }) {
 }
 
 /* ── form initial state ───────────────────────────────────── */
-const INIT = { nome: '', email: '', telefono: '', arrivo: '', partenza: '', ospiti: '2', tipo: 'camera', messaggio: '' }
+const VALID_TIPI = ['camera', 'ristorante', 'evento', 'info']
+const makeInit = tipo => ({ nome: '', email: '', telefono: '', arrivo: '', partenza: '', ospiti: '2', tipo, messaggio: '' })
 
 /* ── component ────────────────────────────────────────────── */
 export default function PrenotaPage() {
   const { isEditMode, content, updateField, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
-  const [form, setForm] = useState(INIT)
+  const [searchParams] = useSearchParams()
+  const tipoParam = searchParams.get('tipo')
+  const initialTipo = VALID_TIPI.includes(tipoParam) ? tipoParam : 'camera'
+  const [form, setForm] = useState(() => makeInit(initialTipo))
   const [sent, setSent] = useState(false)
   const [sending, setSending] = useState(false)
   const [sendError, setSendError] = useState('')
+  const isRistoranteContext = form.tipo === 'ristorante' || form.tipo === 'evento'
 
   const pre  = content.prenota
   const set  = content.settings
@@ -220,9 +226,15 @@ export default function PrenotaPage() {
                   <div>
                     <EditableText tag="p" fileKey="prenota" path={['info', 'emailLabel']} value={info.emailLabel}
                       className="font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-1" />
-                    <a href={`mailto:${set.contact.email}`} className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300">
-                      <EditableText tag="span" fileKey="settings" path={['contact', 'email']} value={set.contact.email} />
-                    </a>
+                    {isRistoranteContext ? (
+                      <a href={`mailto:${set.contact.email_ristorante}`} className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300">
+                        <EditableText tag="span" fileKey="settings" path={['contact', 'email_ristorante']} value={set.contact.email_ristorante} />
+                      </a>
+                    ) : (
+                      <a href={`mailto:${set.contact.email_hotel}`} className="font-sans text-sm text-charcoal/80 hover:text-gold transition-colors duration-300">
+                        <EditableText tag="span" fileKey="settings" path={['contact', 'email_hotel']} value={set.contact.email_hotel} />
+                      </a>
+                    )}
                   </div>
                 </li>
               </ul>

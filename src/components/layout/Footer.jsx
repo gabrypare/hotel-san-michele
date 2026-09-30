@@ -91,10 +91,14 @@ export default function Footer() {
                 <EditableText tag="span" fileKey="settings" path={['contact', 'phone']} value={s.contact.phone} />
               </a>
             </li>
-            <li className="flex gap-3 items-center">
-              <RiMailLine size={15} className="text-gold shrink-0" />
-              <EditableText tag="span" fileKey="settings" path={['contact', 'email']} value={s.contact.email}
-                className="text-cream/50 hover:text-gold transition-colors duration-300" />
+            <li className="flex gap-3 items-start">
+              <RiMailLine size={15} className="text-gold mt-0.5 shrink-0" />
+              <span className="flex flex-col">
+                <EditableText tag="span" fileKey="settings" path={['contact', 'email_hotel']} value={s.contact.email_hotel}
+                  className="text-cream/50 hover:text-gold transition-colors duration-300" />
+                <EditableText tag="span" fileKey="settings" path={['contact', 'email_ristorante']} value={s.contact.email_ristorante}
+                  className="text-cream/50 hover:text-gold transition-colors duration-300" />
+              </span>
             </li>
           </ul>
           <div className="mt-5 text-sm text-cream/50">

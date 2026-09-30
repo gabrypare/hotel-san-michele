@@ -454,7 +454,7 @@ export default function MenuPage() {
         {/* CTA */}
         <div className="mt-14 text-center">
           <p className="font-display italic text-xl text-stone mb-5">"Vieni a tavola con noi — ti aspettiamo"</p>
-          <Link to="/prenota" className="btn-gold">Prenota un Tavolo</Link>
+          <Link to="/prenota?tipo=ristorante" className="btn-gold">Prenota un Tavolo</Link>
         </div>
       </div>
 

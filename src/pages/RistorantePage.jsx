@@ -138,7 +138,7 @@ export default function RistorantePage() {
                 <Link to="/menu" className="btn-gold inline-flex items-center gap-2">
                   Vedi il Menù <RiArrowRightLine size={13} />
                 </Link>
-                <Link to="/prenota" className="btn-outline-dark">Prenota un Tavolo</Link>
+                <Link to="/prenota?tipo=ristorante" className="btn-outline-dark">Prenota un Tavolo</Link>
               </div>
             </ScrollReveal>
 
@@ -326,7 +326,7 @@ export default function RistorantePage() {
             </DndContext>
             <AddCardButton onClick={() => addItem('restaurant', ['orari', 'slots'], { ...NEW_SLOT })} label="Aggiungi orario" className="mt-4" />
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/prenota" className="btn-gold">Prenota un Tavolo</Link>
+              <Link to="/prenota?tipo=ristorante" className="btn-gold">Prenota un Tavolo</Link>
               <Link to="/menu" className="btn-outline-dark">Vedi il Menù</Link>
             </div>
           </ScrollReveal>

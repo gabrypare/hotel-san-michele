@@ -142,7 +142,7 @@ export default function HotelPage() {
               </h2>
               <EditableText tag="p" fileKey="hotel" path={['intro', 'para1']} value={h.intro.para1} multiline className="font-sans text-base text-charcoal/70 leading-relaxed mb-4 block" />
               <EditableText tag="p" fileKey="hotel" path={['intro', 'para2']} value={h.intro.para2} multiline className="font-sans text-base text-charcoal/70 leading-relaxed mb-8 block" />
-              <Link to="/prenota" className="btn-gold inline-flex items-center gap-2">
+              <Link to="/prenota?tipo=camera" className="btn-gold inline-flex items-center gap-2">
                 Prenota una camera <RiArrowRightLine size={13} />
               </Link>
             </ScrollReveal>
@@ -197,7 +197,7 @@ export default function HotelPage() {
                   </li>
                 ))}
               </ul>
-              <Link to="/prenota" className="btn-gold">Richiedi disponibilità</Link>
+              <Link to="/prenota?tipo=camera" className="btn-gold">Richiedi disponibilità</Link>
             </ScrollReveal>
           </div>
         </div>

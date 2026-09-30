@@ -8,8 +8,9 @@
     "address": "Via S. Michele, 5a",
     "city": "25050 Ome (BS) — Franciacorta",
     "phone": "+39 030 3378060",
-    "phone_href": "+390306527167",
-    "email": "Ristorantesanmicheleome@gmail.com Hotelsanmicheleome@gmail.com"
+    "phone_href": "+390303378060",
+    "email_hotel": "hotelsanmicheleome@gmail.com",
+    "email_ristorante": "ristorantesanmicheleome@gmail.com"
   },
   "footer_labels": {
     "explora": "Esplora",

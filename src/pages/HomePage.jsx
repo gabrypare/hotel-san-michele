@@ -415,7 +415,7 @@ export default function HomePage() {
               <Link to="/menu" className="btn-gold inline-flex items-center gap-2">
                 Vedi il Menù <RiArrowRightLine size={13} />
               </Link>
-              <Link to="/prenota" className="btn-outline-light">Prenota un tavolo</Link>
+              <Link to="/prenota?tipo=ristorante" className="btn-outline-light">Prenota un tavolo</Link>
             </div>
           </ScrollReveal>
         </div>
