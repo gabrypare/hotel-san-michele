@@ -8,7 +8,7 @@
       "items": [
         {
           "name": "Affettati dell'Az.Agricola Manenti  e formaggi della cascina 'La Benedetta' con giardiniera fatta in casa",
-          "description": "xxx",
+          "description": "",
           "price": "12",
           "allergens": [
             "latte",
@@ -20,7 +20,7 @@
         },
         {
           "name": "Spuma di grana padano 24 mesi Az.Agricola 'Zani' ,cipolla caramellata , brisè croccante",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": "7",
           "allergens": [
             "glutine",
@@ -31,7 +31,7 @@
         },
         {
           "name": "Battuta di fassona con nocciole soffiate timo e salsa ai funghi",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": "12",
           "allergens": [
             "latte",
@@ -43,7 +43,7 @@
         },
         {
           "name": "Vitello al punto rosa con zucca arrosto e salsa cacio pepe",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": "11",
           "allergens": [
             "latte"
@@ -87,7 +87,7 @@
         },
         {
           "name": "Gnocchi di patate fatti a mano con porro fondente, radicchio ed erborinato della cascina 'La Benedetta'",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": "12",
           "allergens": [
             "glutine",
@@ -99,7 +99,7 @@
         },
         {
           "name": "Maltagliati fatti in casa ai porcini",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": 0,
           "allergens": [
             "glutine",
@@ -128,7 +128,7 @@
         },
         {
           "name": "Tagliata di fassona con patate al forno",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": "16",
           "allergens": [
             "latte"
@@ -138,7 +138,7 @@
         },
         {
           "name": "Frittelle di verdure con ricotta alle erbette e scorzetta di limone",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": 0,
           "allergens": [
             "glutine",
@@ -149,7 +149,7 @@
         },
         {
           "name": "Manzo all'olio con polenta",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": 0,
           "allergens": [
             "glutine",
@@ -184,7 +184,7 @@
         },
         {
           "name": "Torta cremosa al cioccolato fondente con sale maldon",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": "6",
           "allergens": [
             "glutine",
@@ -196,7 +196,7 @@
         },
         {
           "name": "Pannacotta alla vaniglia e fava tonka con salsa alle fragole e crumble",
-          "description": "Descrizione del piatto.",
+          "description": "",
           "price": "6",
           "allergens": [
             "glutine",
