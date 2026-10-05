@@ -7,21 +7,15 @@
       "imgs": [
         "/images/territorio-4.jpg",
         "/images/cantina-1.jpg",
-        "/images/cantina-2.jpg",
+        "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791229024511-location-1791229024012.jpg",
         "/images/territorio-1.jpg",
-        "/images/cantina-3.jpg",
-        "/images/cantina-4.jpg",
-        "/images/cantina-5.jpg",
         "/images/territorio-2.jpg"
       ],
-      "detail": "La Franciacorta conta oltre 60 cantine, tutte aperte a visite guidate con degustazione su prenotazione. Il Franciacorta DOCG è l'unico spumante italiano prodotto esclusivamente con Metodo Classico: Chardonnay, Pinot Nero e Pinot Bianco rifermentati in bottiglia per almeno 18 mesi. Le cantine offrono percorsi tra vigne e barricaie, degustazioni delle diverse tipologie — Satèn, Rosé, Millesimato, Riserva — con abbinamenti gastronomici al territorio.",
+      "detail": "La Franciacorta conta oltre 60 cantine, tutte aperte a visite guidate con degustazione su prenotazione. Il Franciacorta DOCG è prodotto esclusivamente con Metodo Classico: Chardonnay, Pinot Nero e Pinot Bianco vinificati secondo una rigida disciplinare. Le cantine offrono percorsi tra vigne e barricaie, degustazioni delle diverse tipologie .",
       "highlights": [
-        "Ca' del Bosco — Erbusco",
-        "Bellavista — Erbusco",
-        "Berlucchi — Borgonato",
-        "Cavalleri — Erbusco",
-        "Contadi Castaldi",
-        "Ferghettina — Adro"
+        "Cantina Majolini-Ome",
+        "Az Agricola Bonzoni-Ome",
+        "La Fiorita Franciacorta-Ome"
       ],
       "tip": "L'Hotel San Michele può organizzare visite in cantina su prenotazione per i propri ospiti.",
       "mapSrc": ""
