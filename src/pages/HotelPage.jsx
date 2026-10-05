@@ -180,9 +180,14 @@ export default function HotelPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-center">
             <ScrollReveal direction="left" className="lg:col-span-3">
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                {rooms.flatMap(r => r.photos).slice(0, 6).map((src, i) => (
-                  <div key={i} className="aspect-square overflow-hidden">
-                    <img src={src} alt="Camera Hotel San Michele" className="w-full h-full object-cover" loading="lazy" />
+                {rooms.flatMap((r, roomIdx) => r.photos.map((src, photoIdx) => ({ src, roomIdx, photoIdx }))).slice(0, 6).map((p, i) => (
+                  <div key={i} className="relative aspect-square overflow-hidden">
+                    <img src={p.src} alt="Camera Hotel San Michele" className="w-full h-full object-cover" loading="lazy" />
+                    {isEditMode && (
+                      <div className="absolute top-1 right-1 z-10">
+                        <PhotoBtn fileKey="rooms" path={['rooms', p.roomIdx, 'photos', p.photoIdx]} label="Cambia" />
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
