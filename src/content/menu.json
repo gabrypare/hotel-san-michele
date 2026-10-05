@@ -7,10 +7,47 @@
       "heroImg": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80",
       "items": [
         {
-          "name": "Antipasti",
+          "name": "Affettati dell'Az.Agricola Manenti  e formaggi della cascina 'La Benedetta' con giardiniera fatta in casa",
           "description": "xxx",
-          "price": 13,
-          "allergens": [],
+          "price": "12",
+          "allergens": [
+            "latte",
+            "sedano",
+            "solfiti"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Spuma di grana padano 24 mesi Az.Agricola 'Zani' ,cipolla caramellata , brisè croccante",
+          "description": "Descrizione del piatto.",
+          "price": "7",
+          "allergens": [
+            "glutine",
+            "latte"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Battuta di fassona con nocciole soffiate timo e salsa ai funghi",
+          "description": "Descrizione del piatto.",
+          "price": "12",
+          "allergens": [
+            "latte",
+            "fruttaGuscio",
+            "solfiti"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Vitello al punto rosa con zucca arrosto e salsa cacio pepe",
+          "description": "Descrizione del piatto.",
+          "price": "11",
+          "allergens": [
+            "latte"
+          ],
           "photo": "",
           "signature": false
         }
