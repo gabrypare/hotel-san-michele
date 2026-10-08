@@ -1,0 +1,108 @@
+{
+  "hero": {
+    "label": "Franciacorta · Ome · Brescia",
+    "titleLine1": "Hotel and Restaurant",
+    "titleLine2": "St. Michael",
+    "quote": "Come discover Franciacorta, stay with us, and let yourself be charmed",
+    "slides": [
+      {
+        "src": "/images/hotel-1.jpg",
+        "alt": "Hotel San Michele — Exterior",
+        "dark": false
+      },
+      {
+        "src": "/images/hotel-2.jpg",
+        "alt": "Panoramic Terrace",
+        "dark": false
+      },
+      {
+        "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791205720960-home-1791205720152.jpg",
+        "alt": "San Michele Hotel and Restaurant",
+        "dark": false
+      },
+      {
+        "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791205763744-home-1791205762796.jpg",
+        "alt": "View of Franciacorta",
+        "dark": false
+      }
+    ]
+  },
+  "intro": {
+    "sectionLabel": "Our History",
+    "title": "In the heart of the",
+    "titleItalic": "Franciacorta",
+    "para1": "San Michele welcomes its guests among the vineyards of Ome. A family-run establishment where the warmth of authentic hospitality blends with a constant focus on quality: local cuisine, rooms with panoramic views, and the magic of the surrounding landscape.",
+    "para2": "Located in the hilly part of Franciacorta, just a short walk from the best wineries, this is the perfect place for anyone who wants to get a taste of our region",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063608652-home-1785063606900.jpg",
+    "stats": [
+      {
+        "n": "",
+        "l": ""
+      }
+    ]
+  },
+  "esperienze": {
+    "sectionLabel": "Experiences",
+    "title": "What awaits you at the",
+    "titleItalic": "St. Michael",
+    "cards": [
+      {
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063589215-home-1785063587759.jpg",
+        "title": "The Hotel",
+        "desc": "16 rooms with views of the Franciacorta vineyards. Breakfast, swimming pool, panoramic terrace.",
+        "href": "/hotel",
+        "cta": "View the rooms"
+      },
+      {
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063510911-home-1785063509355.jpg",
+        "title": "The Restaurant",
+        "desc": "Signature Lombard cuisine, local seasonal ingredients, and a Franciacorta DOCG wine list.",
+        "href": "/ristorante",
+        "cta": "Discover the story"
+      },
+      {
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785061980967-home-1785061979554.jpg",
+        "title": "Franciacorta",
+        "desc": "Vineyards, abbeys, Lake Iseo, and Brescia. Franciacorta is waiting to be explored.",
+        "href": "/location",
+        "cta": "Explore the area"
+      },
+      {
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062016316-home-1785062015721.jpg",
+        "title": "The Clinic",
+        "desc": "The San Rocco Clinical Institute in Ome — a center of medical excellence just a short walk from the Hotel San Michele.",
+        "href": "/clinica",
+        "cta": "Learn more about the clinic"
+      }
+    ]
+  },
+  "menuTeaser": {
+    "sectionLabel": "Local Cuisine",
+    "title": "The Menu",
+    "titleItalic": "Seasonal",
+    "para1": "The hotel's kitchen emphasizes seasonal ingredients and favors local suppliers, fresh pasta, meat, game, and fish from our lake.",
+    "para2": "All allergens are clearly listed on each dish in accordance with EU Regulation 1169/2011. The menu also includes a selection of Franciacorta wines.",
+    "img": "/images/hotel-2.jpg"
+  },
+  "gallery": {
+    "sectionLabel": "Images",
+    "title": "A taste of the",
+    "titleItalic": "St. Michael",
+    "photos": [
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062856177-home-1785062855317.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062851241-home-1785062850366.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062756345-home-1785062755386.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785062786252-home-1785062785015.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063424530-home-1785063422203.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785063445260-home-1785063443653.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064796367-home-1785064794241.jpg"
+    ]
+  },
+  "bookCta": {
+    "sectionLabel": "Ready to come visit us?",
+    "title": "Book your",
+    "titleItalic": "living room",
+    "body": "Contact us directly for the best available rates. Our team will respond as soon as possible.",
+    "img": "/images/hotel-2.jpg"
+  }
+}

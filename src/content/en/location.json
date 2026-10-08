@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785068324759-location-1785068323186.jpg",
+    "label": "The Region",
+    "title": "The",
+    "titleItalic": "Franciacorta",
+    "subtitle": "A unique region nestled among vineyards, lakes, and history"
+  },
+  "intro": {
+    "sectionLabel": "Franciacorta",
+    "title": "A landscape that",
+    "titleItalic": "tells stories",
+    "para1": "Franciacorta is one of Italy's most charming wine regions: a stretch of rolling hills between Brescia and Lake Iseo, covered in vineyards and crisscrossed by romantic roads that connect medieval villages and Benedictine abbeys.",
+    "para2": "The name immediately brings to mind the bubbles of Franciacorta DOCG—the only Italian sparkling wine produced exclusively using the Metodo Classico—but the region offers much more: nature, history, art, and world-class food and wine.",
+    "para3": "Ome, the town where San Michele is located, is one of the most picturesque villages in the hills: a panoramic setting, vineyards overlooking the houses, and tranquility and beauty around every corner.",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785015217132-location-1785015215951.jpg"
+  },
+  "wine": {
+    "sectionLabel": "Local Wine",
+    "title": "The",
+    "titleItalic": "Franciacorta DOCG",
+    "para1": "Like Champagne in France, Franciacorta is the quintessential Italian Metodo Classico. Chardonnay, Pinot Noir, and Pinot Blanc are crafted in the cellar with meticulous care to produce elegant, long-lasting sparkling wines of extraordinary complexity.",
+    "para2": "Upon request, we organize winery tours and tastings",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785015309256-location-1785015308857.jpg"
+  },
+  "distances": {
+    "sectionLabel": "How to Get Here",
+    "title": "At the heart of it all,",
+    "titleItalic": "far from nothing",
+    "address": "Via S. Michele, 5a · 25050 Ome (BS)",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785015509184-location-1785015508200.jpg",
+    "items": [
+      {
+        "place": "Brescia",
+        "km": "15",
+        "desc": "UNESCO Historic Center, Piazza della Loggia, museums"
+      },
+      {
+        "place": "Lake Iseo",
+        "km": "12",
+        "desc": "The Third Lake of Lombardy, Monte Isola, Lovere"
+      },
+      {
+        "place": "Lake Garda",
+        "km": "45",
+        "desc": "Italy's Largest Lake, Sirmione, Gardaland"
+      },
+      {
+        "place": "Bergamo",
+        "km": "40",
+        "desc": "Medieval Upper Town, Piazza Vecchia, Accademia Carrara"
+      },
+      {
+        "place": "Milan",
+        "km": "95",
+        "desc": "The Duomo, the Navigli, fashion, and design — less than an hour away"
+      },
+      {
+        "place": "BGY Airport",
+        "km": "55",
+        "desc": "Bergamo Orio al Serio Airport, low-cost flights"
+      }
+    ],
+    "howTo": [
+      {
+        "label": "By car:",
+        "desc": "A4 Milan–Venice, Ospitaletto or Rovato exit"
+      },
+      {
+        "label": "By train:",
+        "desc": "Brescia Station, then take the bus to Ome"
+      },
+      {
+        "label": "By plane:",
+        "desc": "Bergamo Airport (BGY), 55 km away"
+      }
+    ]
+  },
+  "activitiesSection": {
+    "sectionLabel": "What to Do",
+    "title": "A region that’s",
+    "titleItalic": "explore",
+    "subtitle": "Click on an activity to learn more"
+  },
+  "map": {
+    "title": "Where We Are",
+    "src": "https://maps.google.com/maps?q=Via+S.+Michele%2C+5a%2C+25050+Ome+BS&output=embed&hl=it&z=16"
+  }
+}

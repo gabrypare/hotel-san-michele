@@ -1,0 +1,36 @@
+{
+  "hotel": {
+    "name": "San Michele Hotel and Restaurant",
+    "tagline": "In the heart of the Ome hills, where the Franciacorta vineyards meet authentic hospitality and local cuisine.",
+    "piva": "00000000000"
+  },
+  "contact": {
+    "address": "5a Via S. Michele",
+    "city": "25050 Ome (BS) — Franciacorta",
+    "phone": "+39 030 3378060",
+    "phone_href": "+390303378060",
+    "email_hotel": "hotelsanmicheleome@gmail.com",
+    "email_ristorante": "ristorantesanmicheleome@gmail.com"
+  },
+  "footer_labels": {
+    "explora": "Explore",
+    "menu": "The Menu",
+    "contatti": "Contact Us"
+  },
+  "hours": {
+    "section_label": "",
+    "lunch_label": "",
+    "lunch": "",
+    "dinner_label": "",
+    "dinner": "",
+    "closed": ""
+  },
+  "social": {
+    "instagram": "#",
+    "facebook": "#"
+  },
+  "legal": {
+    "privacy_href": "#",
+    "cookie_href": "#"
+  }
+}

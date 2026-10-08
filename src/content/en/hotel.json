@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "label": "Where to Stay",
+    "title": "The Hotel",
+    "titleItalic": "St. Michael",
+    "subtitle": "Your stay surrounded by the vineyards of Franciacorta",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785068031711-hotel-1785068030529.jpg"
+  },
+  "intro": {
+    "sectionLabel": "Authentic Hospitality",
+    "title": "A refuge among",
+    "titleItalic": "the vineyards",
+    "para1": "Nestled in the Ome hills, the Hotel San Michele is a family-run hotel that upholds the values of authentic hospitality. Each room has been designed as a private retreat, featuring natural materials, abundant light, and a view that captures the essence of Franciacorta.",
+    "para2": "The tranquility of the vineyards, breakfast featuring local artisanal products, and the panoramic terrace overlooking Franciacorta: San Michele is the ideal starting point for exploring one of Lombardy’s most beautiful regions.",
+    "img": "/images/hotel-2.jpg"
+  },
+  "camere": {
+    "sectionLabel": "The Rooms",
+    "title": "Choose yours",
+    "titleItalic": "space",
+    "subtitle": "Comfortable rooms with views of the Franciacorta vineyards, designed for a relaxing stay.",
+    "features": [
+      "Panoramic view",
+      "Breakfast included",
+      "Free Wi-Fi",
+      "Air Conditioning"
+    ]
+  },
+  "amenities": {
+    "sectionLabel": "Services",
+    "title": "Everything that",
+    "titleItalic": "You need",
+    "items": [
+      {
+        "iconKey": "car",
+        "title": "Free parking",
+        "desc": "Large private parking lot reserved for hotel guests"
+      },
+      {
+        "iconKey": "cup",
+        "title": "Breakfast included",
+        "desc": "A sweet and savory buffet featuring artisanal products, served every morning"
+      },
+      {
+        "iconKey": "wifi",
+        "title": "Wi-Fi Everywhere",
+        "desc": "Free Wi-Fi throughout the property"
+      },
+      {
+        "iconKey": "sun",
+        "title": "Panoramic Terrace",
+        "desc": "A view of the Franciacorta vineyards from sunrise to sunset"
+      },
+      {
+        "iconKey": "restaurant",
+        "title": "On-site restaurant",
+        "desc": "Kitchen open for lunch and dinner"
+      },
+      {
+        "iconKey": "map",
+        "title": "Strategic Location",
+        "desc": "15 minutes from Brescia, 12 minutes from Lake Iseo"
+      }
+    ]
+  },
+  "colazione": {
+    "sectionLabel": "Every morning",
+    "title": "The",
+    "titleItalic": "Breakfast",
+    "titleSuffix": "of San Michele",
+    "para1": "Buffet breakfast to enjoy in the dining room or on the terrace",
+    "hours": "7:30–10:00 · included with all rooms",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1789027571118-hotel-1789027568310.jpg"
+  },
+  "cta": {
+    "title": "Ready to stay?",
+    "body": "Contact us directly to check availability and get the best rates.",
+    "phone": "+39 030 652 7167"
+  }
+}

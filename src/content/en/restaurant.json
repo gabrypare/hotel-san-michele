@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "label": "Local Cuisine",
+    "title": "The Restaurant",
+    "titleItalic": "St. Michael",
+    "subtitle": "Local, seasonal, artisanal",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066268609-ristorante-1785066265500.jpg"
+  },
+  "storia": {
+    "sectionLabel": "",
+    "title": "A Kitchen Is Born",
+    "titleItalic": "from the region",
+    "paragraphs": [
+      "The kitchen works with trusted local suppliers, following the natural rhythm of the seasons.",
+      "Fresh pasta, high-quality meat, game, and lake fish are prepared by blending traditional recipes with modern flavors.",
+      "The hotel features a dining room that seats 70, a spacious ballroom with 200 seats, and a panoramic terrace overlooking the surrounding hills and vineyards. These spaces make the hotel the ideal venue for hosting ceremonies, banquets, business meetings, and parties."
+    ],
+    "images": [
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066388900-ristorante-1785066386655.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239901564-ristorante-1785239899366.jpg",
+      "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785064907076-ristorante-1785064905163.jpg"
+    ]
+  },
+  "filosofia": {
+    "sectionLabel": "The Philosophy",
+    "title": "Three values that",
+    "titleItalic": "lead the kitchen",
+    "cards": [
+      {
+        "icon": "🌿",
+        "title": "Strict Seasonality",
+        "body": "The menu changes in accordance with the natural cycle of the seasons. We avoid out-of-season produce: we try to choose only what nature offers at the right time."
+      },
+      {
+        "icon": "🤝",
+        "title": "Trusted Suppliers",
+        "body": "We rely on local suppliers and give preference to local products."
+      },
+      {
+        "icon": "⚗️",
+        "title": "Craftsmanship and Technique",
+        "body": "You can enjoy traditional dishes and recipes from our cuisine"
+      }
+    ]
+  },
+  "signature": {
+    "sectionLabel": "The Restaurant",
+    "title": "",
+    "titleItalic": "of San",
+    "titleSuffix": "Michele",
+    "dishes": [
+      {
+        "name": "Spacious panoramic terrace...",
+        "desc": "An outdoor space overlooking the surrounding hills, with views of the town’s vineyards and olive groves, is ideal for outdoor ceremonies, banquets, and parties.",
+        "cat": "Terrace",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239764553-ristorante-1785239762055.jpg"
+      },
+      {
+        "name": "Cozy dining room...",
+        "desc": "With a seating capacity of about seventy and an intimate, welcoming atmosphere, it's perfect for any occasion",
+        "cat": "Indoor Hall",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239780090-ristorante-1785239777909.jpg"
+      },
+      {
+        "name": "Spacious hall for large events...",
+        "desc": "A spacious hall that can accommodate over 250 people, ideal for events, ceremonies, corporate meetings, and all kinds of celebrations",
+        "cat": "Exhibition Hall",
+        "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239561008-ristorante-1785239558059.jpg"
+      }
+    ]
+  },
+  "vini": {
+    "sectionLabel": "The Wine List",
+    "title": "The",
+    "titleItalic": "Franciacorta",
+    "titleSuffix": "",
+    "body1": "We aim to promote our region by offering visitors the chance to taste wines produced in the town of Ome, as well as those from the most renowned producers in the Franciacorta region.",
+    "body2": "Come discover a world of sparkling wines",
+    "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785240108068-ristorante-1785240106306.jpg"
+  },
+  "orari": {
+    "title": "Hours and Reservations",
+    "slots": [
+      {
+        "label": "Lunch",
+        "value": "Monday – Sunday",
+        "time": "12:00 – 14:30"
+      },
+      {
+        "label": "Dinner",
+        "value": "Friday – Sunday",
+        "time": "19:00 – 22:00"
+      },
+      {
+        "label": "Banquets",
+        "value": "We offer menus tailored to every need",
+        "time": ""
+      }
+    ]
+  }
+}

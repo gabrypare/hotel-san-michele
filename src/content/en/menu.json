@@ -1,0 +1,231 @@
+{
+  "categories": [
+    {
+      "key": "antipasti",
+      "label": "Appetizers",
+      "subtitle": "To get started",
+      "heroImg": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "Cold cuts from the Manenti Farm and cheeses from the \"La Benedetta\" farm, served with homemade mixed pickles",
+          "description": "",
+          "price": "12",
+          "allergens": [
+            "latte",
+            "sedano",
+            "solfiti"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "24-month-aged Grana Padano foam from Az.Agricola 'Zani', caramelized onion, crispy shortcrust pastry",
+          "description": "",
+          "price": "7",
+          "allergens": [
+            "glutine",
+            "latte"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Minced Fassona beef with puffed hazelnuts, thyme, and mushroom sauce",
+          "description": "",
+          "price": "12",
+          "allergens": [
+            "latte",
+            "fruttaGuscio",
+            "solfiti"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Pink-Center Veal with Roasted Pumpkin and Cacio e Pepe Sauce",
+          "description": "",
+          "price": "11",
+          "allergens": [
+            "latte"
+          ],
+          "photo": "",
+          "signature": false
+        }
+      ]
+    },
+    {
+      "key": "primi",
+      "label": "First Courses",
+      "subtitle": "The Lombard Tradition",
+      "heroImg": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "Handmade Barbariga casoncelli with pumpkin, sautéed in butter and sage",
+          "description": "",
+          "price": "10",
+          "allergens": [
+            "glutine",
+            "uova",
+            "latte",
+            "sedano"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Homemade tagliatelle with homemade pesto, confit cherry tomatoes, and burrata cream",
+          "description": "Description of the dish.",
+          "price": "11",
+          "allergens": [
+            "glutine",
+            "uova",
+            "latte",
+            "fruttaGuscio"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Handmade potato gnocchi with caramelized leeks, radicchio, and blue cheese from the \"La Benedetta\" farm",
+          "description": "",
+          "price": "12",
+          "allergens": [
+            "glutine",
+            "uova",
+            "latte"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Homemade Maltagliati with Porcini Mushrooms",
+          "description": "",
+          "price": 0,
+          "allergens": [
+            "glutine",
+            "uova",
+            "latte",
+            "solfiti"
+          ],
+          "photo": "",
+          "signature": false
+        }
+      ]
+    },
+    {
+      "key": "secondi",
+      "label": "Main Dishes",
+      "subtitle": "Meat, Fish, and Tradition",
+      "heroImg": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "Iberian suckling pig with grilled vegetables",
+          "description": "",
+          "price": "18",
+          "allergens": [],
+          "photo": "https://images.unsplash.com/photo-1598103442097-8b74394b95c5?auto=format&fit=crop&w=300&q=80",
+          "signature": false
+        },
+        {
+          "name": "Fassona Beef Tagliata with Baked Potatoes",
+          "description": "",
+          "price": "16",
+          "allergens": [
+            "latte"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Vegetable Fritters with Ricotta, Herbs, and Lemon Zest",
+          "description": "",
+          "price": 0,
+          "allergens": [
+            "glutine",
+            "latte"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Beef in Olive Oil with Polenta",
+          "description": "",
+          "price": 0,
+          "allergens": [
+            "glutine",
+            "pesce",
+            "latte",
+            "solfiti"
+          ],
+          "photo": "",
+          "signature": false
+        }
+      ]
+    },
+    {
+      "key": "dolci",
+      "label": "Desserts",
+      "subtitle": "The Perfect Ending",
+      "heroImg": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "Sbrisolona with Chantilly cream flavored with grappa",
+          "description": "",
+          "price": "5",
+          "allergens": [
+            "glutine",
+            "uova",
+            "latte",
+            "fruttaGuscio",
+            "solfiti"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Creamy Dark Chocolate Cake with Maldon Salt",
+          "description": "",
+          "price": "6",
+          "allergens": [
+            "glutine",
+            "uova",
+            "latte"
+          ],
+          "photo": "",
+          "signature": false
+        },
+        {
+          "name": "Vanilla and Tonka Bean Panna Cotta with Strawberry Sauce and Crumble",
+          "description": "",
+          "price": "6",
+          "allergens": [
+            "glutine",
+            "uova",
+            "latte",
+            "fruttaGuscio"
+          ],
+          "photo": "",
+          "signature": false
+        }
+      ]
+    },
+    {
+      "key": "vini",
+      "label": "Wine List",
+      "subtitle": "Franciacorta and the Surrounding Area",
+      "heroImg": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=80",
+      "items": [
+        {
+          "name": "to",
+          "description": "Cabernet Sauvignon, Merlot, and Carmenère. Elegant structure, soft tannins, and a spicy finish",
+          "price": 32,
+          "allergens": [
+            "solfiti"
+          ],
+          "photo": "",
+          "signature": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "activities": [
+    {
+      "icon": "🍾",
+      "title": "Franciacorta Tastings",
+      "desc": "Over 60 wineries in Franciacorta; tours with tastings available by reservation.",
+      "imgs": [
+        "/images/territorio-4.jpg",
+        "/images/cantina-1.jpg",
+        "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791229024511-location-1791229024012.jpg",
+        "/images/territorio-1.jpg",
+        "/images/territorio-2.jpg"
+      ],
+      "detail": "Franciacorta is home to over 60 wineries, all of which offer guided tours with tastings by reservation. Franciacorta DOCG is produced exclusively using the Metodo Classico: Chardonnay, Pinot Noir, and Pinot Blanc are vinified according to strict regulations. The wineries offer tours through the vineyards and barrel cellars, as well as tastings of the various types of wine.",
+      "highlights": [
+        "Majolini-Ome Winery",
+        "Bonzoni-Ome Farm",
+        "La Fiorita Franciacorta-Ome"
+      ],
+      "tip": "The Hotel San Michele can arrange winery tours for its guests upon reservation.",
+      "mapSrc": ""
+    },
+    {
+      "icon": "⛵",
+      "title": "Lake Iseo",
+      "desc": "Montisola, Iseo, Lovere: villages, day trips, and water sports just 12 km from the hotel.",
+      "imgs": [
+        "/images/lago-panorama.jpg",
+        "/images/montisola-siviano.jpg",
+        "/images/isola-loreto.jpg"
+      ],
+      "detail": "Lake Iseo is just 12 km from the Hotel San Michele—about a 15-minute drive. In the middle of the lake lies Monte Isola, Europe’s largest inhabited lake island, which can be reached by ferry from Sulzano or Sale Marasino. The towns of Iseo, Lovere, and Sarnico are all worth a visit. The hotel does not organize excursions or water activities, but they can easily be booked directly once you arrive or online.",
+      "highlights": [
+        "Monte Isola by ferry from Sulzano (10 min)",
+        "The villages of Iseo, Lovere, Sarnico, and Pisogne",
+        "Kayaking and Canoeing on the Lake",
+        "Stand-Up Paddleboarding (SUP)",
+        "Windsurfing and kitesurfing",
+        "Sailing and Boat Rentals",
+        "Diving and Scuba Diving"
+      ],
+      "tip": "Ferries and boats: navigazionelagoiseo.it — service available year-round with frequent departures.",
+      "mapSrc": ""
+    },
+    {
+      "icon": "🚴",
+      "title": "Cycling Tourism",
+      "desc": "Bike paths through the Franciacorta vineyards, scenic routes through the hills.",
+      "imgs": [
+        "/images/ciclovia-franciacorta.jpg",
+        "/images/ciclovia-erbusco.jpg",
+        "/images/territorio-4.jpg",
+        "/images/territorio-2.jpg"
+      ],
+      "detail": "Franciacorta is one of Italy’s most beautiful regions for cycling tourism: back roads winding through rows of grapevines, climbs up the hills with views of the lake and the Alps, and dedicated, well-marked trails. The Franciacorta Cycle Route connects the region’s main villages through landscapes of rare beauty. The trails start practically right at the hotel and are accessible year-round.",
+      "highlights": [
+        "Franciacorta Bike Trail (complete loop ~60 km)",
+        "Short routes between Ome, Gussago, and Rodengo (~15–25 km)",
+        "Hike up the hills with views of the lake and the Alps",
+        "Models for e-bikes and mountain bikes",
+        "Quiet, traffic-free side roads winding through the vineyards"
+      ],
+      "tip": "Ask at the front desk for free paper maps and recommendations on the trails best suited to your skill level.",
+      "mapSrc": "https://www.openstreetmap.org/export/embed.html?bbox=9.85%2C45.45%2C10.42%2C45.82&layer=cyclemap&marker=45.6442%2C10.1247"
+    },
+    {
+      "icon": "⛪",
+      "title": "Abbeys and Villages",
+      "desc": "The Olivetan Abbey of Rodengo Saiano, and the villages of Erbusco, Paratico, and Capriolo.",
+      "imgs": [
+        "/images/abbazia-chiesa.jpg",
+        "/images/abbazia-chiostro-grande.jpg",
+        "/images/abbazia-chiostro-piccolo.jpg",
+        "/images/abbazia-chiostro-cisterna.jpg",
+        "/images/erbusco-borgo.jpg",
+        "/images/paratico-castello.jpg",
+        "/images/paratico-lago.jpg"
+      ],
+      "detail": "Franciacorta is home to an extraordinary historical and religious heritage. The Olivetan Abbey of St. Nicholas in Rodengo Saiano—founded in the 11th century by Cluniac monks and entrusted to the Olivetans in 1446—is one of the most beautiful monasteries in Lombardy: three cloisters, frescoes by Romanino and Moretto, and 15th-century wooden inlays. The medieval villages of Erbusco, Paratico, and Capriolo round out a region where every alleyway tells a story spanning centuries.",
+      "highlights": [
+        "Olivetan Abbey of St. Nicholas — Rodengo Saiano (11th century)",
+        "Three cloisters with frescoes by Romanino and Moretto",
+        "The medieval village of Erbusco — the capital of Franciacorta",
+        "Lantieri Castle in Paratico (13th–14th centuries) on Lake Iseo",
+        "Shrine of Our Lady of Cerezzata — Ome",
+        "Capriolo and its historic center on the Oglio River"
+      ],
+      "tip": "The Rodengo Saiano Abbey is open to visitors in the morning; guided tours are available by reservation. Distance from the hotel: ~5 min by car.",
+      "mapSrc": ""
+    },
+    {
+      "icon": "🌿",
+      "title": "Nature Sites",
+      "desc": "The Sebino Peat Bogs, the Monticelli Brusati Waterfalls, and the Alto Sebino Park.",
+      "imgs": [
+        "/images/torbiere-san-pietro.jpg",
+        "/images/torbiere-panorama.jpg",
+        "/images/torbiere-ninfee.jpg",
+        "/images/torbiere-tramonto.jpg",
+        "/images/cascata-gaina-1.jpg",
+        "/images/cascata-gaina-2.jpg",
+        "/images/alto-sebino-lovere.jpg",
+        "/images/alto-sebino-lago.jpg"
+      ],
+      "detail": "The area surrounding the Hotel San Michele is home to three natural treasures of extraordinary value. The Sebino Peat Bogs—a Nature Reserve and European Special Protection Area—are one of Lombardy’s most important wetlands, featuring the Romanesque church of San Pietro in Lamosa, which stands on the water amid reeds and water lilies. The Gaina Waterfalls in Monticelli Brusati can be reached via a hike through the canyon carved out by the Gaina stream. The Alto Sebino Park, the largest local park in Lombardy, stretches from 183 m at Lake Iseo up to 1,880 m at Mount Pora.",
+      "highlights": [
+        "Sebino Peat Bogs — Nature Reserve, 10 km from the hotel",
+        "San Pietro in Lamosa — a Romanesque church on the water (11th century)",
+        "White water lilies and wildlife (herons, kingfishers)",
+        "Gaina Waterfalls — Canyon and Equipped Trail in Monticelli Brusati",
+        "Alto Sebino Park — Hikes from Lovere to Monte Pora",
+        "Riva di Solto — a lakeside village with breathtaking views"
+      ],
+      "tip": "Sebino Peat Bogs: Free admission, open seasonally. Gaina Waterfalls Trail: ~3 km loop trail, elevation gain 250 m.",
+      "mapSrc": ""
+    },
+    {
+      "icon": "🏔️",
+      "title": "Outdoor Activities",
+      "desc": "Golf among the vineyards, hiking in the hills, rock climbing, and water sports on Lake Iseo.",
+      "imgs": [
+        "/images/outdoor-golf.jpg",
+        "/images/outdoor-golf2.jpg",
+        "/images/outdoor-trekking.jpg",
+        "/images/outdoor-colline.jpg",
+        "/images/outdoor-trekking.jpg"
+      ],
+      "detail": "Franciacorta and Lake Iseo offer a wide range of outdoor activities for all skill levels. The Franciacorta Golf Club in Nigoline di Corte Franca features 27 holes (three 9-hole courses named Brut, Satèn, and Rosé) nestled within 80 hectares of greenery amid woods and vineyards—one of the most beautiful courses in Northern Italy, open to non-members by reservation. On Lake Iseo, you can enjoy kayaking, stand-up paddleboarding (SUP), windsurfing, kitesurfing, sailing, rowing, and scuba diving. The cliffs at Sale Marasino and Riva di Solto are among the most popular sport climbing sites in Lombardy. The hills of Ome and Gussago are perfect for hiking, offering panoramic views of the Alps and the Po Valley.",
+      "highlights": [
+        "Franciacorta Golf Club — 27 holes (Brut, Satèn, Rosé) among the vineyards",
+        "Kayaking, SUP, windsurfing, and kitesurfing on Lake Iseo",
+        "Sailing and Boat Rentals — Schools Open Year-Round",
+        "Sport Climbing in Sale Marasino and Riva di Solto",
+        "Diving and Scuba Diving in Lake Iseo",
+        "Hiking in the Ome, Gussago, and Rodengo Saiano Hills",
+        "Paragliding from Forcella di Sale — panoramic lake view"
+      ],
+      "tip": "Franciacorta Golf Club: Non-members are welcome by reservation — tel. 030 984167. For water sports: Iseo Lake Adventure (iseolakeadventure.com) and OverAlp.",
+      "mapSrc": ""
+    }
+  ]
+}

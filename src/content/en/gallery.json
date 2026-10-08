@@ -1,0 +1,111 @@
+{
+  "heroImg": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/3c/d5/79/caption.jpg?w=1600&h=900&s=1",
+  "photos": [
+    {
+      "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/3c/d5/79/caption.jpg?w=900&h=600&s=1",
+      "label": "The Hotel",
+      "cat": "hotel",
+      "span": "col-span-2 row-span-2"
+    },
+    {
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791198371915-gallery-1791198370459.jpg",
+      "label": "Superior Room",
+      "cat": "hotel",
+      "span": ""
+    },
+    {
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791198385114-gallery-1791198384356.jpg",
+      "label": "Panoramic Room",
+      "cat": "hotel",
+      "span": ""
+    },
+    {
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791198403144-gallery-1791198402432.jpg",
+      "label": "San Michele Suite",
+      "cat": "hotel",
+      "span": ""
+    },
+    {
+      "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/f8/32/c2/photo4jpg.jpg?w=900&h=600&s=1",
+      "label": "The Terrace",
+      "cat": "hotel",
+      "span": "col-span-2"
+    },
+    {
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1789027402605-gallery-1789027399982.jpg",
+      "label": "Dining Room",
+      "cat": "restaurant",
+      "span": "col-span-2"
+    },
+    {
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791228770217-gallery-1791228768483.jpg",
+      "label": "",
+      "cat": "restaurant",
+      "span": ""
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80",
+      "label": "Franciacorta DOCG",
+      "cat": "kitchen",
+      "span": ""
+    },
+    {
+      "src": "/images/territorio-1.jpg",
+      "label": "Adro Vineyards",
+      "cat": "territory",
+      "span": "col-span-3"
+    },
+    {
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791199144007-gallery-1791199143559.jpg",
+      "label": "Vineyard in Franciacorta",
+      "cat": "territory",
+      "span": ""
+    },
+    {
+      "src": "/images/territorio-2.jpg",
+      "label": "Vigneto and Santissima — Gussago",
+      "cat": "territory",
+      "span": "col-span-2"
+    },
+    {
+      "src": "/images/territorio-5.jpg",
+      "label": "Montina Vineyard — Provezze",
+      "cat": "territory",
+      "span": ""
+    },
+    {
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1789027527100-gallery-1789027523994.jpg",
+      "label": "Breakfast",
+      "cat": "hotel",
+      "span": ""
+    },
+    {
+      "src": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791198832162-gallery-1791198831390.jpg",
+      "label": "New photo",
+      "cat": "restaurant",
+      "span": "col-span-2"
+    }
+  ],
+  "categories": [
+    {
+      "key": "tutti",
+      "label": "Everyone"
+    },
+    {
+      "key": "hotel",
+      "label": "The Hotel"
+    },
+    {
+      "key": "ristorante",
+      "label": "The Restaurant"
+    },
+    {
+      "key": "cucina",
+      "label": "The Kitchen"
+    },
+    {
+      "key": "territorio",
+      "label": "The Region"
+    }
+  ]
+}

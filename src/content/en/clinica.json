@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "img": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=90",
+    "label": "For Patients and Their Families",
+    "title": "Agreements &",
+    "titleItalic": "dedicated services",
+    "subtitle": "Restaurant discount and shuttle service for patients at the San Rocco Clinical Institute"
+  },
+  "intro": {
+    "sectionLabel": "Three minutes from the clinic",
+    "title": "A point of reference",
+    "titleItalic": "For those close to the patients at the San Rocco Institute",
+    "para": "The Hotel Ristorante San Michele is located just 1.2 km from the San Rocco Clinical Institute. For patients undergoing hospitalization or surgery—and the family members accompanying them—we have arranged special benefits: a discount at the restaurant and a dedicated shuttle service."
+  },
+  "sconto": {
+    "sectionLabel": "",
+    "title": "Special discount for",
+    "titleItalic": "patients and their families",
+    "desc": "Patients who are hospitalized or undergoing surgery at the San Rocco Clinical Institute, as well as their family members, are eligible for a special rate and are exempt from the tourist tax.",
+    "footerLabel": "For information about the special discount"
+  },
+  "navetta": {
+    "sectionLabel": "Service included",
+    "title": "Free shuttle",
+    "titleItalic": "hotel ↔ clinic",
+    "desc": "Guests at the Hotel San Michele who need to get to the San Rocco Clinical Institute can take advantage of the dedicated shuttle service. Transportation is arranged directly by the front desk upon reservation.",
+    "footerLabel": "Book the shuttle at the front desk or contact us"
+  },
+  "vantaggi": {
+    "sectionLabel": "Why Choose San Michele",
+    "title": "Everything you need,",
+    "titleItalic": "three minutes away",
+    "items": [
+      {
+        "icon": "heart",
+        "title": "Proximity to the clinic",
+        "desc": "Just 1.2 km from the San Rocco Clinical Institute. A three-minute drive—absolute convenience for families and patients."
+      },
+      {
+        "icon": "restaurant",
+        "title": "Local Cuisine",
+        "desc": "The restaurant serves signature Lombard cuisine. A moment of quality, even on the busiest days."
+      },
+      {
+        "icon": "taxi",
+        "title": "Shuttle service upon request",
+        "desc": "The hotel-to-clinic shuttle service is available to all guests. Simply let the front desk know when you check in."
+      }
+    ]
+  },
+  "dove": {
+    "sectionLabel": "Where We Are",
+    "title": "San Rocco Clinical Institute —",
+    "titleItalic": "1.2 km from the hotel",
+    "para": "The clinic is located on the same street as the hotel, a three-minute drive away. The front desk at Hotel San Michele is available to assist with any transportation needs or to provide information.",
+    "clinicaLabel": "San Rocco Clinical Institute",
+    "clinicaAddress": "Via dei Sabbioni, 24 · 25050 Ome (BS)",
+    "clinicaPhoneLabel": "Clinic Switchboard",
+    "clinicaPhone": "+39 030 685 9111",
+    "hotelLabel": "Hotel San Michele",
+    "hotelAddress": "5a Via S. Michele · Ome",
+    "distanza": "~3 minutes · 1.2 km from the San Rocco Institute"
+  },
+  "cta": {
+    "title": "Are you here to visit a family member who is hospitalized?",
+    "para": "Contact us: We'll explain the restaurant's special discount and arrange a shuttle service for your transportation."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "img": "/images/hotel-2.jpg",
+    "label": "We're here to help",
+    "title": "Book",
+    "titleItalic": "or contact us",
+    "subtitle": ""
+  },
+  "info": {
+    "sectionLabel": "Contact Us",
+    "title": "Book",
+    "titleItalic": "directly",
+    "titleSuffix": "with us",
+    "intro": "By contacting us directly, you'll have access to the best available rates and a fully personalized service. Our team is here to assist you with any needs you may have.",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email"
+  },
+  "hours": {
+    "label": "Hours",
+    "reception": "Reception: 7:00 a.m. – 10:00 p.m.",
+    "lunch": "Lunch hours: 12:00 p.m. – 2:30 p.m.",
+    "dinner": "Restaurant dinner hours: 7:30 p.m. – 10:00 p.m.",
+    "closed": "Closed on Tuesdays"
+  },
+  "whyDirect": {
+    "title": "Why Book Directly",
+    "items": [
+      "Best Rates Guaranteed",
+      "Complete flexibility when booking",
+      "Preferences and special requests handled directly",
+      "Early check-in upon request"
+    ]
+  }
+}

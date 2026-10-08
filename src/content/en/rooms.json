@@ -1,0 +1,77 @@
+{
+  "rooms": [
+    {
+      "slug": "camera-classic",
+      "name": "Classic Room",
+      "label": "Comfort · Garden View",
+      "tagline": "Essential Well-Being",
+      "price": "Starting at €85 per night",
+      "size": "22 m²",
+      "guests": "2 guests",
+      "desc": "Furnished with natural materials, it offers everything you need for a relaxing stay. Garden view, private bathroom with shower, air conditioning, and Wi-Fi.",
+      "features": [
+        "Double bed or twin beds",
+        "Private bathroom with shower",
+        "Air conditioning · Wi-Fi",
+        "40\" LED TV · Safe",
+        "View of the garden",
+        "Breakfast included"
+      ],
+      "photos": [
+        "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791206172498-hotel-1791206171516.jpg",
+        "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791206183367-hotel-1791206182565.jpg",
+        "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791206207844-hotel-1791206207124.jpg",
+        "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791206218794-hotel-1791206218075.jpg"
+      ],
+      "cardDesc": "Furnished with natural materials, it offers everything you need for a relaxing stay. Garden view, private bathroom with shower, air conditioning, and Wi-Fi."
+    },
+    {
+      "slug": "camera-panoramica",
+      "name": "Panoramic Room",
+      "label": "Superior · Vineyard View",
+      "tagline": "Waking Up in Franciacorta",
+      "price": "Starting at €110 per night",
+      "size": "28 m²",
+      "guests": "2 guests",
+      "desc": "The windows look out directly onto the Franciacorta vineyards. Private balcony, minibar, and breakfast included every morning.",
+      "features": [
+        "King-size bed",
+        "Private balcony with a view of the vineyards",
+        "Private bathroom with shower",
+        "Mini-bar · Wi-Fi · 43\" LED TV",
+        "Air Conditioning",
+        "Breakfast included"
+      ],
+      "photos": [
+        "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791206234824-hotel-1791206233631.jpg",
+        "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791206253604-hotel-1791206252350.jpg",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1600&q=85"
+      ]
+    },
+    {
+      "slug": "suite-san-michele",
+      "name": "San Michele Suite",
+      "label": "Suite · 180° Panoramic View",
+      "tagline": "An Exceptional Stay",
+      "price": "Starting at €170 per night",
+      "size": "45 m²",
+      "guests": "2 guests",
+      "desc": "Separate living area, private terrace with a 180° view of the hills, marble bathroom with a whirlpool tub. Complimentary bottle of Franciacorta DOCG included.",
+      "features": [
+        "Separate living area",
+        "Private panoramic terrace",
+        "Hot tub · rain shower",
+        "A Welcome Glass of Franciacorta DOCG",
+        "Bathrobe · Premium minibar",
+        "Breakfast included (served in your room upon request)"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1621293954908-907159247fc8?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?auto=format&fit=crop&w=1600&q=85",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=85"
+      ]
+    }
+  ]
+}
