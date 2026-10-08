@@ -7,21 +7,15 @@
       "imgs": [
         "/images/territorio-4.jpg",
         "/images/cantina-1.jpg",
-        "/images/cantina-2.jpg",
+        "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1791229024511-location-1791229024012.jpg",
         "/images/territorio-1.jpg",
-        "/images/cantina-3.jpg",
-        "/images/cantina-4.jpg",
-        "/images/cantina-5.jpg",
         "/images/territorio-2.jpg"
       ],
-      "detail": "La Franciacorta conta oltre 60 cantine, tutte aperte a visite guidate con degustazione su prenotazione. Il Franciacorta DOCG è l'unico spumante italiano prodotto esclusivamente con Metodo Classico: Chardonnay, Pinot Nero e Pinot Bianco rifermentati in bottiglia per almeno 18 mesi. Le cantine offrono percorsi tra vigne e barricaie, degustazioni delle diverse tipologie — Satèn, Rosé, Millesimato, Riserva — con abbinamenti gastronomici al territorio.",
+      "detail": "La Franciacorta conta oltre 60 cantine, tutte aperte a visite guidate con degustazione su prenotazione. Il Franciacorta DOCG è prodotto esclusivamente con Metodo Classico: Chardonnay, Pinot Nero e Pinot Bianco vinificati secondo una rigida disciplinare. Le cantine offrono percorsi tra vigne e barricaie, degustazioni delle diverse tipologie .",
       "highlights": [
-        "Ca' del Bosco — Erbusco",
-        "Bellavista — Erbusco",
-        "Berlucchi — Borgonato",
-        "Cavalleri — Erbusco",
-        "Contadi Castaldi",
-        "Ferghettina — Adro"
+        "Cantina Majolini-Ome",
+        "Az Agricola Bonzoni-Ome",
+        "La Fiorita Franciacorta-Ome"
       ],
       "tip": "L'Hotel San Michele può organizzare visite in cantina su prenotazione per i propri ospiti.",
       "mapSrc": ""
@@ -33,11 +27,7 @@
       "imgs": [
         "/images/lago-panorama.jpg",
         "/images/montisola-siviano.jpg",
-        "/images/isola-loreto.jpg",
-        "/images/lago-kayak.jpg",
-        "/images/lago-sup.jpg",
-        "/images/lago-windsurf.jpg",
-        "/images/lago-barca.jpg"
+        "/images/isola-loreto.jpg"
       ],
       "detail": "Il Lago d'Iseo è a soli 12 km dall'Hotel San Michele — circa 15 minuti in auto. Al centro del lago sorge Monte Isola, la più grande isola lacustre d'Europa abitata, raggiungibile in traghetto da Sulzano o Sale Marasino. I borghi di Iseo, Lovere e Sarnico meritano tutti una visita. Le gite e le attività acquatiche non sono organizzate dall'hotel, ma sono facilmente prenotabili direttamente una volta sul posto o online.",
       "highlights": [
@@ -47,8 +37,7 @@
         "Stand Up Paddle (SUP)",
         "Windsurf e kitesurf",
         "Vela e noleggio imbarcazioni",
-        "Diving e immersioni",
-        "Pesca sportiva e canottaggio"
+        "Diving e immersioni"
       ],
       "tip": "Traghetti e battelli: navigazionelagoiseo.it — servizio attivo tutto l'anno con corse frequenti.",
       "mapSrc": ""
@@ -60,9 +49,6 @@
       "imgs": [
         "/images/ciclovia-franciacorta.jpg",
         "/images/ciclovia-erbusco.jpg",
-        "/images/ciclovia-sentiero-1.jpg",
-        "/images/ciclovia-sentiero-2.jpg",
-        "/images/ciclovia-colli.jpg",
         "/images/territorio-4.jpg",
         "/images/territorio-2.jpg"
       ],
@@ -135,13 +121,9 @@
       "imgs": [
         "/images/outdoor-golf.jpg",
         "/images/outdoor-golf2.jpg",
-        "/images/lago-kayak.jpg",
-        "/images/lago-sup.jpg",
-        "/images/lago-windsurf.jpg",
-        "/images/lago-barca.jpg",
-        "/images/outdoor-climbing.jpg",
         "/images/outdoor-trekking.jpg",
-        "/images/outdoor-colline.jpg"
+        "/images/outdoor-colline.jpg",
+        "/images/outdoor-trekking.jpg"
       ],
       "detail": "La Franciacorta e il Lago d'Iseo offrono un ventaglio completo di attività all'aperto per tutti i livelli. Il Golf Club Franciacorta a Nigoline di Corte Franca ha 27 buche (tre percorsi da 9 chiamati Brut, Satèn e Rosé) immersi in 80 ettari di verde tra boschi e vigneti — uno dei campi più belli del Nord Italia, aperto ai non soci su prenotazione. Sul Lago d'Iseo si praticano kayak, SUP, windsurf, kitesurf, vela, canottaggio e diving. Le pareti di Sale Marasino e Riva di Solto sono tra le falesie di arrampicata sportiva più apprezzate della Lombardia. I colli di Ome e Gussago si percorrono a piedi con panorami sulle Alpi e sulla Pianura Padana.",
       "highlights": [
