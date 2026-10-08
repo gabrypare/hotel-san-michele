@@ -80,10 +80,10 @@ function PhotoBtn({ path, label = 'Cambia foto' }) {
 const NEW_PHOTO = { src: '/images/hotel-1.jpg', label: 'Nuova foto', cat: 'hotel', span: '' }
 
 export default function GalleryPage() {
-  const { isEditMode, content, addItem, removeItem, duplicateItem, reorderItems, updateField } = useEditMode()
+  const { isEditMode, content, pick, addItem, removeItem, duplicateItem, reorderItems, updateField } = useEditMode()
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
 
-  const g = content.gallery
+  const g = pick('gallery')
   const [cat, setCat]         = useState('tutti')
   const [lightbox, setLightbox] = useState(null)
 

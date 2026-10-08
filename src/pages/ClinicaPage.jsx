@@ -81,9 +81,9 @@ function PhotoBtn({ onUpload, className = '' }) {
 
 /* ── component ── */
 export default function ClinicaPage() {
-  const { isEditMode, content, updateField, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
+  const { isEditMode, content, pick, updateField, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
 
-  const cl  = content.clinica
+  const cl  = pick('clinica')
   const hero = cl.hero
   const intro = cl.intro
   const sc  = cl.sconto

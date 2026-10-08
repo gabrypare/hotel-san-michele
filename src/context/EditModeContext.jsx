@@ -28,6 +28,7 @@ const INITIAL = {
   location:   locationJson,
   prenota:    prenotaJson,
   clinica:    clinicaJson,
+  en:         {},
 }
 
 function deepClone(obj) { return JSON.parse(JSON.stringify(obj)) }
@@ -64,8 +65,26 @@ export function EditModeProvider({ children }) {
   const [content, setContent]         = useState(deepClone(INITIAL))
   const [isDirty, setIsDirty]         = useState(false)
   const [saveStatus, setSaveStatus]   = useState('idle')
+  const [lang, setLangState]          = useState(() => {
+    if (typeof window === 'undefined') return 'it'
+    return localStorage.getItem('site_lang') === 'en' ? 'en' : 'it'
+  })
   const passwordRef                   = useRef('')
   const contentRef                    = useRef(content)
+
+  /* In modalità modifica si lavora sempre in italiano: l'inglese è generato in automatico al salvataggio */
+  const displayLang = isEditMode ? 'it' : lang
+
+  const setLang = useCallback((l) => {
+    setLangState(l)
+    if (typeof window !== 'undefined') localStorage.setItem('site_lang', l)
+  }, [])
+
+  /* Restituisce il contenuto di fileKey nella lingua attiva, con fallback all'italiano se manca la traduzione */
+  const pick = useCallback((fileKey) => {
+    if (displayLang === 'en' && content.en?.[fileKey]) return content.en[fileKey]
+    return content[fileKey]
+  }, [content, displayLang])
 
   /* Mantieni contentRef sempre aggiornato — così save() legge sempre il valore più recente */
   contentRef.current = content
@@ -181,6 +200,7 @@ export function EditModeProvider({ children }) {
   return (
     <Ctx.Provider value={{
       isEditMode, content, isDirty, saveStatus,
+      lang, setLang, displayLang, pick,
       activate, deactivate,
       updateField, addItem, removeItem, duplicateItem, reorderItems,
       save, passwordRef,

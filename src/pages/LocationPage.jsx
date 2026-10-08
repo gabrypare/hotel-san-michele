@@ -76,9 +76,9 @@ function PhotoBtn({ fileKey, path, label = 'Cambia foto', className = '' }) {
 }
 
 export default function LocationPage() {
-  const { isEditMode, content, reorderItems, addItem, removeItem, duplicateItem, updateField } = useEditMode()
-  const loc = content.location
-  const activities = content.activities.activities
+  const { isEditMode, content, pick, reorderItems, addItem, removeItem, duplicateItem, updateField } = useEditMode()
+  const loc = pick('location')
+  const activities = pick('activities').activities
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
 
   const [selected, setSelected]     = useState(null)

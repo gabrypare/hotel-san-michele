@@ -78,9 +78,9 @@ const NEW_DISH = { name: 'Nuovo Piatto Firma', desc: 'Descrizione del piatto.', 
 const NEW_SLOT = { label: 'Servizio', value: 'Lunedì – Domenica', time: '00:00 – 00:00' }
 
 export default function RistorantePage() {
-  const { isEditMode, content, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
+  const { isEditMode, content, pick, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
-  const r = content.restaurant
+  const r = pick('restaurant')
 
   return (
     <div className="bg-cream">

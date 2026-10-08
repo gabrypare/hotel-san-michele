@@ -3,10 +3,12 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri'
 import SanMicheleLogo from '../ui/SanMicheleLogo'
-import navJson from '../../content/nav.json'
 import { useEditMode } from '../../context/EditModeContext'
 
-const NAV = navJson.items
+const UI = {
+  it: { prenota: 'Prenota' },
+  en: { prenota: 'Book Now' },
+}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -14,7 +16,9 @@ export default function Navbar() {
   const location = useLocation()
   const navigate = useNavigate()
   const isHome   = location.pathname === '/'
-  const { isEditMode } = useEditMode()
+  const { isEditMode, pick, lang, setLang, displayLang } = useEditMode()
+  const NAV = pick('nav').items
+  const t = UI[displayLang]
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 60)
@@ -91,8 +95,15 @@ export default function Navbar() {
                   : 'border border-cream/80 text-cream hover:bg-cream hover:text-forest'
               }`}
             >
-              Prenota
+              {t.prenota}
             </Link>
+            {!isEditMode && (
+              <div className={`flex items-center font-sans text-[0.68rem] tracking-wide ${textCls}`}>
+                <button onClick={() => setLang('it')} className={lang === 'it' ? 'text-gold font-semibold' : 'opacity-60 hover:opacity-100'}>IT</button>
+                <span className="mx-1 opacity-40">/</span>
+                <button onClick={() => setLang('en')} className={lang === 'en' ? 'text-gold font-semibold' : 'opacity-60 hover:opacity-100'}>EN</button>
+              </div>
+            )}
           </div>
 
           {/* Hamburger */}
@@ -117,7 +128,7 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
           >
             <div className="flex flex-col items-center gap-4 sm:gap-7">
-              {[...NAV, { label: 'Prenota', href: '/prenota' }].map((n, i) => (
+              {[...NAV, { label: t.prenota, href: '/prenota' }].map((n, i) => (
                 <motion.div
                   key={n.label}
                   initial={{ opacity: 0, y: 20 }}
@@ -137,6 +148,18 @@ export default function Navbar() {
                 </motion.div>
               ))}
             </div>
+            {!isEditMode && (
+              <motion.div
+                className="absolute bottom-20 flex items-center gap-2 font-sans text-xs tracking-wide text-cream/70"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.45 }}
+              >
+                <button onClick={() => setLang('it')} className={lang === 'it' ? 'text-gold font-semibold' : 'opacity-60'}>IT</button>
+                <span className="opacity-40">/</span>
+                <button onClick={() => setLang('en')} className={lang === 'en' ? 'text-gold font-semibold' : 'opacity-60'}>EN</button>
+              </motion.div>
+            )}
             <motion.p
               className="absolute bottom-10 font-sans text-[0.65rem] tracking-[0.28em] uppercase text-cream/30"
               initial={{ opacity: 0 }}

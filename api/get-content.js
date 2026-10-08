@@ -51,12 +51,20 @@ export default async function handler(req, res) {
   try {
     const entries = await Promise.all(
       Object.entries(FILE_MAP).map(async ([key, path]) => {
-        const data = await fetchFile(path, token)
-        return data ? [key, data] : null
+        const [itData, enData] = await Promise.all([
+          fetchFile(path, token),
+          fetchFile(path.replace('src/content/', 'src/content/en/'), token),
+        ])
+        return { key, itData, enData }
       })
     )
     const result = {}
-    entries.forEach(e => { if (e) result[e[0]] = e[1] })
+    const en = {}
+    entries.forEach(({ key, itData, enData }) => {
+      if (itData) result[key] = itData
+      if (enData) en[key] = enData
+    })
+    result.en = en
     res.setHeader('Cache-Control', 'no-store')
     res.status(200).json(result)
   } catch (err) {

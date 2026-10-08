@@ -1,4 +1,5 @@
 import https from 'https'
+import { translateContentToEnglish } from '../lib/deepl.js'
 
 const REPO   = 'gabrypare/hotel-san-michele'
 const BRANCH = 'main'
@@ -83,6 +84,19 @@ export default async function handler(req, res) {
         await commitFile(filePath, content[key], sha, token)
       } catch (err) {
         errors.push(err.message)
+        continue
+      }
+
+      /* ── traduzione automatica in inglese (non blocca il salvataggio se fallisce) ── */
+      if (process.env.DEEPL_API_KEY) {
+        try {
+          const enContent = await translateContentToEnglish(content[key])
+          const enPath = filePath.replace('src/content/', 'src/content/en/')
+          const enSha = await getFileSha(enPath, token)
+          await commitFile(enPath, enContent, enSha, token)
+        } catch (translateErr) {
+          console.error(`Traduzione EN fallita per ${key}:`, translateErr.message)
+        }
       }
     }
     if (errors.length) return res.status(500).json({ error: errors.join('; ') })

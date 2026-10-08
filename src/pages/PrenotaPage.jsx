@@ -67,7 +67,7 @@ const makeInit = tipo => ({ nome: '', email: '', telefono: '', arrivo: '', parte
 
 /* ── component ────────────────────────────────────────────── */
 export default function PrenotaPage() {
-  const { isEditMode, content, updateField, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
+  const { isEditMode, content, pick, updateField, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
   const [searchParams] = useSearchParams()
   const tipoParam = searchParams.get('tipo')
   const initialTipo = VALID_TIPI.includes(tipoParam) ? tipoParam : 'camera'
@@ -77,8 +77,8 @@ export default function PrenotaPage() {
   const [sendError, setSendError] = useState('')
   const isRistoranteContext = form.tipo === 'ristorante' || form.tipo === 'evento'
 
-  const pre  = content.prenota
-  const set  = content.settings
+  const pre  = pick('prenota')
+  const set  = pick('settings')
   const hero = pre.hero
   const info = pre.info
   const why  = pre.whyDirect

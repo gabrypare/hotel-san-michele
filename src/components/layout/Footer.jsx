@@ -5,13 +5,13 @@ import settings from '../../content/settings.json'
 import { useEditMode } from '../../context/EditModeContext'
 import EditableText from '../editor/EditableText'
 
-const { hotel, contact, hours, social, legal } = settings
+const { legal } = settings
 
 export default function Footer() {
   const year = new Date().getFullYear()
-  const { isEditMode, content } = useEditMode()
+  const { isEditMode, pick } = useEditMode()
 
-  const s = isEditMode ? content.settings : settings
+  const s = pick('settings')
 
   return (
     <footer className="bg-forest-deeper text-cream/65 font-sans">

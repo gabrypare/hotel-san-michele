@@ -87,10 +87,10 @@ function PhotoBtn({ fileKey, path, label = 'Cambia foto' }) {
 const NEW_AMENITY = { iconKey: 'star', title: 'Nuovo servizio', desc: 'Descrizione del servizio.' }
 
 export default function HotelPage() {
-  const { isEditMode, content, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
+  const { isEditMode, content, pick, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
-  const h = content.hotel
-  const rooms = content.rooms.rooms
+  const h = pick('hotel')
+  const rooms = pick('rooms').rooms
 
   return (
     <div className="bg-cream">

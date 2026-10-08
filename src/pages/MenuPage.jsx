@@ -20,16 +20,16 @@ export default function MenuPage() {
   const [active, setActive]   = useState('antipasti')
   const [legend, setLegend]   = useState(false)
   const [loading, setLoading] = useState(false)
-  const { isEditMode, content, updateField, reorderItems, addItem, removeItem, duplicateItem } = useEditMode()
+  const { isEditMode, content, pick, updateField, reorderItems, addItem, removeItem, duplicateItem } = useEditMode()
 
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
 
   // In edit mode, read from context; otherwise use static import
   const getCategory = (key) => {
-    const cats = content.menu.categories
+    const cats = pick('menu').categories
     return cats.find(c => c.key === key) || MENU[key]
   }
-  const getCategoryIndex = (key) => content.menu.categories.findIndex(c => c.key === key)
+  const getCategoryIndex = (key) => pick('menu').categories.findIndex(c => c.key === key)
 
   const category = getCategory(active)
 
@@ -83,7 +83,7 @@ export default function MenuPage() {
       y += 10
 
       /* ── CATEGORIES — usa i dati aggiornati dal context ── */
-      content.menu.categories.forEach(cat => {
+      pick('menu').categories.forEach(cat => {
         guard(18)
 
         /* category title */

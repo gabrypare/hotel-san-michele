@@ -114,9 +114,9 @@ export default function HomePage() {
   const [paused, setPaused] = useState(false)
   const [stripHover, setStripHover] = useState(false)
   const stripRef = useRef(null)
-  const { isEditMode, content, updateField, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
+  const { isEditMode, content, pick, updateField, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
-  const h = content.home
+  const h = pick('home')
 
   useEffect(() => {
     if (paused || isEditMode) return
