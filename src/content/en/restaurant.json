@@ -13,7 +13,7 @@
     "paragraphs": [
       "The kitchen works with trusted local suppliers, following the natural rhythm of the seasons.",
       "Fresh pasta, high-quality meat, game, and lake fish are prepared by blending traditional recipes with modern flavors.",
-      "The hotel features a dining room that seats 70, a spacious ballroom with 200 seats, and a panoramic terrace overlooking the surrounding hills and vineyards. These spaces make the hotel the ideal venue for hosting ceremonies, banquets, business meetings, and parties."
+      "The hotel features a 60-seat dining room, a spacious 200-seat ballroom, and a panoramic terrace overlooking the surrounding hills and vineyards. These spaces make the hotel the ideal venue for hosting ceremonies, banquets, business meetings, and parties."
     ],
     "images": [
       "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066388900-ristorante-1785066386655.jpg",
@@ -51,19 +51,19 @@
     "dishes": [
       {
         "name": "Spacious panoramic terrace...",
-        "desc": "An outdoor space overlooking the surrounding hills, with views of the town's vineyards and olive groves, is ideal for ceremonies, banquets, and outdoor parties.",
+        "desc": "An outdoor space overlooking the surrounding hills, with views of the town’s vineyards and olive groves, is ideal for ceremonies, banquets, and outdoor parties.",
         "cat": "Terrace",
         "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239764553-ristorante-1785239762055.jpg"
       },
       {
         "name": "Cozy dining room...",
-        "desc": "With a capacity of about seventy seats and an intimate, welcoming atmosphere, it's perfect for any occasion",
+        "desc": "With seating for sixty, the intimate and welcoming atmosphere is perfect for any occasion",
         "cat": "Indoor Hall",
         "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239780090-ristorante-1785239777909.jpg"
       },
       {
         "name": "Spacious hall for large events...",
-        "desc": "A spacious hall that can accommodate over 250 people, ideal for events, ceremonies, business meetings, and all kinds of celebrations",
+        "desc": "A spacious hall that can accommodate over 200 people, ideal for events, ceremonies, corporate meetings, and all kinds of celebrations",
         "cat": "Exhibition Hall",
         "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239561008-ristorante-1785239558059.jpg"
       }
