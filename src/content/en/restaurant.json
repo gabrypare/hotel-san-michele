@@ -51,19 +51,19 @@
     "dishes": [
       {
         "name": "Spacious panoramic terrace...",
-        "desc": "An outdoor space overlooking the surrounding hills, with views of the town’s vineyards and olive groves, is ideal for outdoor ceremonies, banquets, and parties.",
+        "desc": "An outdoor space overlooking the surrounding hills, with views of the town's vineyards and olive groves, is ideal for ceremonies, banquets, and outdoor parties.",
         "cat": "Terrace",
         "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239764553-ristorante-1785239762055.jpg"
       },
       {
         "name": "Cozy dining room...",
-        "desc": "With a seating capacity of about seventy and an intimate, welcoming atmosphere, it's perfect for any occasion",
+        "desc": "With a capacity of about seventy seats and an intimate, welcoming atmosphere, it's perfect for any occasion",
         "cat": "Indoor Hall",
         "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239780090-ristorante-1785239777909.jpg"
       },
       {
         "name": "Spacious hall for large events...",
-        "desc": "A spacious hall that can accommodate over 250 people, ideal for events, ceremonies, corporate meetings, and all kinds of celebrations",
+        "desc": "A spacious hall that can accommodate over 250 people, ideal for events, ceremonies, business meetings, and all kinds of celebrations",
         "cat": "Exhibition Hall",
         "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239561008-ristorante-1785239558059.jpg"
       }
@@ -74,7 +74,7 @@
     "title": "The",
     "titleItalic": "Franciacorta",
     "titleSuffix": "",
-    "body1": "We aim to promote our region by offering visitors the chance to taste wines produced in the town of Ome, as well as those from the most renowned producers in the Franciacorta region.",
+    "body1": "We aim to promote our region by offering visitors the opportunity to taste wines produced in the town of Ome, as well as those from the most renowned producers in the Franciacorta region.",
     "body2": "Come discover a world of sparkling wines",
     "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785240108068-ristorante-1785240106306.jpg"
   },
