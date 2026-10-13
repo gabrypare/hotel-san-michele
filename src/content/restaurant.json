@@ -13,7 +13,7 @@
     "paragraphs": [
       "La cucina lavora con fornitori locali di fiducia, seguendo il calendario naturale delle stagioni.",
       "Pasta fresca, carne di qualità ,selvaggina e pesce di lago vengono trattati mescolando ricette tradizionali a gusti moderni .",
-      "La struttura dispone di una sala da 70 coperti , un ampio salone da 200 posti e una terrazza panoramica che si affaccia su colline e vigneti circostanti . Questi spazi rendono l'hotel il posto ideale per organizzare cerimonie , banchetti , meeting aziendali e feste ."
+      "La struttura dispone di una sala da 60 posti , un ampio salone da 200 posti e una terrazza panoramica che si affaccia su colline e vigneti circostanti . Questi spazi rendono l'hotel il posto ideale per organizzare cerimonie , banchetti , meeting aziendali e feste ."
     ],
     "images": [
       "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785066388900-ristorante-1785066386655.jpg",
@@ -57,13 +57,13 @@
       },
       {
         "name": "Accogliente sala interna...",
-        "desc": "Con una capienza di settanta coperti circa e l'atmosfera intima e accogliente si presta a ogni occasione",
+        "desc": "Con una capienza di sessanta coperti , l'atmosfera intima e accogliente si presta a ogni occasione",
         "cat": "Sala interna",
         "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239780090-ristorante-1785239777909.jpg"
       },
       {
         "name": "Ampio salone per grandi eventi...",
-        "desc": "Salone dalle generose dimensioni che può ospitare oltre 250 persone ideale per eventi , cerimonie , meeting aziendali e ogni tipo di ricorrenza",
+        "desc": "Salone dalle generose dimensioni che può ospitare oltre 200 persone ideale per eventi , cerimonie , meeting aziendali e ogni tipo di ricorrenza",
         "cat": "Salone",
         "img": "https://6e6xeyohuxqe27u8.public.blob.vercel-storage.com/menu/1785239561008-ristorante-1785239558059.jpg"
       }
