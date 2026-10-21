@@ -79,7 +79,7 @@
       {
         "title": "1. In short",
         "paragraphs": [
-          "This website does not use profiling, advertising or analytics cookies. For this reason we do not ask for your consent when you open the website.",
+          "This website does not use profiling or advertising cookies. For this reason we do not ask for your consent when you open the website.",
           "Some content from other services (such as the Google map) is loaded only if you choose so, with a click."
         ]
       },
@@ -87,7 +87,8 @@
         "title": "2. Technical tools used by the website",
         "paragraphs": [
           "• Language preference (site_lang): if you choose the Italian or English version, the website remembers your choice by saving it in your browser (local storage). It contains no personal data, does not expire and you can delete it at any time from your browser settings.",
-          "These tools are necessary for the website to work and do not require consent (Art. 122 Italian Legislative Decree 196/2003)."
+          "• Visit statistics (Vercel Web Analytics): we count, anonymously and in aggregate, the pages visited, where visitors come from (e.g. Google, Instagram), their country and device type. The service does not use cookies, stores nothing on your device and cannot identify you or follow you across other websites.",
+          "These tools are either necessary for the website to work or collect only anonymous data, and do not require consent (Art. 122 Italian Legislative Decree 196/2003)."
         ]
       },
       {

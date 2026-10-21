@@ -79,7 +79,7 @@
       {
         "title": "1. In breve",
         "paragraphs": [
-          "Questo sito non usa cookie di profilazione, pubblicità o statistiche. Per questo motivo non ti chiediamo il consenso all'apertura del sito.",
+          "Questo sito non usa cookie di profilazione o pubblicità. Per questo motivo non ti chiediamo il consenso all'apertura del sito.",
           "Alcuni contenuti di altri servizi (come la mappa di Google) vengono caricati solo se lo scegli tu, con un click."
         ]
       },
@@ -87,7 +87,8 @@
         "title": "2. Strumenti tecnici usati dal sito",
         "paragraphs": [
           "• Preferenza lingua (site_lang): se scegli la versione italiana o inglese, il sito ricorda la tua scelta salvandola nel browser (memoria locale). Non contiene dati personali, non scade e puoi cancellarla in qualsiasi momento dalle impostazioni del browser.",
-          "Questi strumenti sono necessari al funzionamento del sito e non richiedono consenso (art. 122 D.Lgs. 196/2003)."
+          "• Statistiche di visita (Vercel Web Analytics): contiamo in forma anonima e aggregata le pagine visitate, la provenienza (es. Google, Instagram), il paese e il tipo di dispositivo. Il servizio non usa cookie, non salva nulla sul tuo dispositivo e non permette di identificarti né di seguirti su altri siti.",
+          "Questi strumenti sono necessari al funzionamento del sito o raccolgono solo dati anonimi, e non richiedono consenso (art. 122 D.Lgs. 196/2003)."
         ]
       },
       {
