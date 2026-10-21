@@ -207,8 +207,8 @@ export default function ClinicaPage() {
                 <EditableText tag="p" fileKey="clinica" path={['navetta', 'footerLabel']} value={nav.footerLabel}
                   className="font-sans text-xs text-charcoal/35 tracking-wide mb-4" />
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Link to="/prenota" className="btn-gold inline-flex items-center gap-2 text-sm">
-                    Prenota l'Hotel <RiArrowRightLine size={13} />
+                  <Link to="/prenota?tipo=hotel" className="btn-gold inline-flex items-center gap-2 text-sm">
+                    Chiedi informazioni <RiArrowRightLine size={13} />
                   </Link>
                   <a href="tel:+390303378060" className="btn-outline-dark inline-flex items-center gap-2 text-sm">
                     +39 030 3378060
@@ -337,7 +337,7 @@ export default function ClinicaPage() {
                 <EditableText tag="p" fileKey="clinica" path={['dove', 'distanza']} value={dov.distanza}
                   className="font-sans text-sm text-gold mb-6" />
                 <div className="border-t border-cream/10 pt-6 flex flex-col sm:flex-row gap-3">
-                  <Link to="/prenota" className="btn-gold text-sm">Prenota una camera</Link>
+                  <Link to="/prenota?tipo=hotel" className="btn-gold text-sm">Chiedi informazioni</Link>
                   <a href="tel:+390303378060" className="btn-outline-light text-sm">
                     +39 030 3378060
                   </a>

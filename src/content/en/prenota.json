@@ -2,15 +2,15 @@
   "hero": {
     "img": "/images/hotel-2.jpg",
     "label": "We're here to help",
-    "title": "Book",
-    "titleItalic": "or contact us",
+    "title": "Contact us",
+    "titleItalic": "for information",
     "subtitle": ""
   },
   "info": {
     "sectionLabel": "Contact Us",
     "title": "Book",
     "titleItalic": "directly",
-    "titleSuffix": "with us",
+    "titleSuffix": "by phone",
     "intro": "By contacting us directly, you'll have access to the best available rates and a fully personalized service. Our team is here to assist you with any need.",
     "addressLabel": "Address",
     "phoneLabel": "Phone",

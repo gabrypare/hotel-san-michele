@@ -6,8 +6,8 @@ import SanMicheleLogo from '../ui/SanMicheleLogo'
 import { useEditMode } from '../../context/EditModeContext'
 
 const UI = {
-  it: { prenota: 'Prenota' },
-  en: { prenota: 'Book Now' },
+  it: { prenota: 'Contatti' },
+  en: { prenota: 'Contact' },
 }
 
 export default function Navbar() {

@@ -44,7 +44,7 @@ export default function Footer() {
               { label: 'Il Menù',       href: '/menu' },
               { label: 'Location',      href: '/location' },
               { label: 'Galleria',      href: '/galleria' },
-              { label: 'Prenota',       href: '/prenota' },
+              { label: 'Contatti',      href: '/prenota' },
             ].map(l => (
               <li key={l.label}>
                 <Link to={l.href} className="text-cream/50 hover:text-gold transition-colors duration-300">

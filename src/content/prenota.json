@@ -2,15 +2,15 @@
   "hero": {
     "img": "/images/hotel-2.jpg",
     "label": "Siamo a tua disposizione",
-    "title": "Prenota",
-    "titleItalic": "o contattaci",
+    "title": "Contattaci",
+    "titleItalic": "per informazioni",
     "subtitle": ""
   },
   "info": {
     "sectionLabel": "Contatti",
     "title": "Prenota",
     "titleItalic": "direttamente",
-    "titleSuffix": "con noi",
+    "titleSuffix": "al telefono",
     "intro": "Contattandoci direttamente hai accesso alle migliori tariffe disponibili e a un servizio completamente personalizzato. Il nostro team è a disposizione per ogni esigenza.",
     "addressLabel": "Indirizzo",
     "phoneLabel": "Telefono",

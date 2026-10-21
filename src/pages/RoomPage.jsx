@@ -212,8 +212,8 @@ export default function RoomPage() {
                   className="font-sans text-base text-charcoal/70 leading-relaxed mb-10 block"
                 />
 
-                <Link to="/prenota?tipo=camera" className="btn-gold inline-flex items-center gap-2">
-                  Prenota questa camera <RiArrowRightLine size={13} />
+                <Link to="/prenota?tipo=hotel" className="btn-gold inline-flex items-center gap-2">
+                  Chiedi informazioni <RiArrowRightLine size={13} />
                 </Link>
               </ScrollReveal>
             </div>
@@ -257,8 +257,8 @@ export default function RoomPage() {
                   <div className="mt-8 pt-6 border-t border-cream/10">
                     <EditableText tag="p" fileKey="rooms" path={['rooms', roomIdx, 'price']} value={room.price} className="font-display italic text-2xl text-gold-light mb-1 block" />
                     <p className="font-sans text-xs text-cream/40 mb-5">Colazione inclusa · Cancellazione gratuita</p>
-                    <Link to="/prenota?tipo=camera" className="btn-gold w-full text-center block">
-                      Prenota ora
+                    <Link to="/prenota?tipo=hotel" className="btn-gold w-full text-center block">
+                      Chiedi informazioni
                     </Link>
                   </div>
                 </div>

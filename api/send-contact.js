@@ -3,12 +3,14 @@ import nodemailer from 'nodemailer'
 const HOTEL_EMAIL      = 'hotelsanmicheleome@gmail.com'
 const RISTORANTE_EMAIL = 'ristorantesanmicheleome@gmail.com'
 
+/* Solo richieste di informazioni: le prenotazioni si fanno per telefono */
 const TIPO_LABELS = {
-  camera:     'Prenotazione camera',
-  ristorante: 'Prenotazione ristorante',
-  evento:     'Evento / Banchetto',
-  info:       'Informazioni generali',
+  hotel:      'Informazioni hotel',
+  ristorante: 'Informazioni ristorante',
 }
+
+/* Vecchi valori (link esterni o pagine in cache) → nuove categorie */
+const LEGACY_TIPI = { camera: 'hotel', info: 'hotel', evento: 'ristorante' }
 
 const VALID_TIPI = Object.keys(TIPO_LABELS)
 
@@ -32,7 +34,8 @@ function row(label, value) {
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
 
-  const { nome, email, telefono, arrivo, partenza, ospiti, tipo, messaggio } = req.body ?? {}
+  const { nome, email, telefono, messaggio } = req.body ?? {}
+  const tipo = LEGACY_TIPI[req.body?.tipo] ?? req.body?.tipo
 
   /* ── basic validation ── */
   if (!nome || !email || !tipo) return res.status(400).json({ error: 'Campi obbligatori mancanti' })
@@ -40,11 +43,11 @@ export default async function handler(req, res) {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return res.status(400).json({ error: 'Email non valida' })
 
   /* ── routing ── */
-  const toEmail   = (tipo === 'camera' || tipo === 'info') ? HOTEL_EMAIL : RISTORANTE_EMAIL
+  const isRistorante = tipo === 'ristorante'
+  const toEmail   = isRistorante ? RISTORANTE_EMAIL : HOTEL_EMAIL
   const tipoLabel = TIPO_LABELS[tipo]
 
   /* ── transporter (account diverso per hotel / ristorante) ── */
-  const isRistorante = tipo === 'ristorante' || tipo === 'evento'
   const gmailUser = isRistorante ? process.env.GMAIL_USER_RISTORANTE : process.env.GMAIL_USER
   const gmailPass = isRistorante ? process.env.GMAIL_APP_PASSWORD_RISTORANTE : process.env.GMAIL_APP_PASSWORD
 
@@ -66,9 +69,6 @@ export default async function handler(req, res) {
     ${row('Nome', nome)}
     ${row('Email', email)}
     ${row('Telefono', telefono)}
-    ${row('Arrivo', arrivo)}
-    ${row('Partenza', partenza)}
-    ${ospiti ? row('Ospiti', ospiti) : ''}
   </table>
   ${messaggio ? `
   <div style="margin-top:20px;padding:16px;background:#f7f2e8;border-left:3px solid #C9A96E">
@@ -93,11 +93,14 @@ export default async function handler(req, res) {
     Abbiamo ricevuto la tua richiesta di <strong>${tipoLabel.toLowerCase()}</strong>.<br>
     Ti risponderemo entro <strong>24 ore</strong> all'indirizzo <strong>${escapeHtml(email)}</strong>.
   </p>
+  <p style="color:#555;line-height:1.7;font-size:15px">
+    Per <strong>prenotare</strong> ${isRistorante ? 'un tavolo' : 'una camera'} chiamaci al <strong>+39 030 3378060</strong>.
+  </p>
   <div style="margin:24px 0;padding:16px;background:#f7f2e8;border-left:3px solid #C9A96E">
-    <p style="margin:0 0 4px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#888">Per contattarci direttamente</p>
+    <p style="margin:0 0 4px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#888">Per prenotare o contattarci direttamente</p>
     <p style="margin:0;font-size:14px;color:#2a2218;line-height:1.8">
       <a href="tel:+390303378060" style="color:#C9A96E;text-decoration:none">+39 030 3378060</a><br>
-      <a href="mailto:info@sanmicheleome.it" style="color:#C9A96E;text-decoration:none">info@sanmicheleome.it</a>
+      <a href="mailto:${toEmail}" style="color:#C9A96E;text-decoration:none">${toEmail}</a>
     </p>
   </div>
   <p style="margin-top:28px;font-size:11px;color:#bbb">

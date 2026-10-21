@@ -185,7 +185,7 @@ export default function LocationPage() {
               <EditableText tag="p" fileKey="location" path={['intro', 'para2']} value={loc.intro.para2} multiline className="font-sans text-base text-charcoal/72 leading-relaxed mb-5 block" />
               <EditableText tag="p" fileKey="location" path={['intro', 'para3']} value={loc.intro.para3} multiline className="font-sans text-base text-charcoal/72 leading-relaxed mb-8 block" />
               <Link to="/prenota" className="btn-gold inline-flex items-center gap-2">
-                Prenota il tuo soggiorno <RiArrowRightLine size={13} />
+                Chiedi informazioni <RiArrowRightLine size={13} />
               </Link>
             </ScrollReveal>
             <ScrollReveal direction="right" delay={0.15}>
@@ -488,7 +488,7 @@ export default function LocationPage() {
                               <RiArrowLeftSLine size={16} /><span className="font-sans text-[0.6rem] tracking-[0.12em] uppercase">Prec.</span>
                             </button>
                             <Link to="/prenota" onClick={() => setSelected(null)} className="inline-flex items-center gap-1.5 bg-gold hover:bg-gold-light text-forest-dark font-sans text-[0.65rem] tracking-[0.2em] uppercase px-4 py-2 transition-all duration-300">
-                              Prenota <RiArrowRightLine size={10} />
+                              Informazioni <RiArrowRightLine size={10} />
                             </Link>
                             <button onClick={nextModal} disabled={selected === activities.length - 1} className={`flex items-center gap-1 transition-colors duration-200 ${selected === activities.length - 1 ? 'invisible' : 'text-charcoal/45 hover:text-forest'}`}>
                               <span className="font-sans text-[0.6rem] tracking-[0.12em] uppercase">Succ.</span><RiArrowRightSLine size={16} />
@@ -628,7 +628,7 @@ export default function LocationPage() {
                             <RiArrowLeftSLine size={16} /><span className="font-sans text-[0.6rem] tracking-[0.12em] uppercase">Prec.</span>
                           </button>
                           <Link to="/prenota" onClick={() => setSelected(null)} className="inline-flex items-center gap-1.5 bg-gold hover:bg-gold-light text-forest-dark font-sans text-[0.65rem] tracking-[0.2em] uppercase px-4 py-2 transition-all duration-300">
-                            Prenota <RiArrowRightLine size={10} />
+                            Informazioni <RiArrowRightLine size={10} />
                           </Link>
                           <button onClick={nextModal} disabled={selected === activities.length - 1} className={`flex items-center gap-1 transition-colors duration-200 ${selected === activities.length - 1 ? 'invisible' : 'text-charcoal/45 hover:text-forest'}`}>
                             <span className="font-sans text-[0.6rem] tracking-[0.12em] uppercase">Succ.</span><RiArrowRightSLine size={16} />

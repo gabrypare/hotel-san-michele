@@ -415,7 +415,7 @@ export default function HomePage() {
               <Link to="/menu" className="btn-gold inline-flex items-center gap-2">
                 Vedi il Menù <RiArrowRightLine size={13} />
               </Link>
-              <Link to="/prenota?tipo=ristorante" className="btn-outline-light">Prenota un tavolo</Link>
+              <Link to="/prenota?tipo=ristorante" className="btn-outline-light">Chiedi informazioni</Link>
             </div>
           </ScrollReveal>
         </div>
@@ -513,7 +513,7 @@ export default function HomePage() {
           </h2>
           <EditableText tag="p" fileKey="home" path={['bookCta', 'body']} value={h.bookCta.body} multiline className="font-sans text-base text-cream/60 mb-10 leading-relaxed block" />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/prenota" className="btn-gold">Prenota Ora</Link>
+            <Link to="/prenota" className="btn-gold">Chiedi informazioni</Link>
             <a href="tel:+390303378060" className="btn-outline-light">+39 030 3378060</a>
           </div>
         </ScrollReveal>

@@ -62,20 +62,22 @@ function PhotoBtn({ onUpload, className = '' }) {
 }
 
 /* ── form initial state ───────────────────────────────────── */
-const VALID_TIPI = ['camera', 'ristorante', 'evento', 'info']
-const makeInit = tipo => ({ nome: '', email: '', telefono: '', arrivo: '', partenza: '', ospiti: '2', tipo, messaggio: '' })
+/* Solo richieste di informazioni (hotel / ristorante): le prenotazioni si fanno per telefono */
+const VALID_TIPI = ['hotel', 'ristorante']
+const LEGACY_TIPI = { camera: 'hotel', info: 'hotel', evento: 'ristorante' }
+const makeInit = tipo => ({ nome: '', email: '', telefono: '', tipo, messaggio: '' })
 
 /* ── component ────────────────────────────────────────────── */
 export default function PrenotaPage() {
   const { isEditMode, content, pick, updateField, addItem, removeItem, duplicateItem, reorderItems } = useEditMode()
   const [searchParams] = useSearchParams()
-  const tipoParam = searchParams.get('tipo')
-  const initialTipo = VALID_TIPI.includes(tipoParam) ? tipoParam : 'camera'
+  const tipoParam = LEGACY_TIPI[searchParams.get('tipo')] ?? searchParams.get('tipo')
+  const initialTipo = VALID_TIPI.includes(tipoParam) ? tipoParam : 'hotel'
   const [form, setForm] = useState(() => makeInit(initialTipo))
   const [sent, setSent] = useState(false)
   const [sending, setSending] = useState(false)
   const [sendError, setSendError] = useState('')
-  const isRistoranteContext = form.tipo === 'ristorante' || form.tipo === 'evento'
+  const isRistoranteContext = form.tipo === 'ristorante'
 
   const pre  = pick('prenota')
   const set  = pick('settings')
@@ -97,7 +99,7 @@ export default function PrenotaPage() {
       const data = await res.json()
       if (res.ok) {
         setSent(true)
-        setForm(INIT)
+        setForm(makeInit(form.tipo))
       } else {
         setSendError(data.error ?? 'Errore durante l\'invio. Riprova.')
       }
@@ -303,6 +305,17 @@ export default function PrenotaPage() {
                     onSubmit={submit}
                     className="space-y-6"
                   >
+                    {/* Prenotazioni solo per telefono */}
+                    <div className="bg-forest-dark px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                      <div>
+                        <p className="font-sans text-xs tracking-[0.22em] uppercase text-gold mb-1">Vuoi prenotare?</p>
+                        <p className="font-sans text-sm text-cream/65">Camere e tavoli si prenotano solo per telefono. Il modulo qui sotto è per richiedere informazioni.</p>
+                      </div>
+                      <a href={`tel:${set.contact.phone_href}`} className="btn-gold inline-flex items-center gap-2 shrink-0">
+                        <RiPhoneLine size={14} /> {set.contact.phone}
+                      </a>
+                    </div>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
                         <label className="block font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-2">Nome e Cognome *</label>
@@ -323,46 +336,26 @@ export default function PrenotaPage() {
                           className="w-full bg-transparent border border-charcoal/20 focus:border-gold outline-none px-4 py-3 font-sans text-sm text-charcoal placeholder-stone/60 transition-colors duration-300" />
                       </div>
                       <div>
-                        <label className="block font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-2">Tipo di richiesta</label>
+                        <label className="block font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-2">Richiesta per</label>
                         <select name="tipo" value={form.tipo} onChange={setF}
                           className="w-full bg-cream border border-charcoal/20 focus:border-gold outline-none px-4 py-3 font-sans text-sm text-charcoal transition-colors duration-300 cursor-pointer">
-                          <option value="camera">Prenotazione camera</option>
-                          <option value="ristorante">Prenotazione ristorante</option>
-                          <option value="evento">Evento / Banchetto</option>
-                          <option value="info">Informazioni generali</option>
+                          <option value="hotel">Informazioni hotel</option>
+                          <option value="ristorante">Informazioni ristorante</option>
                         </select>
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-5">
-                      <div>
-                        <label className="block font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-2">Arrivo</label>
-                        <input type="date" name="arrivo" value={form.arrivo} onChange={setF}
-                          className="w-full bg-transparent border border-charcoal/20 focus:border-gold outline-none px-4 py-3 font-sans text-sm text-charcoal transition-colors duration-300" />
-                      </div>
-                      <div>
-                        <label className="block font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-2">Partenza</label>
-                        <input type="date" name="partenza" value={form.partenza} onChange={setF}
-                          className="w-full bg-transparent border border-charcoal/20 focus:border-gold outline-none px-4 py-3 font-sans text-sm text-charcoal transition-colors duration-300" />
-                      </div>
-                      <div>
-                        <label className="block font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-2">Ospiti</label>
-                        <input type="number" name="ospiti" value={form.ospiti} onChange={setF} min="1" max="20"
-                          className="w-full bg-transparent border border-charcoal/20 focus:border-gold outline-none px-4 py-3 font-sans text-sm text-charcoal transition-colors duration-300" />
-                      </div>
-                    </div>
-
                     <div>
-                      <label className="block font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-2">Messaggio</label>
-                      <textarea name="messaggio" value={form.messaggio} onChange={setF} rows={5}
-                        placeholder="Richieste speciali, allergie alimentari, preferenze di camera, occasioni speciali..."
+                      <label className="block font-sans text-[0.68rem] tracking-[0.22em] uppercase text-stone mb-2">Messaggio *</label>
+                      <textarea name="messaggio" value={form.messaggio} onChange={setF} rows={5} required
+                        placeholder="Scrivi qui la tua domanda: servizi, camere, menù, eventi, allergie alimentari..."
                         className="w-full bg-transparent border border-charcoal/20 focus:border-gold outline-none px-4 py-3 font-sans text-sm text-charcoal placeholder-stone/60 transition-colors duration-300 resize-none" />
                     </div>
 
                     <div>
                       <button type="submit" disabled={sending}
                         className="btn-gold w-full sm:w-auto sm:px-14 disabled:opacity-60 disabled:cursor-not-allowed">
-                        {sending ? 'Invio in corso…' : 'Invia Richiesta'}
+                        {sending ? 'Invio in corso…' : 'Invia Richiesta di Informazioni'}
                       </button>
                       {sendError && (
                         <p className="font-sans text-sm text-red-600 mt-3">{sendError}</p>

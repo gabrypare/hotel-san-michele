@@ -142,8 +142,8 @@ export default function HotelPage() {
               </h2>
               <EditableText tag="p" fileKey="hotel" path={['intro', 'para1']} value={h.intro.para1} multiline className="font-sans text-base text-charcoal/70 leading-relaxed mb-4 block" />
               <EditableText tag="p" fileKey="hotel" path={['intro', 'para2']} value={h.intro.para2} multiline className="font-sans text-base text-charcoal/70 leading-relaxed mb-8 block" />
-              <Link to="/prenota?tipo=camera" className="btn-gold inline-flex items-center gap-2">
-                Prenota una camera <RiArrowRightLine size={13} />
+              <Link to="/prenota?tipo=hotel" className="btn-gold inline-flex items-center gap-2">
+                Chiedi informazioni <RiArrowRightLine size={13} />
               </Link>
             </ScrollReveal>
             <ScrollReveal direction="right" delay={0.15}>
@@ -202,7 +202,7 @@ export default function HotelPage() {
                   </li>
                 ))}
               </ul>
-              <Link to="/prenota?tipo=camera" className="btn-gold">Richiedi disponibilità</Link>
+              <Link to="/prenota?tipo=hotel" className="btn-gold">Chiedi informazioni</Link>
             </ScrollReveal>
           </div>
         </div>
@@ -292,7 +292,7 @@ export default function HotelPage() {
             <EditableText tag="h2" fileKey="hotel" path={['cta', 'title']} value={h.cta.title} className="font-script text-3xl lg:text-4xl text-forest-dark mb-4 block" />
             <EditableText tag="p" fileKey="hotel" path={['cta', 'body']} value={h.cta.body} multiline className="font-sans text-base text-charcoal/60 mb-8 block" />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/prenota" className="btn-gold">Prenota Ora</Link>
+              <Link to="/prenota?tipo=hotel" className="btn-gold">Chiedi informazioni</Link>
               <a href={`tel:${h.cta.phone.replace(/\s/g, '')}`} className="btn-outline-dark">
                 <EditableText tag="span" fileKey="hotel" path={['cta', 'phone']} value={h.cta.phone} className="inline" />
               </a>
