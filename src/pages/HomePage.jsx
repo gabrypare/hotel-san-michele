@@ -416,6 +416,7 @@ export default function HomePage() {
                 Vedi il Menù <RiArrowRightLine size={13} />
               </Link>
               <Link to="/prenota?tipo=ristorante" className="btn-outline-light">Chiedi informazioni</Link>
+              <a href={`tel:${pick('settings').contact.phone_href}`} className="btn-outline-light">{pick('settings').contact.phone}</a>
             </div>
           </ScrollReveal>
         </div>

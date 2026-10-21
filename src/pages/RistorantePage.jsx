@@ -326,6 +326,7 @@ export default function RistorantePage() {
             <AddCardButton onClick={() => addItem('restaurant', ['orari', 'slots'], { ...NEW_SLOT })} label="Aggiungi orario" className="mt-4" />
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/menu" className="btn-gold">Vedi il Menù</Link>
+              <a href={`tel:${pick('settings').contact.phone_href}`} className="btn-outline-dark">{pick('settings').contact.phone}</a>
             </div>
           </ScrollReveal>
         </div>

@@ -454,7 +454,10 @@ export default function MenuPage() {
         {/* CTA */}
         <div className="mt-14 text-center">
           <p className="font-display italic text-xl text-stone mb-5">"Vieni a tavola con noi — ti aspettiamo"</p>
-          <Link to="/prenota?tipo=ristorante" className="btn-gold">Chiedi informazioni</Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/prenota?tipo=ristorante" className="btn-gold">Chiedi informazioni</Link>
+            <a href={`tel:${pick('settings').contact.phone_href}`} className="btn-outline-dark">{pick('settings').contact.phone}</a>
+          </div>
         </div>
       </div>
 
