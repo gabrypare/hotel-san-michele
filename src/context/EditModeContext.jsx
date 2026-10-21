@@ -11,6 +11,7 @@ import hotelJson       from '../content/hotel.json'
 import locationJson    from '../content/location.json'
 import prenotaJson    from '../content/prenota.json'
 import clinicaJson    from '../content/clinica.json'
+import legalJson      from '../content/legal.json'
 
 const Ctx = createContext(null)
 export const useEditMode = () => useContext(Ctx)
@@ -28,6 +29,7 @@ const INITIAL = {
   location:   locationJson,
   prenota:    prenotaJson,
   clinica:    clinicaJson,
+  legal:      legalJson,
   en:         {},
 }
 

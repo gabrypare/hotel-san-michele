@@ -1,0 +1,116 @@
+{
+  "privacy": {
+    "label": "Informativa",
+    "title": "Privacy",
+    "titleItalic": "Policy",
+    "updated": "Ultimo aggiornamento: 21 ottobre 2026",
+    "intro": "Questa pagina spiega come l'Hotel Ristorante San Michele tratta i dati personali di chi visita il sito e di chi ci contatta tramite il modulo di richiesta, ai sensi del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003.",
+    "sections": [
+      {
+        "title": "1. Titolare del trattamento",
+        "paragraphs": [
+          "Hotel Ristorante San Michele — Via S. Michele, 5a, 25050 Ome (BS) — P.IVA 03524900986.",
+          "Per qualsiasi domanda sui tuoi dati puoi scrivere a hotelsanmicheleome@gmail.com oppure telefonare al +39 030 3378060."
+        ]
+      },
+      {
+        "title": "2. Quali dati raccogliamo",
+        "paragraphs": [
+          "Dati che ci fornisci tu: quando compili il modulo nella pagina Prenota raccogliamo nome e cognome, indirizzo email, numero di telefono (facoltativo), date di arrivo e partenza, numero di ospiti, tipo di richiesta e il testo del messaggio.",
+          "Se nel messaggio ci comunichi informazioni come allergie o intolleranze alimentari, le useremo solo per soddisfare la tua richiesta e non per altri scopi.",
+          "Dati di navigazione: i server che ospitano il sito registrano automaticamente alcuni dati tecnici (indirizzo IP, tipo di browser, data e ora di accesso) necessari al funzionamento e alla sicurezza del sito. Non usiamo questi dati per identificarti."
+        ]
+      },
+      {
+        "title": "3. Perché li usiamo",
+        "paragraphs": [
+          "• Rispondere alle tue richieste di informazioni e gestire le prenotazioni di camere, tavoli ed eventi (base giuridica: esecuzione di misure precontrattuali richieste da te, art. 6.1.b GDPR).",
+          "• Garantire la sicurezza e il corretto funzionamento del sito (base giuridica: legittimo interesse del titolare, art. 6.1.f GDPR).",
+          "Non usiamo i tuoi dati per invio di pubblicità o newsletter e non li vendiamo a nessuno."
+        ]
+      },
+      {
+        "title": "4. Chi può vedere i dati",
+        "paragraphs": [
+          "I dati sono trattati solo dal personale dell'hotel e del ristorante incaricato di rispondere alle richieste.",
+          "Per far funzionare il sito ci avvaliamo di alcuni fornitori che agiscono come responsabili del trattamento: Vercel Inc. (hosting del sito) e Google Ireland Ltd (servizio di posta Gmail, con cui riceviamo le richieste del modulo). Questi fornitori possono trattare dati anche fuori dall'Unione Europea, nel rispetto delle garanzie previste dal GDPR (EU-US Data Privacy Framework e clausole contrattuali standard)."
+        ]
+      },
+      {
+        "title": "5. Per quanto tempo li conserviamo",
+        "paragraphs": [
+          "Conserviamo i dati delle richieste per il tempo necessario a gestirle e comunque non oltre 24 mesi dall'ultimo contatto, salvo che la legge ci obblighi a conservarli più a lungo (ad esempio per finalità fiscali in caso di soggiorno o servizio effettivamente acquistato)."
+        ]
+      },
+      {
+        "title": "6. È obbligatorio fornire i dati?",
+        "paragraphs": [
+          "No, ma senza nome e indirizzo email non possiamo rispondere alla tua richiesta. Gli altri campi del modulo sono facoltativi."
+        ]
+      },
+      {
+        "title": "7. I tuoi diritti",
+        "paragraphs": [
+          "In qualsiasi momento puoi chiederci di accedere ai tuoi dati, correggerli, cancellarli, limitarne l'uso, opporti al trattamento o riceverne una copia (artt. 15–22 GDPR). Basta scrivere a hotelsanmicheleome@gmail.com.",
+          "Se ritieni che i tuoi dati siano trattati in modo non corretto puoi presentare reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it)."
+        ]
+      },
+      {
+        "title": "8. Cookie",
+        "paragraphs": [
+          "Per le informazioni sui cookie consulta la Cookie Policy, raggiungibile dal link in fondo a ogni pagina del sito."
+        ]
+      },
+      {
+        "title": "9. Modifiche",
+        "paragraphs": [
+          "Questa informativa può essere aggiornata nel tempo. La data dell'ultimo aggiornamento è indicata in cima alla pagina."
+        ]
+      }
+    ]
+  },
+  "cookie": {
+    "label": "Informativa",
+    "title": "Cookie",
+    "titleItalic": "Policy",
+    "updated": "Ultimo aggiornamento: 21 ottobre 2026",
+    "intro": "I cookie sono piccoli file di testo che un sito salva sul tuo dispositivo mentre navighi. Questa pagina spiega quali strumenti di questo tipo usa il sito dell'Hotel Ristorante San Michele e come puoi gestirli.",
+    "sections": [
+      {
+        "title": "1. In breve",
+        "paragraphs": [
+          "Questo sito non usa cookie di profilazione, pubblicità o statistiche. Per questo motivo non ti chiediamo il consenso all'apertura del sito.",
+          "Alcuni contenuti di altri servizi (come la mappa di Google) vengono caricati solo se lo scegli tu, con un click."
+        ]
+      },
+      {
+        "title": "2. Strumenti tecnici usati dal sito",
+        "paragraphs": [
+          "• Preferenza lingua (site_lang): se scegli la versione italiana o inglese, il sito ricorda la tua scelta salvandola nel browser (memoria locale). Non contiene dati personali, non scade e puoi cancellarla in qualsiasi momento dalle impostazioni del browser.",
+          "Questi strumenti sono necessari al funzionamento del sito e non richiedono consenso (art. 122 D.Lgs. 196/2003)."
+        ]
+      },
+      {
+        "title": "3. Contenuti di terze parti",
+        "paragraphs": [
+          "• Google Maps (pagina Location): la mappa viene caricata solo quando clicchi su «Mostra la mappa». Da quel momento Google può installare propri cookie e raccogliere dati come l'indirizzo IP, secondo la sua informativa: policies.google.com/privacy.",
+          "• OpenStreetMap (mappe dei percorsi nelle schede delle attività): viene caricata quando apri una scheda che contiene una mappa. Il servizio può ricevere dati tecnici come l'indirizzo IP: osmfoundation.org/wiki/Privacy_Policy.",
+          "• Google Fonts: i caratteri tipografici del sito sono forniti da Google. Non installano cookie, ma il tuo browser comunica a Google l'indirizzo IP per scaricarli."
+        ]
+      },
+      {
+        "title": "4. Come gestire o cancellare i cookie",
+        "paragraphs": [
+          "Puoi cancellare o bloccare i cookie in qualsiasi momento dalle impostazioni del tuo browser (Chrome, Safari, Firefox, Edge). Bloccando i cookie alcuni contenuti di terze parti, come la mappa, potrebbero non funzionare."
+        ]
+      },
+      {
+        "title": "5. Titolare e contatti",
+        "paragraphs": [
+          "Hotel Ristorante San Michele — Via S. Michele, 5a, 25050 Ome (BS) — P.IVA 03524900986 — hotelsanmicheleome@gmail.com.",
+          "Per maggiori informazioni sul trattamento dei dati consulta la Privacy Policy."
+        ]
+      }
+    ]
+  }
+}

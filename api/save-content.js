@@ -17,6 +17,7 @@ const FILE_MAP = {
   location:   'src/content/location.json',
   prenota:    'src/content/prenota.json',
   clinica:    'src/content/clinica.json',
+  legal:      'src/content/legal.json',
 }
 
 function ghRequest(method, path, body, token) {

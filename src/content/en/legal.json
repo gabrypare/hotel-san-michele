@@ -1,0 +1,116 @@
+{
+  "privacy": {
+    "label": "Information notice",
+    "title": "Privacy",
+    "titleItalic": "Policy",
+    "updated": "Last updated: October 21, 2026",
+    "intro": "This page explains how Hotel Ristorante San Michele processes the personal data of website visitors and of those who contact us through the request form, in accordance with EU Regulation 2016/679 (GDPR) and Italian Legislative Decree 196/2003.",
+    "sections": [
+      {
+        "title": "1. Data controller",
+        "paragraphs": [
+          "Hotel Ristorante San Michele — Via S. Michele, 5a, 25050 Ome (BS), Italy — VAT no. 03524900986.",
+          "For any question about your data you can write to hotelsanmicheleome@gmail.com or call +39 030 3378060."
+        ]
+      },
+      {
+        "title": "2. What data we collect",
+        "paragraphs": [
+          "Data you provide: when you fill in the form on the Book page we collect your full name, email address, phone number (optional), arrival and departure dates, number of guests, type of request and the text of your message.",
+          "If your message includes information such as food allergies or intolerances, we will use it only to fulfil your request and for no other purpose.",
+          "Browsing data: the servers hosting the website automatically record some technical data (IP address, browser type, date and time of access) needed for the website to work and stay secure. We do not use this data to identify you."
+        ]
+      },
+      {
+        "title": "3. Why we use it",
+        "paragraphs": [
+          "• To answer your requests for information and manage bookings for rooms, tables and events (legal basis: pre-contractual measures taken at your request, Art. 6.1.b GDPR).",
+          "• To ensure the security and proper functioning of the website (legal basis: legitimate interest of the controller, Art. 6.1.f GDPR).",
+          "We do not use your data to send advertising or newsletters and we do not sell it to anyone."
+        ]
+      },
+      {
+        "title": "4. Who can see the data",
+        "paragraphs": [
+          "Your data is handled only by hotel and restaurant staff in charge of answering requests.",
+          "To run the website we rely on some providers acting as data processors: Vercel Inc. (website hosting) and Google Ireland Ltd (Gmail email service, through which we receive form requests). These providers may also process data outside the European Union, under the safeguards provided by the GDPR (EU-US Data Privacy Framework and standard contractual clauses)."
+        ]
+      },
+      {
+        "title": "5. How long we keep it",
+        "paragraphs": [
+          "We keep request data for as long as needed to handle it and in any case no longer than 24 months from the last contact, unless the law requires us to keep it longer (for example for tax purposes when a stay or service is actually purchased)."
+        ]
+      },
+      {
+        "title": "6. Do I have to provide my data?",
+        "paragraphs": [
+          "No, but without your name and email address we cannot answer your request. The other fields of the form are optional."
+        ]
+      },
+      {
+        "title": "7. Your rights",
+        "paragraphs": [
+          "At any time you can ask us to access, correct or delete your data, restrict its use, object to processing or receive a copy of it (Arts. 15–22 GDPR). Just write to hotelsanmicheleome@gmail.com.",
+          "If you believe your data is not being processed correctly, you can lodge a complaint with the Italian Data Protection Authority (www.garanteprivacy.it)."
+        ]
+      },
+      {
+        "title": "8. Cookies",
+        "paragraphs": [
+          "For information about cookies please see the Cookie Policy, available from the link at the bottom of every page of the website."
+        ]
+      },
+      {
+        "title": "9. Changes",
+        "paragraphs": [
+          "This notice may be updated over time. The date of the last update is shown at the top of the page."
+        ]
+      }
+    ]
+  },
+  "cookie": {
+    "label": "Information notice",
+    "title": "Cookie",
+    "titleItalic": "Policy",
+    "updated": "Last updated: October 21, 2026",
+    "intro": "Cookies are small text files that a website saves on your device while you browse. This page explains which tools of this kind are used by the Hotel Ristorante San Michele website and how you can manage them.",
+    "sections": [
+      {
+        "title": "1. In short",
+        "paragraphs": [
+          "This website does not use profiling, advertising or analytics cookies. For this reason we do not ask for your consent when you open the website.",
+          "Some content from other services (such as the Google map) is loaded only if you choose so, with a click."
+        ]
+      },
+      {
+        "title": "2. Technical tools used by the website",
+        "paragraphs": [
+          "• Language preference (site_lang): if you choose the Italian or English version, the website remembers your choice by saving it in your browser (local storage). It contains no personal data, does not expire and you can delete it at any time from your browser settings.",
+          "These tools are necessary for the website to work and do not require consent (Art. 122 Italian Legislative Decree 196/2003)."
+        ]
+      },
+      {
+        "title": "3. Third-party content",
+        "paragraphs": [
+          "• Google Maps (Location page): the map is loaded only when you click «Show the map». From that moment Google may set its own cookies and collect data such as your IP address, according to its privacy policy: policies.google.com/privacy.",
+          "• OpenStreetMap (route maps in the activity cards): loaded when you open a card containing a map. The service may receive technical data such as your IP address: osmfoundation.org/wiki/Privacy_Policy.",
+          "• Google Fonts: the website's typefaces are provided by Google. They do not set cookies, but your browser sends your IP address to Google to download them."
+        ]
+      },
+      {
+        "title": "4. How to manage or delete cookies",
+        "paragraphs": [
+          "You can delete or block cookies at any time from your browser settings (Chrome, Safari, Firefox, Edge). If you block cookies, some third-party content, such as the map, may not work."
+        ]
+      },
+      {
+        "title": "5. Controller and contacts",
+        "paragraphs": [
+          "Hotel Ristorante San Michele — Via S. Michele, 5a, 25050 Ome (BS), Italy — VAT no. 03524900986 — hotelsanmicheleome@gmail.com.",
+          "For more information on data processing please see the Privacy Policy."
+        ]
+      }
+    ]
+  }
+}

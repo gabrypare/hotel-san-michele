@@ -82,6 +82,7 @@ export default function LocationPage() {
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }))
 
   const [selected, setSelected]     = useState(null)
+  const [mapLoaded, setMapLoaded]   = useState(false)
   const [carouselIdx, setCarouselIdx] = useState(0)
   const carouselTimer = useRef(null)
 
@@ -378,14 +379,27 @@ export default function LocationPage() {
             <div className="flex items-center justify-center gap-4 mb-8">
               <EditableText tag="h3" fileKey="location" path={['map', 'title']} value={loc.map.title} className="font-serif text-2xl text-forest-dark text-center block" />
             </div>
-            <iframe
-              title="Hotel San Michele — Ome (BS)"
-              src={loc.map.src}
-              width="100%" height="420"
-              style={{ border: '1px solid rgba(42,34,24,0.12)', filter: 'grayscale(0.2) contrast(0.95)' }}
-              allowFullScreen loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            {/* Google Maps installa cookie di terze parti: si carica solo dopo il click (vedi Cookie Policy) */}
+            {mapLoaded ? (
+              <iframe
+                title="Hotel San Michele — Ome (BS)"
+                src={loc.map.src}
+                width="100%" height="420"
+                style={{ border: '1px solid rgba(42,34,24,0.12)', filter: 'grayscale(0.2) contrast(0.95)' }}
+                allowFullScreen loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            ) : (
+              <div className="h-[420px] border border-charcoal/10 bg-cream-dark flex flex-col items-center justify-center text-center px-6">
+                <RiMapPin2Line size={28} className="text-gold mb-4" />
+                <p className="font-sans text-sm text-charcoal/70 mb-1">Via S. Michele, 5a — 25050 Ome (BS)</p>
+                <p className="font-sans text-xs text-charcoal/45 max-w-sm mb-6">
+                  La mappa è fornita da Google e può installare cookie di terze parti.{' '}
+                  <Link to="/cookie" className="underline hover:text-gold transition-colors">Cookie Policy</Link>
+                </p>
+                <button onClick={() => setMapLoaded(true)} className="btn-gold">Mostra la mappa</button>
+              </div>
+            )}
             {isEditMode && (
               <div className="mt-2 flex items-center gap-2">
                 <span className="font-sans text-[0.6rem] uppercase tracking-widest text-charcoal/40">URL mappa:</span>

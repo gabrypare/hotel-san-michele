@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom'
 import { RiInstagramLine, RiFacebookCircleLine, RiMapPin2Line, RiPhoneLine, RiMailLine } from 'react-icons/ri'
 import SanMicheleLogo from '../ui/SanMicheleLogo'
-import settings from '../../content/settings.json'
 import { useEditMode } from '../../context/EditModeContext'
 import EditableText from '../editor/EditableText'
-
-const { legal } = settings
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -128,8 +125,8 @@ export default function Footer() {
             <EditableText tag="span" fileKey="settings" path={['hotel', 'piva']} value={s.hotel.piva} />
           </p>
           <div className="flex gap-5">
-            <a href={legal.privacy_href} className="hover:text-gold transition-colors duration-300">Privacy Policy</a>
-            <a href={legal.cookie_href} className="hover:text-gold transition-colors duration-300">Cookie Policy</a>
+            <Link to="/privacy" className="hover:text-gold transition-colors duration-300">Privacy Policy</Link>
+            <Link to="/cookie" className="hover:text-gold transition-colors duration-300">Cookie Policy</Link>
           </div>
         </div>
       </div>

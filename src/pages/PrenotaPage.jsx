@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams, Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from '@dnd-kit/core'
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
@@ -368,7 +368,8 @@ export default function PrenotaPage() {
                         <p className="font-sans text-sm text-red-600 mt-3">{sendError}</p>
                       )}
                       <p className="font-sans text-[0.65rem] text-charcoal/35 mt-3">
-                        I dati sono trattati ai sensi del GDPR (Reg. UE 2016/679). Non verranno condivisi con terze parti.
+                        I dati sono trattati ai sensi del GDPR (Reg. UE 2016/679) solo per rispondere alla tua richiesta.{' '}
+                        <Link to="/privacy" className="underline hover:text-gold transition-colors">Leggi l'informativa privacy</Link>
                       </p>
                     </div>
                   </motion.form>

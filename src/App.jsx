@@ -14,6 +14,7 @@ import GalleryPage  from './pages/GalleryPage'
 import PrenotaPage  from './pages/PrenotaPage'
 import RoomPage     from './pages/RoomPage'
 import ClinicaPage  from './pages/ClinicaPage'
+import LegalPage    from './pages/LegalPage'
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -43,6 +44,8 @@ function AnimatedRoutes() {
           <Route path="/prenota"   element={<PrenotaPage />} />
           <Route path="/hotel/:slug" element={<RoomPage />} />
           <Route path="/clinica"   element={<ClinicaPage />} />
+          <Route path="/privacy"   element={<LegalPage doc="privacy" />} />
+          <Route path="/cookie"    element={<LegalPage doc="cookie" />} />
         </Routes>
       </motion.div>
     </AnimatePresence>

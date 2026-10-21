@@ -30,7 +30,7 @@
     "facebook": "#"
   },
   "legal": {
-    "privacy_href": "#",
-    "cookie_href": "#"
+    "privacy_href": "/privacy",
+    "cookie_href": "/cookie"
   }
 }
