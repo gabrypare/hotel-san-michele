@@ -96,7 +96,7 @@ export default async function handler(req, res) {
   <div style="margin:24px 0;padding:16px;background:#f7f2e8;border-left:3px solid #C9A96E">
     <p style="margin:0 0 4px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#888">Per contattarci direttamente</p>
     <p style="margin:0;font-size:14px;color:#2a2218;line-height:1.8">
-      <a href="tel:+390306527167" style="color:#C9A96E;text-decoration:none">+39 030 652 7167</a><br>
+      <a href="tel:+390303378060" style="color:#C9A96E;text-decoration:none">+39 030 3378060</a><br>
       <a href="mailto:info@sanmicheleome.it" style="color:#C9A96E;text-decoration:none">info@sanmicheleome.it</a>
     </p>
   </div>

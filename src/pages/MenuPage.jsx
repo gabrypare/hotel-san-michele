@@ -68,7 +68,7 @@ export default function MenuPage() {
       y += 5
 
       pdf.setTextColor(139, 115, 85)
-      pdf.text('Via S. Michele, 5a  ·  25050 Ome (BS)  ·  +39 030 652 7167', W / 2, y, { align: 'center' })
+      pdf.text('Via S. Michele, 5a  ·  25050 Ome (BS)  ·  +39 030 3378060', W / 2, y, { align: 'center' })
       y += 6
 
       pdf.setFont('times', 'italic')
